@@ -1,0 +1,389 @@
+.tk-freelancer-box{
+    padding: 30px;
+    background: $white;
+    border: 1px solid $lightest_2;
+    box-shadow: $drop_shadows_lightest;
+    border-radius: $radius;
+    + .tk-freelancer-box{
+        margin-top: 24px;
+    }
+}
+.tk-content-box{
+    > h4{
+        margin-bottom: 20px;
+    }
+    .tk-swipernav{
+        margin-top: 20px;
+    }
+    + .tk-content-box{
+        margin-top: 30px;
+    }
+}
+.tk-freelancer-profile{
+    display: flex;
+    figure{
+        flex: none;
+        max-width: 180px;
+        border-radius: 6px;
+        margin:0 20px 0 0;
+        img{
+            border-radius: inherit;
+        }
+    }
+    &_title{
+        display: block;
+        width: 100%;
+        .tk-freelancer-profile-price{
+            .tk-save {
+                justify-content: end;
+            }
+        }
+    }
+    
+}
+.tk-freelancer-profile-title{
+    width: 100%;
+    h3{
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 18px;
+            padding-left: 15px;
+        }
+    }
+    > span{
+        @extend %h5;
+        display: block; 
+        font-weight: 600;
+    }
+}
+.tk-freelancerinfo-holder{
+    width: 100%;
+    display: flex;
+    + .tk-freelancerinfo-holder{
+        margin-top: 30px;
+    }
+}
+.tk-client-review{
+    padding: 30px 0 0;
+    .tk-sectiontitle{
+        padding-left: 30px;
+    }
+}
+.tk-reviews_holder{
+    + .tk-reviews_holder{
+        border-top: 1px solid $lightest;
+    }
+}
+.tk-profilerrating{
+    padding: 0;
+    margin: 10px 0 0;
+    @extend %flex;
+    align-items: center;
+    gap:10px 24px;
+    @extend %p14;
+    li{
+        list-style-type: none;
+        line-height: inherit;
+        > i{
+            font-size: 16px;
+            color: $light;
+            line-height: 24px;
+        }
+        > em{
+            @extend %p14;
+            font-weight: 600;
+            color: $charcoal_black;
+            padding:0 3px;
+        }
+        > span{
+            @extend %p14;
+            font-weight: 600;
+            color: $light;
+            i{
+                padding-right: 6px;
+            }
+        }
+    }
+}
+.tk-freelancer-profile-price{
+    flex: none;
+    margin-left: auto;
+    text-align: right;
+    strong{
+        @extend %h6;
+        display: block;
+    }
+    h4{
+        margin:0; 
+    }   
+    > a {
+        margin: 20px 0 0;
+        display: block;
+    }
+}
+.tk-freelancerinfo-language{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    li{
+        list-style-type: none;
+        min-width: 246px;
+        width: 100%;
+        > span{
+            @extend %h6;
+            color: $light;
+            display: block;
+        }
+        h6{
+            margin-bottom: 0;
+            color: $dark;
+        }
+    }
+}
+.tk-freelancerinfo-btn{
+    margin:10px 0 0 auto;
+    .tk-btn-yellow{
+        i{
+            padding-right: 10px;
+        }
+    }
+}
+.tk-skills-tags{
+    padding: 0;
+    margin: 0;
+    @extend %flex;
+    align-items: center;
+    gap: 16px;
+    li{
+        list-style-type: none;
+        > a{
+            display: flex;
+            align-items: center;
+            padding: 2px 11px;
+            @extend %tiny_title;
+            font-weight: 700;
+            color: $dark;
+            border-radius: $radius;
+            background-color: $lightest;
+            border: 1px solid $lightest;
+            @extend %transition;
+            &:hover{
+                color: $dark;
+                background-color: $white;
+                border-color: $lightest_2;
+            }
+        }
+        span{
+            a{
+                display: block;
+                @extend %label_title;
+                color: $theme-color;
+            }
+        }
+    }
+}
+.tk-uploadprofilepic{
+    @extend %flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    figure{
+        width: 120px;
+        flex: none;
+        margin:  0 20px 0 0 ;
+        img{
+            width: 100%;
+            border-radius: 4px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .tk-hasloader{
+            width: 100%;
+            height: 100%;
+            background: #fffefe8a;
+            position: absolute;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .spinner-border{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                vertical-align: 0;
+                border: 5px solid #959191;
+                border-right-color: #ac989869;
+            }
+        }
+    }
+}
+.tk-freelancer-content-two {
+    h4{
+        margin: 0;
+    }
+    p{
+        font-size: 15px;
+        line-height: 24px;
+        margin: 0 0 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+.tk-uploadbtn{
+    label {
+        margin: 0;
+        input{
+            display: none;
+        }
+    }
+}
+.tk-uploadbtnpic{
+    @extend %flex;
+    gap: 10px;
+}
+.tk-btnlight{
+    background-color: $lightest;
+}
+.tb-savebtn {
+    em{
+        text-align: right;
+        flex: 1;
+    }
+}
+.tk-profile-form{
+    padding: 30px;
+    background: #fff;
+}
+.tk-project-box{
+    + .tk-profile-form{
+        padding: 30px;
+        background: #fff;
+        box-shadow: inset 0px 1px 0px #eeeeee;
+    }
+   > h3 {
+        margin:  0 0 15px;
+    }
+} 
+.tk-dhbbtnarea{
+    gap: 20px;
+    padding: 30px;
+    @extend %flex;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    justify-content: flex-end;
+    border-top: 1px solid $border-color;
+    background: $white;
+    em{
+        flex: initial;
+        color: #0A0F26;
+        text-align: right;
+        font-style: normal;
+        font-size: 0.875rem;
+        line-height: 1.4285714286em;
+    }
+}
+.tk-featureRating{
+    @extend %flex;
+    align-items: center;
+    h3{
+        margin-bottom: 0;
+        padding-right: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    h4{
+        padding-right: 2px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    h6{
+        margin: 0 5px 0;
+        line-height: 1.1;
+        display: inline-block;
+    }
+    > a{
+        line-height: 1.1;
+        font-family: $heading-font-family;
+    }
+    &__stars{
+        letter-spacing: 2px;
+        display: inline-flex;
+        vertical-align: middle;
+        @extend %tk-featureRating__stars;
+        + em{padding-left: 2px;}
+        &::before{
+            @extend %tk-featureRating;
+            @extend %tk-featureRating__starsIcon;
+            color: $lighter; 
+        }
+        span{
+            @extend %tk-featureRating__stars; 
+            width: 100%;
+            overflow: hidden;   
+            &::after{
+                @extend %tk-featureRating;
+                @extend %tk-featureRating__starsIcon;
+            }
+        }
+    }
+}
+.tk-reviews-box{
+    padding: 30px;
+    border-bottom: 0;
+    position: relative;
+    ~ .tk-reviews-box{
+        margin-top: 20px;
+        border-top: 1px solid $lightest;
+    }
+    .tk-description{
+        margin: 20px 0 0 0;
+        p{
+            @extend %p15;
+            margin-bottom: 0;
+        }
+    }
+}
+.tk-reviews-img{
+    display: flex;
+    align-items: flex-start;
+    figure{
+        margin: 0 20px 0 0;
+        img{
+            max-width: 64px;
+            display: inline-block;
+            border-radius:$radius;
+        }
+    }
+}
+.tk-Reviews-detail{
+    a{
+        @extend %flex;
+        color: $light;
+        align-items: center;
+        h5{
+            margin: 5px 0 0;
+        }
+    }
+}
+.tk-review-time{
+    color: $light;
+    @extend %p16;
+    display: inline-block;
+}
+.tk-empty-detail{
+    &::after{
+        display: none;
+    }
+}
+.tk-freelancer-box.tk-client-review{
+    .tk-reviews-box ~ .tk-reviews-box {
+        margin: 0;
+    }
+}

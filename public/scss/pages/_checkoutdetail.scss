@@ -1,0 +1,397 @@
+.tk-checkoutinfo{
+    padding: 30px;
+    @extend %flex;
+    align-items: center;
+    border-bottom: 1px solid $lightest_2;
+    figure{
+        flex: none;
+        margin: 0 20px 0 0;
+        max-width: 100px;
+        border-radius: $radius;
+        img{
+            margin: 0 20px 0 0;
+            width: 100px;
+            border-radius: 4px;
+            height: 100px;
+        }
+    }
+}
+.tk-checkoutdetail{
+    h6{
+        margin: 0;
+        color: $primary_color_01_base;
+        a{color: $primary_color_01_base;}
+    }
+    h5{
+        margin: 0 0 6px;
+      
+    }
+}
+.tk-featuedbox{
+    padding: 40px 30px;
+    h4{
+        margin:  0 0 20px;
+    }
+}
+.tk-mainlistvtwo{
+    @extend %flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0;
+    & li {
+        width: 50%;
+        & + li {
+            margin: 0;
+        }
+    }
+    & li:nth-child(n+3){
+        margin: 20px 0 0;
+    }
+}
+.tk-boxtittle{
+    @extend %flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 10px;
+    
+    .tk-inputiconbtn{
+        max-width: 306px;
+    }
+    h4{
+        margin: 0;
+    }
+}
+.tk-additionalservicesvtwo{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    .tk-additionalservices__content{
+        width: 100%;
+        &::before{
+            display: none;
+        }
+    }
+    .tk-form-checkbox{
+        align-items: center;
+        overflow: hidden;
+        .tk-additionolinfo{
+            margin:  0 0 0 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .form-check-input{
+            flex: none;
+            margin-top: 3px;
+            align-self: start;
+        }
+    }
+    & li{
+        background-color: $white;  
+        padding: 20px;
+          &:nth-child(odd){
+            background-color: $white ;  
+          }
+          &:nth-child(even){
+            background-color: $white ;  
+          }
+        & + li {
+            border-top: 1px solid $lightest_2;
+        }
+    }
+    .tk-active{
+      background-color: $lightest !important;
+      .tk-form-checkbox{
+          .tk-addcartinfoprice{
+            right: 20px;
+            .tk-multiplyinfo{
+                visibility: visible;
+            }
+          }
+      }
+      
+    }
+}
+.tk-vlaue-btn{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $lightest_2;
+    text-align: center;
+    height: 38px;
+    width: auto;
+    background: $white;
+    padding: 10px 16px;
+    width: 137px;
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {display: none}
+    .tk-input-number {
+            width: auto;
+            text-align: center;
+            border: none;
+            margin: 0px;
+            background: $white;
+            font: 600 0.875rem $heading-font-family;
+            min-width: 20px;
+            height: 24px;
+            padding: 0 8px 0 0;
+            &:focus{
+                border: 0;
+                outline: 0;
+                box-shadow: none;
+            }
+    }
+    a{
+        color: $light;
+        display: inline-block;
+        line-height: 12px;
+        i{
+            display: inline-block
+        }
+    }
+    span{
+        @extend %label_title;
+        display: inline-block;
+        color: $light;
+        margin: 0 0 0 15px;
+        
+    }
+}
+.tk-multiplyinfo{
+    @extend %flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    visibility: hidden;
+    @extend %transition;
+    > span{
+        display: inline-block;
+        margin: 0 14px;
+    }
+}
+.tk-addcartinfoprice{
+    width: 57%;
+    @extend %flex;
+    align-items: center;
+    justify-content: flex-end;
+    h6{
+        margin: 0;
+    }
+}
+.tk-asideboxsm{
+    padding: 20px;
+    background-color: $white;
+    h5{
+        margin: 0;
+    }
+    & + .tk-collapsepanel .tk-pakagelist{
+        padding-top: 0;
+    }
+}
+.tk-pakageinfo{
+    h4{
+        margin: 0;
+    }
+    h6{
+        margin: 0;
+    }
+}
+.tk-pakagedetail{
+    @extend %flex;
+    align-items: center;
+    padding: 20px 30px;
+    background: $lightest;
+    position: relative;
+    &::after{
+        @extend %transition;
+        content: "\e930";
+        position: absolute;
+        right: 30px;
+        font-family: "icomoon";
+        font-size: 26px;
+        display: inline-block;
+        color: $light;
+    }
+    figure{
+        margin:  0 20px 0 0;
+        img{
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+.tk-pakagedetail.collapsed {
+    &::after{
+       transform: rotate(90deg);
+    }
+}
+.tk-collapsepanel{
+    background: $white;
+}
+.tk-pakagelist{
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+.tk-pakagelist-item{
+    @extend %transition;
+    &:hover{
+        a{background: $lightest;}
+    }
+    &.tk-active{
+        a{
+            background: $lightest;
+            em{
+                i{display: inline-block}
+            }
+        }
+    }
+    a{
+        @extend %h6;
+        color: $dark;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        @extend %transition;
+        border-radius: $radius;
+        img{
+            margin-right: 10px;
+            max-width: 30px;
+            height: 30px;
+            flex: none;
+        }
+        em{
+            margin-left: auto;
+            color: $light;
+            font-style: normal;
+            display: flex;
+            align-items: center;
+            i{
+                display: none;
+                font-size: 16px;
+                color: $bright-green;
+                padding-left: 10px;
+            }
+        }
+    }
+} 
+.tk-featuredlisted{
+    padding: 0;
+    margin: 15px 0 0;
+    li{
+        @extend %p15;
+        span{
+            @extend %p15;
+            display: inline-block;
+            float: right;
+        }
+        & + li {
+            margin: 10px 0 0;
+        }
+    }
+}
+.tk-asideboxv2{
+    ~ .tk-featuredlisted {
+        border-top: 1px solid  $lightest_2;
+        padding: 20px 30px;
+        margin: 0;
+        list-style: none;
+    }
+}
+.tk-walletsystem{
+    padding: 30px;
+    background-color: $primary_color_02_base_40_light;
+    .tk-additionolinfo{
+        max-width: 220px;
+        margin: 0 0 0 10px;
+        cursor: pointer;
+    }
+    .tk-form-checkbox{
+        align-items: flex-start;
+        & > .form-check-input{
+            margin-top: 3px;
+        }
+    }
+    .tk-additionalservices__content {
+        @extend %flex;
+        justify-content: space-between;
+        width: 100%;
+        .tk-additionalservices-title{
+            max-width: 200px;
+            p{
+                color: $dark;
+            }
+        }
+        
+        &::before{
+            display: none;
+        }
+    }
+}
+.tk-walletamount{
+    align-self: center;
+    margin-left: auto;
+    span{
+        @extend %p15;
+        color: $dark;
+    }
+}
+.tk-btnwallet{
+    a{
+        width: 100%;
+        gap: 7px;
+    }
+}
+.tk-btnsfund{
+    color: $white;
+    width: 100%;
+    background-color: $primary_color_02_base_20_dark;
+    height: 40px;
+}
+.tk-btnwalletfund{
+    margin: 20px 0 0 ;
+}
+.tk-additionolinfo{
+   > span{
+        display: block;
+        @extend %h6;
+        color: $dark;
+    }
+    > em{
+        display: block;
+        @extend %p15;
+        color: $dark;
+    }
+}
+.tk-checkoutdetail{
+    h6{
+        display: inline-flex;
+        gap: 0 2px;
+        align-items: center;
+        flex-wrap: wrap;
+        a{
+            display: inline-flex;
+            align-items: center;
+            &:not(:last-child)::after{
+                padding: 0 0 0 1px;
+                content: ",";
+                font-size: 20px;
+                line-height: 20px;
+                color: #3377FF;
+                display: inline-block;
+                font-family: $body-font-family;
+            }
+        }
+    }
+}
+.tk-box {
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    ~ .tk-box {
+        border-top: 1px solid #eeeeee;
+    }
+}
+.tk-featuredlisted.tk-exploremore {
+    padding: 20px;
+}

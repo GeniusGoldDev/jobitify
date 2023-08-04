@@ -1,0 +1,22 @@
+body{@extend %body-font;}
+h1{font: 700 rem(52)/em(58,52) $heading-font-family;}
+h2{font: 700 rem(36)/em(46,36) $heading-font-family;}
+h3{font: 700 rem(28)/em(38,28) $heading-font-family;}
+h4{font: 700 rem(22)/em(30,22) $heading-font-family;}
+h5{font: 700 rem(18)/em(26,18) $heading-font-family;}
+h6{font: 700 rem(16)/em(26,16) $heading-font-family;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 8px;
+    color: $heading-font-color;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{color: $heading-font-color; }

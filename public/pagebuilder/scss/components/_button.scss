@@ -1,0 +1,63 @@
+.at-btn-line,
+.at-btn{
+    height: 42px;
+    gap: 0 10px;
+    color: $white;
+    padding: 0 24px;
+    cursor: pointer;
+    position: relative;
+    @extend %tiny_title;
+    font-weight: 600;
+    @extend %transition;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #22C55E;
+    border-radius: $radius;
+    i{
+        color: $white;
+        font-size: 20px;
+    }
+    &[disable]{
+        pointer-events: none;
+        color: $light !important;
+        border-color: $lighter !important;
+        background-color: $lighter !important;
+        i{color: $light;}
+    }
+    &:hover,
+    &:focus{
+        outline: none;
+        color: $white;
+        background-color: #22C55E;
+    }
+}
+.at-btn-line-sm{
+    @extend .at-btn-line;
+    height: 34px;
+}
+.at-btn-line-lg{
+    @extend .at-btn-line;
+    height: 48px;
+}
+.at-btn-sm{
+    @extend .at-btn;
+    height: 34px;
+}
+.at-btn-lg{
+    @extend .at-btn;
+    height: 48px;
+    
+}
+.at-btn-line{
+    color: $lighter;
+    text-align: center;
+    border-radius: $radius;
+    background: transparent;
+    border: 1px solid $light;
+    &:hover,
+    &:focus{
+        color: $lighter;
+        background: transparent;
+    }
+}

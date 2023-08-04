@@ -1,0 +1,356 @@
+/** ====== Invoice Detail  Component ====== **/
+.tk-printshaer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 30px;
+    a{
+        & + a{
+            margin: 0 0 0 10px;
+        }
+    }
+    .tk-btn {
+        & + .tk-btn{
+            min-width: 140px;
+        }
+    }
+}
+.btn-sm{
+    min-width: 50px;
+    height: 50px;
+    background: #00cc8d;
+    color: #fff;
+    padding: 0 10px;
+}
+.tk-shareinvoice{
+    color: $anchor_color;
+    font: 600 rem(14)/em(18,14) $heading-font-family;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    i{
+        display: inline-block;
+        margin: 0 10px 0 0;
+        font-size: rem(18px);
+    }
+}
+.tk-printable {
+    padding: 30px;
+    background: $white;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    box-shadow: $drop_shadows_lightest;
+    .tk-tasksinfos{margin: 30px 0 0;}
+}
+.tk-invoicebill {
+    display: flex;
+    justify-content: space-between;
+    figure{
+        margin: 0;
+        width: 160px;
+        height: 100%;
+    }
+}
+.tk-billno{
+    h3 {
+        font-size: rem(36px);
+        margin: 0;
+        line-height:em(37,36)
+    }
+    span {font: 700 rem(18)/em(22,18) $heading-font-family;}
+}
+.tk-invoicetasks{
+    h5{
+        margin: 0;
+        font-weight: 400;
+        font-family: $body-font-family;
+    }
+    h3{
+        font: 700 rem(20)/em(28,20) $heading-font-family;
+        margin: 0;
+    }
+}
+.tk-tasksdates{
+    @extend %flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    & > span{
+        display: inline-block;
+        margin-top: 10px;
+        font: 400 rem(14)/em(22,14) $body-font-family;
+        color: $dark;
+        em{
+            font-style: normal;
+        }
+    }
+   
+}
+.tk-tasksinfos{
+    @extend %flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    .tk-invoicetasks{
+        flex: 1;
+    }
+}
+.tk-fromreceiver{
+    span{
+        font-size: rem(14);
+        display: block;
+        color: #676767;
+        line-height: em(24,14);
+    }
+    h5{
+        margin: 0 0 10px;
+        line-height: em(19,13);
+    }
+}
+.tk-invoicefromto{
+    gap: 30px;
+    @extend %flex;
+    padding: 30px 0;
+    margin-top: 30px;
+    flex-direction: column;
+    border-top: 1px solid $border-color;
+    .tk-fromreceiver{
+        flex: 50%;
+    }
+}
+.tk-invoice-table{
+    &.tk-table{
+        margin: 0;
+        border: 0;
+        >thead {
+            border-top: 1px solid $border-color;
+            >tr {
+                border: 0;
+                border-bottom: 1px solid $border-color;
+                >th {
+                    padding: 17px 28px;
+                    line-height: 21px;
+                    color: $dark;
+                    font: 700 rem(14)/em(35, 14) $body-font-family;
+                    border-left: 0;
+                    border-right: 0;
+                }
+                td{
+                    color: red;
+                    font: 700 rem(14)/em(15, 14) $body-font-family;
+                    > span{
+                        display: inline-block;
+                        color: red;
+                        font: 400 rem(14)/em(15, 14) $body-font-family;
+                        em {
+                            font-size: rem(12px);
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        >tbody {
+            >tr {
+                border: 0;
+                td {
+                    padding: 24px 28px 23px 28px;
+                    line-height: 21px;
+                    border: 0;
+                    vertical-align: bottom;
+                    & + td:nth-child(2){
+                        width: 31%;
+                    }
+                    h6{
+                        margin: 0;
+                        position: relative;
+                        top: 22px;
+                        left: 0;
+                    }
+                    &:last-child{
+                        width: 20%;
+    
+                    }
+                }
+                & +  tr{
+                    & td:first-child {
+                        vertical-align: top;
+                        padding-top: 28px;
+                        padding-bottom: 28px;
+    
+                    }
+                }
+                &:first-child{
+                    td{
+                        vertical-align: top;
+                        padding-bottom: 10px;
+                    }
+                } 
+            }
+        }
+    }
+}
+.tk-tablelist{
+    padding: 0;
+    margin: 3px 0 0;
+    li{
+        font: 400 rem(14)/em(22, 14) $body-font-family;
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+        color: red;
+        margin-top: 3px;
+        & + li {
+            margin-top: 4px;
+        }
+        &::after{
+            color: #676767;
+            position: absolute;
+            content: ".";
+            top: -5px;
+            left: 0;
+            font-size: 19px;
+        }
+    }
+}
+.tk-tablelistv2{
+    margin-top: 6px;
+    position: relative;
+    top: 20px;
+    li{
+        margin-top: 6px;
+        &::after{
+          display: none;
+        }
+        & + li{
+            margin-top: 4px;
+        }
+    }
+}
+.tk-subtotal{
+    @extend %flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px 0 0;
+    border-top: 1px solid #eee;
+    padding: 30px 0 0;
+}
+.tk-subtotalbill{
+    width: 100%;
+    max-width: 350px;
+    padding: 0 20px 0 30px;
+    margin: 0;
+    > li:not(.tk-sumtotal){
+        font: 400 rem(14)/em(22, 14) $body-font-family;
+        list-style: none;
+        margin: 0 0 10px;
+        color: $dark;
+        h6{
+            margin: 0;
+            float: right;
+        }
+    }
+ 
+}
+.tk-sumtotal{
+    min-width: 350px;
+    margin-top: 14px;
+    border-radius: $radius;
+    list-style-type: none;
+    color: $charcoal_black;
+    background: $primary_color_02_base;
+    padding: 14px 20px 14px 30px;
+    font: 700 rem(14)/em(22, 14) $heading-font-family;
+    h6{
+        margin: 0;
+        float: right;
+        color: $charcoal_black;
+        font: 700 rem(18)/em(22, 18) $heading-font-family;
+    }
+}
+.tw-termstitle{
+    h4{
+        font-size: rem(20);
+        line-height: em(28,20);
+        margin: 0 0 13px;
+    }
+}
+.tk-termconditionlist{
+    margin: 19px 0 0;
+    li{
+        list-style-type: none;
+        font: 400 rem(16)/em(25,16) $body-font-family;
+        position: relative;
+        padding-left: 12px;
+        color: #676767;
+        &::before{
+            content: "";
+            background: #676767;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+        & + li{
+            margin: 3px 0 0;
+        }
+    }
+}
+.tk-anoverview{
+    .tk-description{
+        p{
+            margin-bottom: 0;
+            &:not(:last-child){padding-bottom: 18px;}
+        }
+        ul{
+            margin: 20px 0 0;
+            padding-left: 20px;
+            li{
+                list-style-type: disc;
+            }
+        }
+    }
+}
+.tk-anoverview .tk-description p + ul{margin-top: 0;}
+.tk-anoverview{
+    .tk-description {
+        margin: 30px 0 0;
+    }
+}
+.tk-invoicestable{
+    border:1px solid #eee;
+    box-shadow: $drop_shadows_lightest;
+}
+.tk-invoicehead{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+    .tk-btn{
+        margin-left: auto;
+    }
+    .tk-btn-solid-lg{
+        margin-left: auto;
+    }
+}
+.tk-ad-balance{
+    padding-top: 10px;
+    span{
+        @extend %h6;
+        float: right;
+    }
+}
+.tk-seller-empty-hourlyinvoice{
+    p{
+        text-align: center;
+        font-weight: 700;
+        
+    }
+}
+.tb-viewdetails{
+    gap: 0 8px;   
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,1331 @@
+.tk-rtl {
+    direction: rtl;
+}
+/* ______________________________--header-Rtl--______________________________________________________ */
+.tk-rtl .sub-menu li i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tb-headerwrap__right {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.tk-rtl .tk-logo {
+    margin-left: auto;
+    margin-right: 0;
+}
+.tk-rtl .tk-dropdowarrow {
+    right: auto;
+    left: 15px;
+}
+.tk-rtl .tb-wallet em {
+    margin-left: 0 !important;
+    margin-right: auto;
+}
+.tk-rtl .tb-userlogin .sub-menu:before {
+    right: auto;
+    left: 21px;
+}
+
+/* ______________________________--Dashboard-rtl--______________________________________________________ */
+.tk-rtl .menu-item-has-children > a:after {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.tk-rtl .tk-sort {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-price {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-template-view i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-project-detail {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-price {
+    padding-left: 0;
+    padding-right: 30px;
+    text-align: left;
+
+}
+.tk-rtl .tb-userlogin .sub-menu {
+    right: auto;
+    left: 30px;
+    margin: 20px 0px 0 -40px;
+}
+.tk-rtl .tk-btn-holder i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+/* -------------------------Dashboard-rtl-End---------------------------------------------------------- */
+/* ______________________________--about-us--______________________________________________________ */
+.tk-rtl figcaption {
+    margin-right: 0 !important;
+    margin-left: -198px !important;
+}
+.tk-rtl .tk-motivation_img {
+    padding-right: 0;
+    padding-left: 43px;
+}
+.tk-rtl .tk-motivation_list i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-ratingstars {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-slideruser-info {
+    margin-left: 0;
+    margin-right: 14px;
+}
+.tk-rtl .wk-fcopyright_list {
+    margin-left: 0;
+    margin-right: auto;
+}
+/* ______________________________--about-End--______________________________________________________ */
+/* ______________________________--checkout-start--______________________________________________________ */
+.tk-rtl .tk-uploadprofilepic figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-required:after {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.tk-rtl .tb-settingtab i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .icon-sliders {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-advancebtn span + span {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-inputappend_right {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tb-enable {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tb-onoff {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-notify-content {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-projectbtns span {
+    padding-right: 0;
+    padding-left: 30px;
+}
+.tk-rtl .tk-btn-solid-lg-lefticon i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-ordersumery-content > strong {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-order-detail h6 {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tb-actionselect > span {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tb-sortby {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-actionselect > span {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-sortby {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-template-serach h5 {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-infoprofile i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-blogviewdates span i ~ em {
+    margin-left: 0 !important;
+    margin-right: 6px !important;
+}
+.tk-rtl .tk-blogviewdates li i {
+    margin-right: 0 !important;
+    margin-left: 7px;
+}
+.tk-rtl .tk-qualifinfo li span i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-languages li:not(:last-child)::after {
+    left: -2px;
+    right: auto;
+}
+.tk-rtl .tk-review-box i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-review-box em {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.tk-rtl .tk-featureRating > i {
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+.tk-rtl .tk-featureRating h6 {
+    margin-right: 0;
+    margin-left: 6px;
+}
+.tk-rtl .tk-deatlswithimg figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-tabicon {
+    margin-left: 0;
+    margin-right: 19px;
+}
+.tk-rtl .tk-itemlinksvtwo .tk-switchservice {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-rateviews span {
+    padding-left: 0 !important;
+    padding-right: 10px !important;
+}
+.tk-rtl .tk-rateviews em {
+    padding-left: 0;
+    padding-right: 6px;
+}
+.tk-rtl .tk-detail__icon a ~ a {
+    margin-left: 0;
+    margin-right: 23px;
+}
+.tk-rtl .tk-qualificationvtwo .tk-accordion_title h5 {
+    padding-right: 20px !important;
+    padding-left: 0 !important;
+}
+.tk-rtl .tk-template-serach .tk-inputicon .form-control {
+    padding: 0 20px 0 40px;
+}
+.tk-rtl .tk-status-tabs_content h6::before {
+    margin-right: 0;
+    margin-left: 12px;
+    right: 0;
+    left: auto;
+}
+.tk-rtl .tk-tabs-star::after {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.tk-rtl .tk-accord-rightside i {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-projectbtns > a:last-child {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-btnline i {
+    padding-right: 0 !important;
+    padding-left: 10px !important;
+}
+.tk-rtl .tk-fileareaitem {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-form-checkbox label {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-uploadlist li img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-radiobox label > a {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-tabicon li + li {
+    margin-left: 0;
+    margin-right: 18px;
+}
+.tk-rtl .wo-inputicon i {
+    right: auto;
+    left: 9px !important;
+}
+.tk-rtl .tb-sortby .form-control {
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.tk-rtl .tk-itemlinksvtwo .tk-startingprice {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-inputicon .icon-search {
+    left: 20px;
+    right: auto;
+}
+.tk-rtl .tk-tooltiparrow:after {
+    right: 68px;
+    left: auto;
+}
+.tk-rtl .icon-chevron-right:before {
+    content: "\e92f";
+}
+.tk-rtl .tk-search-wrapper .tk-select:before {
+    right: 16px;
+    left: auto;
+}
+.tk-rtl .tb-displistform .tb-select:before {
+    left: 16px;
+    right: auto;
+}
+.tk-rtl .tk-template-serach .tk-select::before {
+    right: auto;
+    left: 16px;
+}
+.tk-rtl .tk-tabbitem .tk-itemlinksvtwo .tk-startingprice {
+    padding-left: 10px;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+.tk-rtl .tk-asidetitle h5::after {
+    right: auto;
+    left: 0;
+}
+.tk-rtl .tb-popuptitle .close {
+    margin-right: auto;
+    margin-left: 0;
+}
+.tk-rtl .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+    right: -17px;
+    left: auto;
+} 
+.tk-rtl .tk-featureRating__stars {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-featureRating address i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tb-payouthistory {
+    right: 0;
+    left: auto;
+}
+.tk-rtl .tk-total-title i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-projectinfo_title img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-verified-info h5 i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-project-requirement_content {
+    padding-left: 0;
+    padding-right: 14px;
+}
+.tk-rtl .tk-add-price-slots .tk-addicon {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-addicon i {
+    padding-left: 0;
+    padding-right: 6px;
+}
+.tk-rtl .tk-checkout-info li > span {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tk-rtl .tk-draghandler {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-milestones-input .tk-addslots {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-verified-info > a i {
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-radio-tabs li + li {
+    margin-left: 0;
+    margin-right: 18px;
+}
+.tk-rtl .tk-project-type > div {
+    margin-left: 0;
+    margin-right: 14px;
+}
+.tk-rtl .tk-active-option .tk-project-type::after {
+    right: auto;
+    left: 20px;
+}
+.tk-rtl .tk-betaversion-wrap figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-status-tabs_content > p {
+    padding-left: 0;
+    padding-right: 22px;
+}
+.tk-rtl .tk-status-tabs_content::before {
+    left: auto;
+    right: 4px;
+}
+.tk-switchbtn {
+    margin: 0 0 0 20px;
+}
+.tk-attechment-tittle i {
+    margin-left: 0;
+    font-size: 20px;
+    position: absolute;
+    right: auto !important;
+    left: 10px !important;
+}
+.tk-rtl .tk-status-tabs_content > a {
+    padding-right: 22px;
+    padding-left: 0;
+}
+.tk-rtl .icon-chevron-left:before {
+    content: "\e930" !important;
+}
+.tk-rtl .tk-projectinfo-list li i {
+    margin-right: 0;
+    margin-left: 6px;
+}
+.tk-rtl .tk-requirement-tags span {
+    margin-left: 4px;
+    margin-right: 0;
+}
+.tk-rtl .tk-searchbtn .icon-search {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-themebanner_list .icon-briefcase {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-linestyle span {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-btn-yellow i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-appcompat i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-project-img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-freelancer-search figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-freelancer-content-two > a i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-blogviewdatessm li i {
+    margin-right: 0;
+    margin-left: 6px;
+}
+.tk-rtl .tk-price-two {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tk-rtl .tk-btn2-wrapper {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+.tk-rtl .tk-btn2-wrapper i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-themenav_signbtn a + a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-bannerv5 .tk-bannerv3_title{
+    text-align: right;
+}
+.tk-counter li + li {
+    padding-right: 24px;
+    margin-right: 24px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 0;
+}
+.tk-selecthas-icon i{
+    right: 20px;
+    left: auto;
+}
+.tk-rtl .tk-accordion_title:after {
+    right: auto !important;
+    left: 15px;
+}
+.tk-text-wrapper ul li::after {
+    right: 0;
+    left:auto;
+}
+.tk-text-wrapper ul li {
+    padding: 0 26px 0 0;
+}
+.tk-rtl .tk-topservicetask .tk-like {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-aside-content .form-control {
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.tk-rtl .tk-taskform .tk-inputicon i {
+    right: 10px;
+    left: auto;
+}
+.tk-rtl .tk-delivery-time .tk-icon-box {
+    margin-right: 0;
+    margin-left: 14px;
+}
+.tk-rtl .tk-delivery-time .tk-delivery-days {
+    margin-left: 0;
+    margin-right: 6px;
+}
+.tk-jobdescription ul li::after {
+    right: 0;
+}
+.tk-jobdescription ul li {
+    padding-right: 20px;
+    padding-left: 0;
+}
+.tk-accordion_title h5{
+    padding: 0 0 0 30px;
+
+}
+.tk-rtl .tk-delivery-time .tk-delivery-days {
+    margin-left: 0;
+    margin-right: 6px;
+}
+.tk-rtl .tk-verified-info strong i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-serviesbann__content .tk-blogviewdates li em + em {
+    margin-left: 0;
+    margin-right: 6px;
+}
+.tk-rtl .tk-aboutseller .tk-blogviewdates li em {
+    margin-right: 0 !important;
+}
+.tk-rtl
+    .tk-syncthumbnail.splide--nav
+    > .splide__track
+    > .splide__list
+    > .splide__slide {
+    margin-right: 0 !important;
+    margin-left: 10px;
+}
+.tk-rtl .tk-shareprolink .tk-heart i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-profilebox .tk-accordion_title h5 {
+    padding-right: 0 !important;
+    padding-left: 20px !important;
+}
+.tk-rtl .tk-projectsstatus_option {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.tk-rtl .tk-price-two {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-view-proposal {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-project-table-info {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-proinvoices_table tbody tr td {
+    text-align: right;
+}
+.tk-rtl .tk-proinvoices_table thead tr th {
+    text-align: right;
+}
+.tk-rtl .tk-profile-view a {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-proposal-list .tk-view-proposal {
+    margin-left: 0;
+    margin-right: 35px;
+}
+.tk-rtl .tk-view-proposal > i {
+    padding-left: 0;
+    padding-right: 6px;
+}
+.tk-rtl .tk-bidbtn a + a {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-freelancers-info figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-employerproject-edit {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 30px;
+}
+.tk-rtl .tk-employerproject-edit h4 {
+    padding-right: 0;
+    padding-left: 20px;
+}
+.tk-rtl .tk-projectsstatus_budget {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-projectsstatus_img {
+    margin-right: 0;
+    margin-left: 16px;
+}
+.tk-rtl .tk-counterinfo_list li strong {
+    margin-right: 0;
+    margin-left: 16px;
+}
+.tk-rtl .tk-timecards_total {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-timecards_head > h5 {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-timecards_total > span {
+    padding-left: 0;
+    padding-right: 6px;
+}
+.tk-rtl .tk-projectsactivity .tk-nav-tabs li button i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-remove {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-uploaded-img p {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-uploadphoto label {
+    margin-left: 0;
+    margin-right: 4px;
+}
+.tk-rtl .tk-proactivity_file a {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-popuptitle .close {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-proinvoices_table tbody tr td:first-child {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tk-rtl .tk-proinvoices_table thead tr th:first-child {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tk-rtl .tb-payouthistory .tb-displistform .tb-select:before {
+    right: 16px !important;
+    left: auto !important;
+}
+.tk-rtl .tk-timecards_total .tk-calendar {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-project-detail a + a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-edit-project i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-contract-list {
+    left: 0;
+    right: auto;
+}
+.tk-rtl .tk-pagination ul li.tk-nextpage {
+    padding-left: 0;
+    padding-right: 45px;
+}
+.tk-rtl .tk-activity-tags-wrapper > a + a {
+    margin-right: 12px;
+    margin-left: 0;
+    padding-right: 12px;
+    padding-left: 0;
+    border-left: none;
+    border-right: 1px solid #eee;
+}
+.tk-rtl .tk-hire-freelancer_content > span {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-hire-freelancer-info {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-employerproject .tk-alert-readbtn {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-statusview_alert span i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-employerproject .tk-alert-readbtn i {
+    padding-left: 0;
+    padding-right: 6px;
+}
+.tk-rtl .tk-user-content .tk-user-info {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-card-title .tk-hastippy i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .sub-menu li.tb-wallet a {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-addtime-slot li > a i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-timeslot_save .tk-timeslot-btn {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-timeslot_save .tk-timeslot-btn .tk-btn-solid {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-timecard_title .tk-timecard_info {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-betaversion-wrap .tk-downloadbtn {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 20px;
+}
+.tk-rtl .tk-timecardwraper .tk-timecards_total .tk-calendar {
+    margin-right: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-downloadbtn .tk-btn-solid-lefticon i {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.tk-rtl .tk-uploadfile-doc .tk-form-btn span + a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+.tk-rtl .tk-timecard_head > h6:nth-child(3) {
+    padding-right: 0;
+    padding-left: 44px;
+    text-align: left;
+}
+.tk-rtl .tk-termscondition .tk-checkterm > a {
+    padding-left: 0;
+    padding-right: 5px;
+}
+.tk-rtl .tk-termscondition .tk-form-checkbox label span {
+    padding-left: 0;
+}
+.tk-rtl .tb-settingtab .icon-sliders {
+    margin: 0 !important;
+}
+.tk-rtl .tk-project-box .tk-verified-info > a i {
+    margin: 0;
+}
+.tk-rtl .tk-slider-content::after {
+    left: 0;
+    right: auto;
+}
+.tk-rtl .tb-userlogin .sub-menu::after {
+    right: auto;
+    left: 20px;
+}
+.tk-rtl .tk-proposals-btn button + button {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.tk-rtl .tk-asiderightbar {
+    border-right: 1px solid #eeeeee;
+    border-left: 0;
+}
+.tk-rtl .tk-pofilelinks .tk-profilebox {
+    border-right: 1px solid #eeeeee;
+    border-left: 0;
+}
+.tk-rtl .tk-template-serach-wrapper .tk-select {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-proposal-list li:first-child {
+    margin: 0 0 0 -15px;
+}
+.tk-rtl .vbox-close {
+    right: auto;
+    left: 16px !important;
+}
+.tk-rtl .tk-profilestatus li + li {
+    margin-left: 0;
+    margin-right: 35px;
+}
+.tk-rtl .tk-section-skeleton .tk-skeletonseven {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .jconfirm .jconfirm-box div.jconfirm-closeIcon {
+    right: auto;
+    left: 20px;
+}
+.tk-rtl .icon-arrow-right:before {
+    content: "\e910";
+}
+.tk-rtl .tk-sidebarpkg__btn i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-checkoutinfo figure {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-pakagelist-item a img {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-pakagelist-item a em {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-pakagelist-item a em i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-checkoutinfo figure img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.tk-rtl .tk-btnwallet i {
+    padding-right: 0;
+    padding-left: 10px;
+}
+.tk-rtl .tk-ordersumery-content .tk-status-tabs_content span {
+    padding-left: 0;
+    padding-right: 22px;
+}
+.tk-rtl .tk-replybtns .icon-chevron-right {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-conversation-holder .tk-custom-scrollbar {
+    padding-right: 0;
+    padding-left: 20px;
+}
+.tk-rtl .tb-table > thead > tr > th {
+    text-align: right;
+}
+.tk-rtl .tb-table > tbody > tr td {
+    text-align: right;
+}
+.tk-rtl .tk-invoicehead i {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.tk-rtl .tk-invoice-table.tk-table > thead > tr > th {
+    text-align: right;
+}
+.tk-rtl .tk-invoice-table.tk-table > tbody > tr td {
+    text-align: right;
+}
+.tk-rtl .tk-sumtotal h6 {
+    float: left;
+}
+.tk-rtl .tk-subtotalbill h6 {
+    float: left !important;
+}
+.tk-rtl .tk-subtotalbill {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.tk-rtl .tk-sumtotal {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.tk-rtl .tk-invoicehead .tk-download-pdf {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tb-tabitemextrasinfo figure {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tb-extrascompleted {
+    margin-right: 0;
+    margin-left: 152px;
+}
+.tk-rtl .tk-prouserslist li {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.tk-rtl .tk-prouserslist li + li {
+    margin-left: 0;
+    margin-right: 4px !important;
+}
+.tk-rtl .tk-actionselect .tk-selectprice {
+    padding-right: 20px;
+    padding-left: 50px;
+}
+.tk-rtl .tb-actionselect2 .tb-select:before {
+    left: 16px !important;
+    right: auto !important;
+}
+.tk-rtl .tk-formsearchvtwo .tk-taskform .tk-inputicon.tk-select > i {
+    right: 10px;
+    left: auto;
+}
+.tk-inputicon .select2-container--default .select2-selection--single {
+    padding: 0 56px 0 40px;
+}
+.tk-rtl .tk-advancebtn span {
+margin: 0;
+}
+.tk-advancesearch{
+    left: 0;
+    right: auto;
+}
+.tk-rtl .tk_show_education {
+    margin-left: 0;
+    margin-right: auto;
+}
+.tk-rtl .tk-formsearchvtwo .tk-taskform .tk-inputicon .form-control {
+    padding-right: 46px;
+    padding-left: 20px;
+}
+.tk-rtl .tk-rangevalue .tk-areasizebox .form-control {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.tk-rtl .tb-sortby .tb-actionselect2 .select2-container--default .select2-selection--single .select2-selection__rendered {
+    text-align: right;
+}
+.tk-rtl  .tk-actionselect .tk-selectprice ~ .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding: 0 20px 0 46px;
+    text-align: right;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    text-align: right;
+    padding: 0 20px 0 30px;
+}
+.tb-select:before, .tk-select:before, .tk-calendar:before {
+    left: 16px;
+    right: auto;
+}
+.tk-headervtwo .tb-userlogin a span{
+    margin-right: 0;
+    margin-left: 12px;
+}
+.tk-status-tabs_content h6{
+    margin-right: 17px;
+    margin-left: 0;
+}
+.select2-container--default .select2-search--inline .select2-search__field {
+    width: 100% !important;
+    text-align: right;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 0 20px 0 50px;
+}
+.tk-project-type {
+    padding: 20px 20px 20px 30px;
+}
+.tk-distanceholder > div{
+     width: 100%;
+}
+.tb-select .form-control, .tk-select .form-control, .tk-calendar .form-control {
+    padding-right: 20px;
+}
+.tk-withdrawamount .tk-themeform .tk-inputicon .form-control{
+    text-align: left;
+}
+.splide--rtl>.splide__arrows .splide__arrow--prev, .splide--rtl>.splide__slider>.splide__track>.splide__arrows .splide__arrow--prev, .splide--rtl>.splide__track>.splide__arrows .splide__arrow--prev {
+    right: auto;
+    left: 1em;
+}
+.tk-hastippy .tk-tippycontent {
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    left: auto;
+    transform: translate(50%, -50%);
+}
+.tk-project-wrapper-two > .tk-hastippy ~ .tk-project-tag-two {
+    right: 22px;
+    left: auto;
+    border-radius: 0px 0px 0px 10px;
+}
+.tk-project-wrapper-two > .tk-hastippy .tk-tippycontent {
+    right: 0;
+    left: 2px;
+    transform: translate(0%, -50%);
+}
+.tk-project-wrapper-two > .tk-hastippy .tk-tippycontent::after {
+    right: 11px;
+    left: auto;
+}
+.splide--rtl>.splide__arrows .splide__arrow--next, .splide--rtl>.splide__slider>.splide__track>.splide__arrows .splide__arrow--next, .splide--rtl>.splide__track>.splide__arrows .splide__arrow--next {
+    right: 1em;
+    left: auto;
+}
+.tk-rtl  .tk-main-sectionv2 .tk-main-title-holder .tk-maintitle :after {
+    right: 0;
+    left: auto;
+}
+.tk-rtl  .menu-item-has-children > a:after {
+    right: auto;
+    left: 0;
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+.tk-rtl .sub-menu .menu-item-has-children > a:after {
+    transform: rotate(180deg);
+    padding: 0;
+}
+.tk-rtl .menu-item-has-children:hover > .sub-menu .sub-menu {
+    top: 0;
+    left: auto ;
+    right: 100%;
+}
+.tk-rtl .tk-price > span, .tk-price > h4 , .tk-project-option{
+    text-align: left;
+}
+.tk-rtl .tk-allproposallist .tk-select .select2-container {
+    width: 232px;
+}
+.litepicker .container__months .month-item-header .button-previous-month,
+.litepicker .container__months .month-item-header .button-next-month {
+    transform: scale(-1);
+}
+.select2-container--default .select2-results__option{
+    text-align: right;
+}
+.tk-fwidget_contact_list > li{
+    padding-right: 34px;
+    padding-left: 0;
+}
+.tk-fwidget_contact_list > li i {
+    left: auto;
+    right: 0;
+}
+.tk-featureditem{
+    right: 0;
+    left: auto;
+    border-radius: 4px 0px 0 20px;
+}
+.form-check-label {
+    padding-right: 10px;
+    padding-left: 0;
+}
+.tk-itemlinksvtwo .tk-switchservice {
+    margin: 0 20px 0 0;
+    padding: 10px 20px 9px 0;
+    border-right: 1px solid #dddddd;
+    border-left: 0;
+}
+.tk-tabicon {
+    border-right: 1px solid #dddddd;
+    border-left: 0;
+    padding: 16px 20px 16px 0;
+    margin: 0 19px 0 0;
+}
+.tk-featureditem + .tk-project-tag-two {
+    right: 22px;
+    left: auto;
+    border-radius: 0 0 0 10px;
+}
+@media (max-width: 1199px) {
+    .tk-rtl .menu-item-has-children:hover > .sub-menu .sub-menu {
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 20px 0 0;
+    }
+    .tb-header .tb-navbar {
+        padding-left: 0;
+    }
+    .tk-rtl .menu-item-has-children .sub-menu li a {
+        padding: 10px 30px 10px 20px;
+        border-radius: 0;
+    }
+    .tk-rtl .tk-themenav_signbtn a + a {
+        margin-left: 0;
+        margin-right: 0;
+      }
+}
+@media (max-width: 991px) {
+    .tk-rtl  .tk-timecard_togglevtwo [aria-expanded=true] .tk-statusvtwo a {
+        transform: rotate(-90deg);
+    }
+    .tk-rtl .tk-timecard_list li > span:before {
+        text-align: right;
+    }
+    .tk-rtl  .tk-timecard_togglevtwo .tk-timecard_infovtwo .tk-statusvtwo {
+        left: 0;
+        right: auto;
+    }
+    .tk-rtl  .tk-timecard_toggle {
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    .tk-formsearchvtwo .tk-taskform .tk-select{
+        max-width: 100%;
+    }
+    .tk-formsearchvtwo .tk-taskform .tk-inputappend_right {
+        margin: 0;
+    }
+    .tk-rtl .tk-sort {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 767px) {
+    .tk-rtl .tk-employerproject-edit {
+        padding-right: 0;
+    }
+    .tk-rtl  .tk-itemlinksvtwo .tk-switchservice {
+        margin: 0 20px 0 0;
+        padding: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    .tk-rtl  .tk-tabicon {
+        border-right: 0;
+        border-left: 0;
+        padding: 0;
+        margin: 0 19px 0 0;
+    }
+    table td::before {
+        text-align: left;
+    }
+    .tk-rtl .tk-proinvoices_table tbody tr td {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .tk-rtl .tk-proinvoices_table tbody tr td:first-child {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    .tk-rtl .tk-notify-content {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .tk-rtl .tk-projectsstatus_option {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .tk-price-two{
+        padding: 0 !important;
+        background-color: transparent;
+    }
+    .tk-rtl .tk-radio-tabs li + li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .tk-rtl .tk-footerv2 .tk-footer-two_copyright .wk-fcopyright_list {
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+@media (max-width: 575px) {
+    .tk-rtl .tk-icondetails .tk-profilestatus li + li {
+        margin: 0 !important;
+      }
+    .tk-rtl  .tk-faq-acordian-two .tk-accordion li .tk-accordion_title {
+        padding: 16px 20px 16px 30px;
+    }
+}
+@media (max-width: 440px) {
+    .tb-navbarbtm .navbar-collapse {
+        width: 260px;
+        right: 0;
+        left: auto;
+    }
+}
+@media (max-width: 420px) {
+    .tk-accord-rightside {
+        margin-top: 10px;
+    }
+    .tk-rtl .tk-attechment-tittle i {
+        top: 11px;
+        left: 10px;
+        right: auto;
+        position: absolute;
+    }
+    .tk-rtl .tk-hire-freelancer_content > span {
+        left: 40px;
+        right: auto;
+    }
+    .tk-betaversion-wrap .tk-downloadbtn{
+        width: 100%;
+        padding-right: 0 !important;
+    }
+    .tk-betaversion-wrap .tk-downloadbtn > .tk-btn-solid-lefticon {
+        width: 100%;
+
+    }
+    .tk-hire-freelancer_content .tk-hire-freelancer-info {
+        padding-left: 10px;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .tk-rtl .tb-userlogin .sub-menu {
+        width: 230px;
+    }
+    .tk-rtl .tb-header .tb-headerwrap .tb-navbar {
+        width: auto;
+        padding: 0; 
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    .tk-rtl .tk-counter li + li {
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+        border-left: 0;
+    }
+    .tk-template-list_content{
+        width: 100%;
+    }
+    .tk-template-list_content .tk-template-info{
+        width: 100%;
+
+    }
+    .tk-rtl .tb-header .tb-headerwrap .tb-headerwrap__right,
+    .tk-rtl .tk-headervtwo .tb-headerwrap .tb-headerwrap__right {
+        padding-left: 10px;
+        padding-right: 30px;
+        float: left;
+    }
+    .tb-header .tb-headerwrap .tb-navbar {
+        width: auto;
+        float: right;
+        margin: 0 0 10px;
+    }
+}
+@media (max-width: 360px) {
+    .tk-rtl .tk-itemlinks.tk-itemlinksvtwo{
+        flex-direction: column;
+    }
+    .tk-rtl .tk-itemlinksvtwo .tk-switchservice {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .tk-rtl .tk-itemlinksvtwo .tk-tabicon {
+        margin: 0;
+      }
+}
+@media (max-width: 380px) {
+    .tk-find-talent .tk-blogviewdatessm{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+.tk-rtl .tk-icon-watermark i {
+    left: -50px;
+    right: auto;
+}
+.tk-rtl .tk-seller-counter-list li:hover .tk-icon-watermark i {
+    left: -20px;
+    right: auto;
+}
+.tk-rtl .tk-seller-item a i {
+    margin-left: 7px;
+    margin-right: 0;
+}
+
+.tk-rtl  .tk-payoutmethodvtwo .form-check-label {
+    margin: 0 10px 0 0;
+}
+.tk-rtl  .tk-payoutmethodvtwo .form-check-label[aria-expanded="true"] .tk-escrow-content {
+    transform: rotate(-90deg);
+}
+.tk-rtl  .tk-themenav_signbtn > a > i {
+    padding-left: 8px;
+    padding-right: 0;
+  }
+  /* .tk-rtl .tk-themenav_signbtn a + a {
+    margin-left: 40px;
+    margin-right: 0;
+  } */
+  .tk-rtl  .tk-headervtwo .tb-navbarnav > li .tk-registerbtn {
+    background: #0A1833 !important;
+  }
+  .tk-rtl .tk-wallet-option .tk-switchservice .tk-onoff {
+    margin-right: auto;
+    margin-left: 0;
+}
+.tk-rtl .tk-priorityradio li label {
+    padding-right: 15px;
+}
+.tk-rtl  .tk-timecard_title[aria-expanded=true] .tk-timecard_info a i {
+    transform: rotate(-90deg);
+}

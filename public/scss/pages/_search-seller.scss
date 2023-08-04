@@ -1,0 +1,220 @@
+.tk-employerproject{
+    display: flex;
+    align-items: center;
+    background: $white;
+    box-shadow: inset 0px -1px 0px #EEEEEE;
+    &-title{
+        .tk-project-tag{
+            margin-bottom:10px;
+        }
+        h3{
+            margin: 0;
+            font-size: rem(22);
+            line-height: em(30,22);
+        }
+    }
+    &-edit{
+        flex: none;
+        display: flex;
+        margin-left: auto;
+        align-self: center;
+        padding-left: 30px;
+        align-items: center;
+        h4{
+            color:$theme-color ;
+            margin-bottom: 0;
+            padding-right: 20px;
+            flex: none;
+        }
+       .tk-btn-solid-lg {
+        height: 40px;
+        flex: none;
+       }
+    }
+}
+.tk-freelancer-search{
+    display: flex;
+    align-items: center;
+    figure{
+        margin:0 20px 0 0;
+        flex: none;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: $radius;
+            object-fit: cover;
+        }
+    }
+}
+.tk-freelancer-content-two{
+    > a{
+        @extend %h6;
+        color: $anchor_color;
+        display: flex;
+        align-items: center;
+        i{
+            font-size: 16px;
+            color: $bright-green;
+            padding-left: 10px;
+        }
+    }
+    .tk-description{
+        margin: 8px 0 0;
+    }
+    > h5{
+        margin-bottom: 4px;
+    }
+    .tk-gigtags{
+        margin-top: 20px;
+    }
+}
+.tk-price-two{
+    padding-left: 20px;
+    text-align: right;
+    margin-left: auto;
+    flex: none;
+    align-self: flex-start;
+
+    span{
+        @extend %h6;
+        color: $dark;
+    }
+    h4{
+        margin-bottom: 0;
+        @extend %transition;
+        color: $heading-font-color;
+    }
+}
+.tk-project-wrappper-three{
+    @extend %transition;
+    &:hover{
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.04), 0px 3px 16px rgba(0, 0, 0, 0.04);
+    }
+}
+.tk-save{
+    @extend %p14;
+    display: flex;
+    align-items: center;
+    color: $light;
+    i{
+        font-size: 16px;
+        line-height: 24px;
+        color: $light;
+        padding-right: 6px;
+    }
+    a{
+        color: $light;
+        @extend %p14;
+        font-weight: 600;
+    }
+    &:hover{
+        color: $charcoal_black;
+    }
+}
+.tk-liked{
+    > span{
+        color: $red !important;
+    }
+    i{
+        color: $red !important;
+        &::before{
+            content: "\f004";
+            font-weight: 600;
+            font-family: 'Font Awesome 5 Free';
+        }
+    }
+}
+.tk-generalsearch, .tk-sortby{
+    label {
+        align-items: center;
+        width: auto;
+        color: #0A0F26;
+        @extend %h6;
+        margin: 0 0 4px;
+    }
+}
+.tk-hastippy{
+    position: relative;
+    display: flex;
+    .tk-tippycontent{
+        position: absolute;
+        top: -25px;
+        left: 20px;
+        transform: translate(-50%, -50%);
+    }
+}
+.tk-tippycontent{
+    @extend %p14;
+    color: #fff;
+    width: max-content;
+    text-shadow: none;
+    background: #0a0f26;
+    padding: 4px 13px;
+    position: relative;
+    border-radius: 4px;
+    @extend %themeboxshadow;
+    transition: opacity 0.2s ease 0s;
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 100%; /* At the bottom of the tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #0a0f26 transparent transparent transparent;
+    }
+}
+.tk-project-wrapper-two{
+    > .tk-hastippy { 
+        .tk-tippycontent{
+            left: 68px;
+            &::after{
+                left: 11px;
+            }
+        }
+        & ~ .tk-project-tag-two{
+            left: 22px;
+        }
+    }
+}
+
+.tk-gigtags{
+    padding: 0;
+    margin: 0;
+    @extend %flex;
+    align-items: center;
+    gap: 16px;
+    li{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 2px 11px;
+        @extend %tiny_title;
+        font-weight: 700;
+        color: $dark;
+        border-radius: $radius;
+        background-color: $lightest;
+        border: 1px solid $lightest;
+        @extend %transition;
+        &:hover{
+            color: $dark;
+            background-color: $white;
+            border-color: $lightest_2;
+        }
+        > a{
+        }
+        span{
+            a{
+                display: block;
+                @extend %label_title;
+                color: $theme-color;
+            }
+        }
+    }
+}
+.tk-find-talent{
+    .tk-price-holder{
+        align-items: center;
+    }
+}

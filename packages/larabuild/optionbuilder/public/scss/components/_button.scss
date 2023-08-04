@@ -1,0 +1,56 @@
+.op-btn-lg,
+.op-btn-two,
+.op-btn{
+    gap: 10px;
+    color: $white;
+    padding: 0 16px;
+    cursor: pointer;
+    min-height: 32px;
+    display: inline-flex;
+    align-items: center;
+    @extend %label_title;
+    @extend %transition;
+    border-radius: $radius;
+    justify-content: center;
+    background-color:$theme-color;
+    &:hover,
+    &:active{
+        color: $white;
+        background-color:$theme-color;
+    }
+}
+.op-btn-two{
+    color: $theme_color;
+    background-color: transparent;
+    border: 1px solid rgba(5, 18, 55, 0.08);
+}
+.op-btn-yellow-sm,
+.op-btn-yellow{
+    gap: 10px;
+    padding: 0 10px;
+    min-height: 28px;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    @extend %transition;
+    border-radius: 6px;
+    justify-content: center;
+    background: #FDC500;
+    color: $theme_color;
+    &:hover{
+        background: #FDC500;
+        color: $theme_color;
+    }
+}
+.op-btn-yellow-sm{
+    font-size: 11px;
+    line-height: 20px;
+    min-height: 24px;
+    border-radius: 26px;
+}
+.op-btn-lg{
+    height: 48px;
+}

@@ -1,0 +1,29 @@
+body{
+    color: $dark;
+    @extend %p16;
+}
+h1{@extend %h1;}
+h2{@extend %h2;}
+h3{@extend %h3;}
+h4{@extend %h4;}
+h5{@extend %h5;}
+h6{@extend %h6;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 8px;
+    letter-spacing: 0.5px;
+    color: $dark;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+    color: $dark;
+    &:hover{color: $dark;}
+}

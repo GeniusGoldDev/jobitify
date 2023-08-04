@@ -1,0 +1,458 @@
+.tb-btn,
+.tb-btnvtwo {
+    position: relative;
+    @extend %flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font: 600 15px $heading-font-family;
+    color: $btn_textcolor;
+    padding: 0 20px;
+    min-width: 160px;
+    background-color: $btn_bgcolor;
+    border: 0;
+    letter-spacing: 0.5px;
+    border-radius: $radius;
+    overflow: hidden;
+    z-index: 0;
+    cursor: pointer;
+    @extend %transition;
+    & i {
+        margin-right: 10px;
+    }
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $btn_textcolor;
+    }
+    &:hover {
+        background-color: $btn_bgcolor;
+    }
+}
+
+.rippleholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+    &.is-active .ripplecircle {
+        animation: a-ripple .4s ease-in;
+    }
+}
+
+.ripplecircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.tb-btnvtwo {
+    color: $heading-font-color;
+    background-color: $theme-color;
+    &:hover,
+    &:focus {
+        color: $heading-font-color;
+    }
+}
+
+.tb-btnsmall {
+    min-width: 50px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.tb-btnvthree {
+    background-color: #f7f7f7;
+    color: #676767;
+    &:hover,
+    &:focus {
+        outline: none;
+        color: #676767;
+    }
+}
+
+.tb-plainbtn {
+    background-color: #fff;
+    color: #999;
+    border: 1px solid #ddd;
+    &:hover,
+    &:focus {
+        color: #999;
+    }
+}
+
+// new button
+.tk-btn-line, 
+.tk-btn-yellow{
+    @extend %h6;
+    height: 40px;
+    color: $btn_textcolor;
+    padding: 0 20px !important;
+    position: relative;
+    @extend %transition;
+    display: inline-flex;
+    align-items: center;
+    border-radius: $radius;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    background-color: $white;
+    border: 2px solid $btn_bgcolor;
+    @extend %transition;
+    cursor: pointer;
+    i {
+        color: $btn_textcolor;
+        font-size: rem(20);
+        padding-left: 10px;
+    }
+    &[disable] {
+        background-color: $lighter !important;
+        color: $light !important;
+        border-color: $lighter !important;
+        pointer-events: none;
+        i {
+            color: $light;
+        }
+    }
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $btn_bgcolor;
+        color: $btn_textcolor;
+    }
+}
+
+button.tk-btn-line {
+    cursor: pointer;
+}
+
+.tk-btn-line-sm {
+    @extend .tk-btn-line;
+    height: 34px;
+}
+
+.tk-btn-line-sm-lefticon {
+    @extend .tk-btn-line-sm;
+}
+
+.tk-btn-line-lg {
+    @extend .tk-btn-line;
+    height: 48px;
+}
+
+.tk-btn-line-lg-lefticon {
+    @extend .tk-btn-line-lg;
+    i {
+        padding: 0 10px 0 0
+    }
+}
+
+.tk-btn-line-lefticon {
+    @extend .tk-btn-line;
+    i {
+        padding: 0 10px 0 0
+    }
+}
+
+.tk-btn-solid,
+.tk-redbtn {
+    @extend .tk-btn-line;
+    background-color: $btn_bgcolor;
+    border: 0;
+    color: $btn_textcolor;
+    border-radius: $radius;
+    &:hover,
+    &:focus {
+        background-color: $btn_bgcolor;
+    }
+}
+
+.tk-btn-solid-sm {
+    @extend .tk-btn-solid;
+    height: 34px;
+    font-size: 14px;
+    i{
+        font-size: 16px;
+    }
+}
+
+.tk-btn-solid-sm-lefticon {
+    @extend .tk-btn-solid-sm;
+}
+
+.tk-btn-solid-lg {
+    @extend .tk-btn-solid;
+    height: 48px;
+}
+
+.tk-btn-solid-lg-lefticon {
+    @extend .tk-btn-solid-lg;
+    i {
+        padding: 0 10px 0 0;
+        font-size: rem(20)
+    }
+}
+
+.tk-btn-solid-lefticon {
+    @extend .tk-btn-solid;
+    i {
+        padding: 0 10px 0 0
+    }
+}
+
+button,
+a {
+    &.tk-btnsolid-white {
+        background-color: $white !important;
+        color: $dark !important;
+        &:hover,
+        &:focus {
+            outline: none;
+            background-color: $theme-color-dark !important;
+            color: $white !important;
+        }
+    }
+    &.tk-btn-plain {
+        background: transparent !important;
+        color: $light !important;
+        text-align: center;
+        &:hover,
+        &:focus {
+            color: $light !important;
+            background: transparent !important;
+        }
+    }
+    &.tk-btn-yellow {
+        color: $btn_textcolor;
+        background-color: $btn_bgcolor;
+        i {
+            color: $btn_textcolor;
+        }
+        &:hover,
+        &:focus {
+            color: $charcoal_black;
+            background-color: $btn_bgcolor;
+        }
+    }
+}
+
+.tk-btnsolid-white {
+    background-color: $white !important;
+    color: $dark !important;
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $theme-color !important;
+        color: $white !important;
+    }
+}
+
+.tk-btn-plain {
+    background: transparent !important;
+    color: $light !important;
+    text-align: center;
+    &:hover,
+    &:focus {
+        color: $light !important;
+        background: transparent !important;
+    }
+}
+
+.tk-btn-yellow{
+    position: relative;
+    // color: $btn_textcolor !important;;
+    // background-color: $btn_bgcolor !important;
+    // border-color: $btn_bgcolor !important;;
+    z-index: 1;
+    &:hover{
+        &:before{
+            transform: scale(1);
+        }
+    }
+    &:before{
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        content: '';
+        height: 100%;
+        border-radius: 4px;
+        position: absolute;
+        transform: scale(0);
+        @extend %transition;
+        background: rgba(0, 0, 0, 0.1);
+
+    }
+    i{color: $btn_textcolor !important; }
+    &:hover,
+    &:focus{
+        color: $btn_textcolor;
+        border-color: $btn_bgcolor;
+        background-color: $btn_bgcolor;
+    }
+}
+.tk-btn-yellow-lg{
+    height: 48px;
+    @extend .tk-btn-yellow
+}
+
+.tk-featuretag {
+    height: 26px;
+    @extend .tk-btn-solid;
+    @extend %label_title;
+    padding: 0 10.24px;
+    color: $btn_bgcolor;
+    background-color: $btn_bgcolor;
+    &:hover,
+    &:focus {
+        color: $btn_bgcolor;
+        background-color: $btn_bgcolor;
+    }
+}
+
+.tk-darkbtn {
+    background-color: $dark;
+    color: $white;
+    i {
+        color: $btn_textcolor;
+    }
+    &:hover,
+    &:focus {
+        color: $white;
+        background-color: $dark;
+    }
+}
+
+.tb-go-dbbtn {
+    margin-top: 20px;
+}
+
+.tk-btnline {
+    flex: none;
+    @extend %h6;
+    color: $btn_textcolor;
+    cursor: pointer;
+    padding: 9px 24px;
+    @extend %transition;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lighter;
+    background-color: $white;
+    border-radius: $radius;
+    i {
+        color: $btn_textcolor;
+        padding-left: 0;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $charcoal_black;
+    }
+    &::before {
+        display: none
+    }
+}
+
+.tk-btn-solid-sm-lefticon {
+    @extend .tk-btn-solid-sm;
+}
+
+.tk-btn-solid-lg-lefticon {
+    @extend .tk-btn-solid-lg;
+    border-radius: $radius;
+    i {
+        padding: 0 0 0 10px;
+        font-size: rem(20)
+    }
+}
+
+.tk-btn-solid-lefticon {
+    @extend .tk-btn-solid;
+    border-radius: $radius;
+    i {
+        padding: 0 0 0 10px;
+        font-size: rem(20)
+    }
+}
+
+.tk-rightbtnicon i {
+    padding: 0 10px 0 0;
+}
+.tk-invite-bidbtn {
+    color: $dark;
+    padding: 7px 24px;
+    @extend %transition;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $radius;
+    background-color: $lightest;
+    @extend %h6;
+    &:hover {
+        color: $btn_textcolor;
+    }
+    &[disabled] {
+        color: $light !important;
+        cursor: not-allowed;
+        background-color: $lightest !important;
+    }
+}
+.tb-btn.tk-btn-small{
+    height: 40px;
+    min-width: 153px;
+}
+.tk-redbtn{
+    color: $white;
+    background-color: $red;
+    &:hover{
+        color: $white;
+        background-color: $red;
+    }
+}
+.tk-btn-yellow-lg:not(.tk-btn-solid-lg){
+    &:before{
+        top: -2px;
+        left: -2px;
+        width: calc( 100% + 4px);
+        height: calc( 100% + 4px);
+    }
+}
+.tk-btn {
+    border: 0;
+    z-index: 0;
+    cursor: pointer;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    overflow: hidden;
+    min-width: 160px;
+    position: relative;
+    align-items: center;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    color: #1C1C1C;
+    justify-content: center;
+    background-color: #FCCF14;
+    font: 700 16px "Urbanist", sans-serif;
+}
+
+.tk-registerbtn{
+    color: $clr-white !important;
+    background-color: $btn-two-bgclr !important;
+    i{
+        color: $clr-white !important;
+    }
+}

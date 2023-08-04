@@ -1,0 +1,338 @@
+.tk-checkout-title{
+    margin: 0 0 30px;
+    h4{
+        margin-bottom: 0;
+    }
+}
+.tk-address{
+    display: flex;
+    align-items: center;
+    margin: -10px;
+    flex: 1;
+    .form-group-half{
+        padding: 10px;
+    }
+}
+.tk-project-box{
+    .tk-projectbtns{
+        flex-wrap: nowrap;
+    }    
+}
+.tk-projectbtns{
+    > a{
+        flex: none;
+    }
+    span{
+        font-weight: 400;
+        padding-right: 30px;
+        @extend %tiny_title;
+        > a{
+            font-weight: 600;
+        }
+    }
+}
+.tk-ordersumery-title{
+    h4{
+        margin-bottom: 0;
+    }
+}
+.tk-ordersumery-content{
+    margin-top: 20px;
+    > span{
+        @extend %p14;
+        color: #64748B;
+        display: block;
+        & ~ .tk-order-detail {
+            margin: 0
+        }
+    }
+    > strong{
+        @extend %h5;
+        color: $dark;
+        margin-bottom: 0;
+        padding-right: 10px;
+    }
+    > p{
+        margin: 0;
+        color: #64748B;
+        @extend %p14;
+        font-style: italic;
+    }
+    
+}
+.tk-order-detail{
+    padding: 0;
+    margin-top: 10px;
+    li{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+        + li{
+            margin-top: 10px;
+        }
+        h6{
+            margin-bottom: 0;
+            font-weight: 600;
+            padding-right: 10px;
+            em{
+                color: #999999;
+                font-style: normal;
+            }
+        }
+        > span{
+            @extend %h6;
+            font-weight: 600;
+        }
+    }
+    li.tk-total-amount{
+        padding-top: 20px;
+        margin-top: 20px !important;
+        border-top: 1px solid #eee;
+        h5{
+            margin-bottom: 0;
+        }
+        > span{
+            @extend %h5;
+            color: $dark;
+        }
+    }
+    & > hr{
+        opacity: 1;
+        margin: 20px 0;
+        background: #eee;
+    }
+}
+.tk-escrow{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FEECA1;
+    img{
+        padding-right: 10px;
+    }
+    > span{
+        @extend %tiny_title;
+        font-weight: 400;
+        > a{
+            font-weight: 600;
+        }
+    }
+}
+.tk-priorityradio{
+    padding: 0;
+    margin: 20px 0 0;
+    li{
+        padding: 10px;
+        border-radius: 4px;
+        list-style-type: none;
+        background-color: $lightest;
+        label {
+            padding-left: 15px;
+            span {
+                color:$dark;
+                padding-left: 5px;
+                &:empty{display: none;}
+            }
+            img{
+                width: 100%;
+                max-width: 30px;
+            }
+        }
+        + li{
+            margin-top: 10px;
+        }
+    }
+}
+.tb-cardinfo{
+    gap: 10px;
+    @extend %flex;
+    margin-top: 10px;
+    flex-direction: column;
+    .StripeElement{
+        height: 48px;
+        padding: 14px 20px;
+        border: 1.5px solid #eee;
+    }
+    .text-danger{
+        margin: 0;
+        &:empty{display: none;}
+    }
+}
+.tk-priorityradio .tk-wallet-option{
+    background-color: #FEECA1;
+}
+.tk-wallet-option .tk-switchservice{
+    display: flex;
+    align-items: center;
+    .tk-onoff{margin-left: auto;}
+}
+.tk-gigcheckout{
+    .tk-asideholder{
+        margin: 0;
+        padding: 30px;
+        .tk-asideboxsm{
+            padding: 0;
+            margin: 0 0 20px;
+            & h5{
+                @extend %h4;
+            }
+        }
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+        .tk-pakagelist{
+            padding: 0;
+            li:not(.tk-plantotalprice){
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                & ~ li{margin-top: 10px;}
+                .tk-label{margin-bottom: 0;}
+                h6{margin: 0;}
+                & > span{
+                    @extend %h6;
+                    font-weight: 600;
+                    text-align: right;
+                    margin-left: auto;
+                }
+                .tk-select{
+                    text-align: left;
+                }
+                .tk-btn{
+                    margin-top: 10px;
+                }
+            }
+            & > hr{
+                opacity: 1;
+                margin: 20px 0;
+                background: #eee;
+            }
+        }
+    }
+}
+.tk-planfooter{
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px !important;
+    .tk-btn{
+        width: 100%;
+    }
+}
+.tk-adservices{
+    padding: 20px 0;
+    margin: 20px 0 !important;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.tk-plantotalprice{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    margin-top: 20px !important;
+    border-top: 1px solid #ddd;
+    & > span{
+        @extend %h5;
+        letter-spacing: 0.5px;
+        text-align: right;
+        margin-left: auto;
+    }
+    h5{
+        margin: 0;
+        @extend %h5;
+    }
+}
+.tk-giguploadfile{
+    .tk-project-box,
+    .tk-uploadfile-doc{
+        background-color: #fff;
+        border-radius: $radius;
+        border: 1px solid #eee;
+        box-shadow: none;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+    }
+    .tk-project-box{
+        margin-bottom: 30px
+    }
+    .tk-upload-list{
+        margin-bottom: 10px
+    }
+}
+.tk-gigactivitywrap{
+    .tk-checkoutdetail{
+        h5{
+            @extend %h4;
+        }
+    }
+    .tb-extrascompleted{
+        width: 100%;
+        margin: 10px 0 0;
+    }
+    .tk-checkoutinfo{
+        flex-wrap: wrap;
+        align-items: flex-start;
+        flex-direction: column;
+        figure{
+            max-width: 80px;
+            img{
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+            }
+        }
+    }
+    .tk-box,
+    .tk-checkoutinfo{
+        & + .tk-box{
+            padding: 30px;
+            margin-top: 30px;
+        }
+        background-color: #fff;
+        border-radius: $radius;
+        border: 1px solid #eee;
+        box-shadow: none;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+    }
+}
+.tb-gigradiobox{
+    gap: 20px;
+    flex-wrap: nowrap;
+    & > div{
+        max-width: 50%;
+    }
+    .tb-radio input[type=radio]:checked + label{
+        color: #fff;
+        background-color: $bright-green;
+        border-color: $bright-green;
+    }
+    label{
+        padding: 9px 20px;
+        border: 1px solid #ddd;
+        width: 100%;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 30px;
+        &:before{
+            right: 20px;
+            left: auto;
+            top: 50%;
+            font-size: 16px;
+            color: #fff;
+            margin-top: -10px;
+            line-height: 20px;
+            content: "\f00c" !important;
+            font-weight: 600;
+        }
+    }
+}
+.tk-messages-sender .tb-statustag span{
+    border-radius: 13px 0 13px 13px;
+}
+.tk-message-content{
+    .tb-statustag{margin-bottom: 10px;}
+}
+.tk-gigorder{
+    .tk-verified-info{
+        flex-direction: column;
+    }
+}

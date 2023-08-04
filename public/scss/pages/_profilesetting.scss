@@ -1,0 +1,997 @@
+.tb-dhb-mainheading {
+    @extend %flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px;
+    & > h4,
+    >h2 {
+        display: flex;
+        font-weight: 700;
+        margin-bottom: 0;
+        font-size: rem(28);
+        line-height: em(36, 28);
+        >a {
+            display: block;
+            margin: 0 20px 0 0;
+            flex: none;
+            span {
+                font-size: 22px;
+                color: #ccc;
+            }
+        }
+    }
+    &__rightarea {
+        @extend %flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        em {
+            padding-right: 30px;
+            font-size: rem(14);
+            line-height: em(24, 14);
+            color: $heading-font-color;
+            font-style: normal;
+            text-align: right;
+            flex: 0 0 45%;
+        }
+    }
+}
+.tb-savelisting {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border-radius: $radius;
+    border: 1px solid $border-color;
+    >li {
+        list-style-type: none;
+        padding: 30px;
+        border-bottom: 0;
+        &+li {
+            border-top: 1px solid $border-color;
+        }
+        .tb-profilestatus {
+            @extend %flex;
+            margin-top: 14px;
+            li {
+                +li {
+                    margin: 0 0 0 35px;
+                }
+            }
+        }
+        .tb-profileprogress {
+            width: 128px;
+        }
+        .tb-profiletime {
+            width: auto;
+            span {
+                line-height: 24px;
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
+.tb-profilestatus {
+    padding: 0;
+    margin: 28px 0 0;
+    +.tb-profilebtnarea {
+        padding-top: 30px;
+    }
+    li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style-type: none;
+        h5 {
+            font: 700 rem(14)/em(20, 14) $heading-font-family !important;
+            width: 50%;
+            margin: 0 !important;
+        }
+        &+li {
+            margin-top: 17px;
+        }
+    }
+}
+.tb-profileprogress {
+    height: 2px;
+    .progress-bar {
+        background-color: #63d594;
+    }
+}
+.tb-filedesciption {
+    z-index: 1;
+    display: contents;
+}
+.taskbot-list {
+    .progress {
+        flex: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100% !important;
+        width: 100%;
+        z-index: 0;
+        .progress-bar {
+            width: 20%;
+            background: url(./../images/img-01.jpg);
+            border-radius: $radius;
+            -webkit-animation: tb-stripe 2s linear infinite;
+            animation: tb-stripe 2s linear infinite;
+        }
+    }
+}
+.taskbot-file-uploaded {
+    .progress {
+        display: none;
+    }
+}
+.tb-switchservice {
+    border-left: 1px solid $border-color;
+    padding: 10px 0 9px 20px;
+    margin: 0 0 0 20px;
+    >span {
+        display: block;
+        margin: 0 0 7px;
+        font: 400 rem(14) / em(24, 14) $body-font-family;
+        color: $heading-font-color;
+    }
+}
+/*-----------------------------Invoices-------------------------------------*/
+.tb-sortby {
+    flex: none;
+    margin-left: auto;
+    .tb-themeform__wrap{
+        gap: 10px;
+        display: flex;
+        .form-group{
+            padding: 0;
+        }
+        & .wo-inputicon:not(.form-group){flex: none;}
+    }
+    .form-control {
+        font-size: rem(14);
+    }
+    .tb-actionselect2 {
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 42px;
+            text-align: left;
+        }
+        .select2-container {
+            min-height: 44px;
+        }
+    }
+}
+.tb-dhbheading__rightarea {
+    .tb-actionselect2 {
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 42px;
+        }
+        .select2-container {
+            min-height: 44px;
+        }
+    }
+}
+.tb-displistform {
+    fieldset {
+        margin: 0;
+    }
+}
+.wo-inputicon {
+    i {
+        position: absolute;
+        right: 9px;
+        font-size: 16px;
+        width: 32px;
+        text-align: center;
+        line-height: 32px;
+        color: #999;
+    }
+    &.form-group {
+        i {
+            right: 14px;
+        }
+    }
+}
+.sub-menuholder {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(18, 54, 82, 0.2);
+    box-shadow: 0 10px 30px 0 rgba(18, 54, 82, 0.2);
+    z-index: 2;
+    background-color: #fff;
+}
+.tb-tabbitem__listtwo {
+    .tb-icondetails {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        h6 {
+            font-size: rem(15);
+            line-height: em(23, 15);
+            margin: 1px 0 2px;
+            a {
+                font-size: rem(18);
+                line-height: em(26, 18);
+            }
+        }
+    }
+}
+/*------------------------Saveditems--------------------------*/
+.te-dhb-mainheading>h2 {
+    display: flex;
+    font-weight: 400;
+    margin-bottom: 0;
+    flex: none;
+    margin: -6px 0 -8px;
+    color: #383949;
+}
+.tb-savelisting {
+    .tb-deatlswithimg .tb-icondetails h6 {
+        margin-bottom: 3px;
+    }
+}
+.tb-deatlswithimg .tb-icondetails h6 {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.tb-deatlswithimg figure img {
+    border-radius: $radius;
+}
+.tb-tabbitem__list .tb-rateviews2 em {
+    font-size: 14px;
+    padding-left: 8px;
+}
+.tb-settingtabholder {
+    &.tb-asidebox {
+        padding: 0;
+    }
+}
+.tb-settingtab {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-height: 400px;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+    li {
+        display: flex;
+        align-items: center;
+        font: 700 rem(15) $heading-font-family;
+        line-height: 1.1;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 3px;
+            background-color: $primary_color_02_base;
+            @extend %transition;
+        }
+        &.active,
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+        }
+        ~li {
+            a {
+                border-top: 1px solid $border-color;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            color: $heading-font-color;
+            padding: 15px 20px;
+            width: 100%;
+            i {
+                padding-right: 10px;
+                min-width: 30px;
+                line-height: inherit;
+                display: inline-block;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.tb-icondetails h6 a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.tb-desclinks {
+    padding: 0;
+    @extend %flex;
+    align-items: center;
+    margin: -5px;
+    padding-bottom: 5px;
+    li {
+        position: relative;
+        list-style-type: none;
+        padding: 5px;
+        a {
+            @extend %h6;
+            display: block;
+            position: relative;
+            color: $theme-color;
+            font: 400 rem(16)/em(26, 16) $body_font_family;
+            &::after {
+                content: ",";
+                color: $theme-color;
+                line-height: 1;
+            }
+        }
+        &:last-child {
+            a {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.tb-tabbitem.status-pending {
+    background-color: #ffc10708;
+}
+.tb-tabbitem.status-rejected {
+    background-color: #ff572208;
+}
+.tb-rejected-reason {
+    cursor: pointer;
+}
+.tk_show_education{
+    font-weight: 600;
+    color: $theme-color;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Urbanist", sans-serif;
+}
+.tk-qualificationseller.tk-qualification{
+    .tk-accordion_title{
+        &::after{
+            top: 50%;
+            right: 20px;
+            font-size: 24px;
+            content: "\e9c0";
+            line-height: 24px;
+            position: absolute;
+            margin-top: -12px;
+            padding-left: 20px;
+            font-family: "icomoon" !important;
+        }
+    }
+}
+.tk-qualification.tk-qualificationvtwo{
+    > li {
+        & ~ li {
+            margin: 20px 0 0;
+        }
+    }
+    .tk-accordion_info{
+        padding: 20px 20px 20px;
+    }
+}
+.tk-qualification{
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    > li{
+        list-style-type: none;
+        & ~ li {
+            margin: 20px 0 0;
+        }
+    }
+    .tk-accordion_info{
+        padding: 0 20px 20px;
+        background-color: $white;
+    }
+    .tk-accordion_title{
+        @extend %flex;
+        flex-wrap: nowrap;
+        padding: 20px;
+        position: relative;
+        align-items: center;
+        border-radius: 10px;
+        background-color: $lightest;
+        transition: all 0.1s ease-in-out !important;
+        > a {
+            font-size: 24px;
+            line-height: 24px;
+            position: absolute;
+            right: 20px;
+            color: #0a0f26;
+            display: inline-block;
+        }
+        a[aria-expanded="true"]{
+            i {
+                &::before{
+                    content: "\e9a3";
+                }
+            }
+        }
+        &::after{
+            top: 50%;
+            right: 20px;
+            font-size: 24px;
+            content: "";
+            line-height: 24px;
+            position: absolute;
+            margin-top: -12px;
+            padding-left: 20px;
+            font-family: "icomoon" !important;
+        }
+        &:before{
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: $heading-font-color;
+        }
+    }
+    .tk-accordion_title[aria-expanded= "true"]{
+        &::after{
+            content: "\e9a3";
+        }
+    }
+}
+.tk-accordion_info {
+    cursor: default;
+    background-color: $lightest;
+    padding: 0 30px 20px;
+    p{
+        margin-bottom: 0;
+    }
+}
+.tk-qualification-title{
+    padding-left: 0;
+    position: relative;
+    width: 100%;
+    &:before{
+        display: none;
+        left: 0;
+        top: 50%;
+        width: 4px;
+        content: '';
+        height: 4px;
+        margin-top: -2px;
+        border-radius: 50%;
+        position: absolute;
+        background: #0A0F26;
+    }
+    span{
+        @extend %p14;
+        display: block;
+        color: $light;
+    }
+    h5{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+.tk-detail{
+    &__icon {
+        flex: none;
+        padding-right:40px;
+        @extend %flex;
+        align-items: center;
+        margin-left: auto;
+        a {
+            font-size: rem(16);
+            ~a {
+                margin-left: 23px;
+            }
+          
+        }
+    }
+}
+.tk-ongoing-date{
+    display: flex;
+    align-items: center;
+    i{
+        color: $light;
+        padding: 0 6px;
+        font-size: 20px;
+        line-height: 20px;
+        display: inline-block;
+    }
+}
+.tk-deactive-holder{
+    padding: 30px;   
+}
+.tb-formcheckbox {
+    .tb-titleinput {
+        flex: initial;
+        padding-top: 0;
+        font-weight: 600;
+        margin-bottom: 0;
+        font-size: rem(14);
+        line-height: em(26, 14);
+        font-family: $body-font-family;
+    }
+    .tb-onoff {
+        flex: none;
+        margin-left: auto;
+    }
+    +.tb-formcheckbox {
+        padding-top: 15px;
+    }
+    +.tb-dhbbtnarea {
+        padding-top: 25px;
+    }
+}
+.tb-acountdeactive {
+    .tb-popup .tb-themeform {
+        padding-top: 16px;
+    }
+}
+.tb-deactivebtns {
+    margin-top: 20px;
+    display: flex;
+    .tb-btn {
+        min-width: 160px;
+        &+.tb-btn {
+            margin-left: 10px;
+        }
+    }
+    .tb-btnplain {
+        background-color: $lightest;
+        &:hover {
+            color: #999;
+            &:before {
+                content: '';
+            }
+        }
+    }
+}
+.tb-acountdeactive {
+    .modal-dialog {
+        max-width: 790px;
+    }
+}
+.tb-profileform__holder {
+    width: 100%;
+    .tb-dhbbtnareav2 {
+        margin-top: 0;
+        gap: 15px;
+    }
+}
+.tk-education-title{
+    &.tk-accordion_title{
+        &::after{
+            display: none;
+        }   
+    } 
+}
+.tk-customupload{
+    .tk-attechment-content{
+        padding: 0;
+        box-shadow: none;
+        .tk-draganddropwrap{
+            margin-top: 0;
+        }
+    }
+}
+.tk-deactive-label,
+.tk-deactive-desc{
+    width: 100%;
+}
+// profile sitting v2 
+.tk-dhb-mainheading {
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    h2 {
+        margin: 0;
+    }
+}
+.tk-dhb-mainheading__rightarea {
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    & em {
+        padding-right: 30px;
+        font-size: 0.875rem;
+        line-height: 1.7142857143em;
+        color: #1C1C1C;
+        font-style: normal;
+        text-align: right;
+        flex: 0 0 45%;
+    }
+}
+.tk-dhb-mainheading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.tk-savelisting {
+    padding: 0;
+    margin: 0;
+    & > li {
+        border: 0;
+        padding: 30px;
+        border-radius: 4px;
+        background: #fff;
+        list-style-type: none;
+        border: 1px solid $border-color;
+        box-shadow: 0px 1px 3px rgb(0 0 0 / 8%);
+        transition: all 0.3s ease-in-out;
+        + li{
+            margin-top: 20px;
+        }
+        &:hover {
+            box-shadow: 0px 5px 6px rgb(0 0 0 / 4%), 0px 3px 16px rgb(0 0 0 / 4%);
+            .tk-itemlinksvtwo .tk-startingprice span{
+                color: $theme-color;
+            }
+        }
+    }
+}
+.tk-tabbitem__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tk-deatlswithimg {
+    display: flex;
+    position: relative;
+    &  figure {
+        flex: none;
+        width: 150px;
+        height: 150px;
+        margin: 0 20px 0 0;
+        overflow: hidden;
+        & img {
+            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.tk-tabbitem__listtwo{
+    & .tk-icondetails {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        & .tk-desclinks {
+            line-height: 1em;
+            margin: 0 -2.5px;
+            padding: 0;
+            align-items: center;
+            padding-bottom: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                padding: 0 2.5px;
+                position: relative;
+                list-style-type: none;
+                a {
+                    color: $anchor_color;
+                    display: inline-block;
+                    &::after {
+                        content: ",";
+                        color: $anchor_color;
+                        line-height: 1;
+                    }
+                }
+                &:last-child{
+                    a{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            
+            }
+        }
+        & h5 {
+            margin-bottom: 0;
+            @extend %h6;
+        }
+        & h6{
+            margin-bottom: 3px;
+            width: 100%;
+            font-size: 18px;
+            & a{
+                @extend %h5;
+            }
+        }
+        .tk-rateviews {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 0;
+            padding-bottom: 1px;
+            align-items: center;
+            gap: 0;
+            margin: -4px -8.5px;
+            line-height: 1.7142857143em;
+            & li {
+                padding-right: 6px;
+                padding-left: 6px;
+                padding: 4px 8.5px;
+                align-items: center;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                i{
+                    font-size: 16px;
+                    transition: all 0.3s ease-in-out;
+                    color: #676767;
+                }
+                em{
+                    @extend %p14;
+                    padding-left: 6px;
+                    font-size: 14px;
+                    color: #676767;
+                }
+                span{
+                    @extend %p14;
+                    color: #676767;
+                    padding-left: 10px;
+                }
+                .tk-favourite{
+                    cursor: pointer;
+                    i,
+                    em{
+                        color: #EF4444;
+                    }   
+                }
+                .tk-save-btn{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        
+    }
+}
+.tk-profilestatus{
+    margin: 14px 0 0 0;
+    padding: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        list-style-type: none;
+        & .tk-profiletime {
+            width: auto;
+            & span {
+                line-height: 24px;
+                margin-bottom: 9px;
+                display: block;
+                font-size: 14px;
+                color: #1C1C1C;
+            }
+        }
+        & .tk-profileprogress {
+            width: 128px;
+            height: 2px;
+            & .progress-bar {
+                background-color: #63d594;
+            }
+        }
+        & + li {
+            margin: 0 0 0 35px;
+        }
+    }
+}
+.tk-itemlinksvtwo {
+    flex: none;
+    display: flex;
+    align-items: center;
+    .tk-startingprice {
+        display: flex;
+        flex: none;
+        padding-left: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 250px;
+        i {
+            display: block;
+            letter-spacing: 0.5px;
+            @extend %h6;
+        }
+        span {
+            @extend %h4;
+            display: block;
+            font-size: 22px;
+            padding-top: 2px;
+            margin-left: 5px;
+            @extend %transition;
+            letter-spacing: 0.5px;
+        }
+    }
+    .tk-switchservice {
+        margin: 0 0 0 20px;
+        padding: 10px 0 9px 20px;
+        border-left: 1px solid $border-colorv2;
+        span {
+            @extend %p14;
+            display: block;
+            margin: 0 0 7px;
+            color: #1C1C1C;
+        }
+    }
+}
+.tk-onoff{
+    & input {
+        display: none;
+    }
+    & label {
+        align-items: center;
+        margin-bottom: 0;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        em {
+            position: relative;
+            align-items: center;
+            margin: 0;
+            width: 35px;
+            height: 21px;
+            border: 1px solid $border-colorv2;
+            background-color: #fff;
+            border-radius: 10.5px 10.5px 10.5px 10.5px;
+            transition: all 0.4s;
+            vertical-align: middle;
+            i {
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: 21px;
+                height: 21px;
+                background: #fff;
+                display: inline-block;
+                pointer-events: none;
+                transition: all 0.3s ease 0s;
+                border: 1px solid #d8d8d8;
+                border-radius: 9.5px 9.5px 9.5px 9.5px;
+                box-shadow: 0 1px 2px 0 rgb(0 0 0 / 40%);
+            }
+        }
+    }
+    input:checked + label em {
+        border-color: #26de81;
+        background-color: #26de81;
+    }
+    input:checked + label em > i {
+        box-shadow: none;
+        left: 100%;
+        margin-left: -21px;
+        border-color: #26de81;
+    }
+}
+.tk-tabicon {
+    border-left: 1px solid $border-colorv2;
+    padding: 16px 0 16px 20px;
+    margin: 0 0 0 19px;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        position: relative;
+        & > a {
+            font-size: 20px;
+            transform: none;
+            display: block;
+        }
+        & + li {
+            margin: 0 0 0 18px;
+        }
+    }
+}
+.tk-btn {
+    border: 0;
+    z-index: 0;
+    cursor: pointer;
+    height: 48px;
+    padding: 0 20px;
+    display: flex;
+    overflow: hidden;
+    min-width: 160px;
+    position: relative;
+    align-items: center;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    color: #1C1C1C !important;
+    justify-content: center;
+    background-color: #FCCF14;
+    font: 700 16px "Urbanist", sans-serif;
+}
+.tk-rateviews2{
+    .tk-favourite{
+        display: flex;
+        align-items: center;
+    }
+    .tk-save-btn{
+        i,
+        em{
+            color: #EF4444;
+        }       
+    }
+}
+.tb-dhb-profile-settings {
+    .tb-tabtasktitle{
+        background: $white;
+    }
+} 
+.tk-portfolios-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+
+    .tk-potfolioitem{
+        width: 33.33%;
+        margin: 0;
+        padding: 12px;
+        .tk-detail__icon{
+            padding: 10px 0 0;
+            a{
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            ~ a{
+                margin-left: 10px;
+            }
+            }
+            .tk-edit{
+                color: #22C55E;
+                background: rgba(34, 197, 94, 0.1);
+            }
+            .tk-delete{
+                color: #FF6167;
+                background: rgba(255, 97, 103, 0.1);
+            }
+            & ~ .tk-portinfo {
+                padding: 10px 0 0;
+                overflow: hidden;
+                width: 100%;
+            }
+        }
+    }
+}
+.tk-potfolioitem{
+    position: relative;
+    > a {
+        position: absolute;
+        right: 20px;
+        display: block;
+        margin: 9px 0 0;
+        > i {
+            font-size: 16px;
+            color: $heading-font-color;
+        }
+    }
+}
+.tk-education-veiw{
+    border-radius: 10px 10px 0 0 !important;
+    ~ .collapse.show {
+        .tk-accordion_info{
+            border-radius:  0 0 10px 10px !important;
+        }
+    }
+}
+.tk-sectioninvoice{
+    padding-bottom: 0 !important;
+}

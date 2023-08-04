@@ -1,0 +1,37 @@
+%transition{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+%transitiontwo{
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+%flex{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+%h1{font: 700 rem(52)/em(68,52) $heading-font-family;}
+%h2{font: 700 rem(36)/em(46,36) $heading-font-family;}
+%h3{font: 700 rem(28)/em(38,28) $heading-font-family;}
+%h4{font: 700 rem(22)/em(30,22) $heading-font-family;}
+%h5{font: 700 rem(18)/em(26,18) $heading-font-family;}
+%h6{font: 700 rem(16)/em(26,16) $heading-font-family;}
+
+%p20{font: 400 rem(20)/em(34,20) $body-font-family;}
+%p18{font: 400 rem(18)/em(28,18) $body-font-family;}
+%p16{font: 400 rem(16)/em(26,16) $body-font-family;}
+%p15{font: 400 rem(15)/em(24,15) $body-font-family;}
+%p14{font: 400 rem(14)/em(24,14) $body-font-family;}
+%p13{font: 400 rem(13)/em(22,13) $body-font-family;}
+
+%label_title{font: 400 rem(14)/em(20,14) $heading-font-family;} 
+%label_titlesm{font: 500 rem(12)/em(16,12) $heading-font-family;} 

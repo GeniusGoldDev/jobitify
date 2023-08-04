@@ -1,0 +1,33 @@
+@for $i from 1 through 100 {
+    .tb-can {
+        span:nth-child(#{$i}) {
+        animation: tb_can 6s ease-in-out both #{0.05 * $i}s infinite;
+        }
+    }
+
+    .tb-will {
+        span:nth-child(#{$i}) {
+        animation: tb_will 6s ease-in-out both #{0.05 * $i}s infinite;
+        }
+    }
+
+    .tb-thrive {
+        span:nth-child(#{$i}) {
+        animation: tb_thrive 6s ease-in-out both #{0.05 * $i}s infinite;
+        }
+    }
+    .tb-popolarservices{
+        .col-md-3{
+            &:nth-child(#{$i}){
+                .aos-item{transition-delay: #{0.10 * $i}s;}
+            }
+        }
+    }
+    .tb-trend{
+        [class^='col-']{
+            &:nth-child(#{$i}){
+                .aos-item{transition-delay: #{0.10 * $i}s;}
+            }
+        }
+    }
+}

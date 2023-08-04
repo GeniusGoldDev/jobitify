@@ -1,0 +1,140 @@
+.tk-pricingholder{
+    .tk-sectioninfov2{
+        .tk-sectiontitle h3{margin: -3px 0 7px;}
+        .tk-description{padding-top: 11px;}
+    }
+}
+.tk-sectiontitle{
+    .tk-sectiontitle__bold{font-weight: 700;}
+}
+.tk-pricing{
+    padding-top: 40px;
+    > .row{
+        margin-top: -15px;
+        margin-bottom: -15px;
+        [class^='col-']{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 39px 29px;
+        border: 1px solid $border_color;
+        border-radius: $radius;
+        background-color: $white;
+        position: relative;
+        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.04), 0px 3px 16px rgba(0, 0, 0, 0.04);
+        @extend %transition;
+        &:hover{
+            box-shadow: 0 6px 20px 0 rgba(#000,0.1);
+            border-color: transparent;
+            > .tk-btn{
+                background-color: $theme-color;
+                color: #fff;
+            }
+        }
+        > span {
+            position: absolute;
+            right: 0;
+            background: #22C55E;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0px 0px 0px 20px;
+            top: 0;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 26px;
+            color: #fff;
+            padding: 5px 13px;
+        }
+        > img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        h4{margin-bottom: 3px;}
+        > h2{
+            font-size: rem(36);
+            line-height: em(42,36);
+            margin: 0;
+            sup{
+                top: -0.4em;
+                font-size: 55%;
+            }
+        }
+        > em{
+            color: #999;
+            line-height: 1.3;
+        }
+        > .tk-btn-solid{
+            min-width: auto;
+            width: 100%;
+            margin-top: 23px;
+        }
+    }
+    &list{
+        list-style: none;
+        width: 100%;
+        padding: 18px 0 0;
+        li{
+            ~ li{
+                margin-top: 12px;
+                padding-top: 10px;
+                border-top: 1px solid #eee;
+            }
+        }
+        &__content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                font-size: rem(15);
+                line-height: em(25,15);
+                em {
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: rem(16);
+                }
+            }
+            i{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.tk-greenbg{background-color: #63d594 !important;}
+.tk-green{color: #63d594 !important;}
+.tk-grey{color: #b2b2b2 !important;}
+.tk-btnv2{
+    &.tk-btn{
+        background-color: #f7f7f7;
+        color: $dark;
+    }
+}
+.tk-btn-solid.tk-btnv2 {
+    background-color: #f7f7f7;
+    color: #353648;
+}
+.tl-bgwhite{
+    background-color: $white;
+}
+.tk-pakagexpired{
+    background: #EF4444 !important;
+}
+.tk-activepakage{
+    > a {
+        background: #22C55E;
+        color: $white;
+        &:hover {
+            background: #22C55E;
+            color: $white;
+        }
+    }
+}

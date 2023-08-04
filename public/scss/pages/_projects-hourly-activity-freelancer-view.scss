@@ -1,0 +1,601 @@
+.tk-projectsstatus_headvtwo{
+    padding: 30px;
+    display: flex;
+    box-shadow: inset 0px 1px 0px $lightest_2;
+}
+.tk-timecards{
+    padding: 30px;
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    &_head{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        & + .tk-timecard,
+        & ~ .tk-timeslot {
+            margin: 20px 0 0;
+        }
+        > h5{
+            margin: 0;
+            padding-right: 10px;
+        }
+        .tk-actionselect{
+            padding-left: 20px;
+            margin-left: auto;
+        }
+    }
+    &_total{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        > h6{
+            margin-bottom: 0;
+            flex: none
+            
+        }
+        > span{
+            @extend %h5;
+            padding-left: 6px;
+        }
+        .tk-calendar{
+            padding-left: 20px;
+        }
+    }
+}
+.tk-timeslot{
+    &_list{
+        margin: -5px;
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        li{
+            padding: 5px;
+            list-style-type: none;
+        }
+        span{
+            @extend %p15;
+            display: block;
+            margin: 0 0 4px;
+            font-weight: 600;
+        }
+        input{
+            height: 40px;
+            padding: 0 10px;
+            text-align: center;
+        }
+    }
+    &_save{
+        display: flex;
+        margin: 20px 0 0;
+        align-items: center;
+        justify-content: space-between;
+        > a{
+            @extend %p14;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            i{
+                font-size: 20px;
+                padding-right: 10px;
+            }
+        }
+        .tk-btn-solid{
+            flex: none;
+            color: $white;
+            background-color: $bright-green;
+        }
+        span{
+            @extend %p14;
+            & + .tk-btn-solid{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.tk-today-timepopup{
+    flex: none;
+}
+.tk-timeslot-btn{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.tk-workinghours-popup{
+    .modal-dialog{
+        max-width: 856px;
+    }
+    .tk-themeform{
+        .tk-btnarea{
+            .tk-btn-solid-lg{
+                width: 100%;
+                color: $white;
+                background-color: $bright-green;
+            }
+        }
+    }    
+}
+.at-slots-timedate{
+    h4{
+        margin: 0;
+    }
+}
+.tk-projectsactivityvtwo{
+    .tk-nav-tabs{
+        padding: 0;
+        box-shadow: inset 0px -1px 0px $lightest_2;
+        li{
+            flex: none;
+            width: auto;
+            button{
+                padding: 14px 60px;
+            }
+        }
+    }
+    .tk-proinvoices,
+    .tk-proactivity{
+        padding: 30px;
+    }
+    .tk-proinvoices_table tbody > tr > td p{
+        max-width: initial;
+    }
+}
+.tk-addtime-slot{
+    @extend %flex;
+    padding-left: 0;
+    margin: 20px 0 0;
+    align-items: stretch;
+    border-radius: $radius;
+    border-top: 1px solid $lightest_2;
+    border-left: 1px solid $lightest_2;
+    li{
+        width: 100%;
+        padding: 20px;
+        max-width: 176px;
+        min-height: 118px;
+        background: $white;
+        list-style-type: none;
+        box-shadow: inset -1.5px 0px 0px #EEEEEE, 
+        inset 0px -1.5px 0px #EEEEEE;
+        > span{
+            @extend %p15;
+            font-weight: 600;
+            display: block;
+        }
+        > em{
+            @extend %p14;
+            color: $light;
+            font-weight: 600;
+            display: block
+        }
+        > a{
+            @extend %p14;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            padding-top: 6px;
+            i{
+                font-size: 20px;
+                padding-left: 10px;
+            }
+        }
+    }
+    li.tk-added-time{
+        background-color: transparent;
+        a{
+            color: $charcoal_black;
+            i{
+                color: $light;
+                font-size: 18px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.tk-disable-slot{
+    background: $lightest !important;
+    span,em{
+        color: $light;
+    }
+}
+.tk-timecard-table tbody  > tr > td p{
+    max-width: 100%;
+}
+.tk-timecard-table{
+    thead {
+        > tr {
+            th{
+                &:nth-child(2){
+                    width: 73%;
+                }
+                &:last-child{
+                    width: 170px;
+                }
+            }
+        }
+    } 
+} 
+.tk-timealert-table{
+    margin-top: 20px;
+}
+.tk-timealert-table tbody > tr > td p{
+    max-width: 480px;
+}
+.tk-timealert-table thead > tr th:last-child{
+    width: 170px;
+}
+.tk-timealert-table tbody > tr > td{
+    vertical-align: top;
+}
+.tk-today-timeslot{
+    padding-left: 0;
+    margin: 20px 0 0;
+    li{
+        display: flex;
+        align-items: center;
+        background: $lightest;
+        justify-content: space-between;
+        padding: 10px 10px 10px 20px;
+        border-radius: $radius;
+        @extend %transition;
+        span{
+            @extend %p15;
+            font-weight: 600;
+        }
+        input{
+            height: 40px;
+            text-align: center;
+            @extend %transition;
+        }
+        .form-control[readonly]{
+            background-color: $white;
+        }
+        &:hover{
+            input{
+                box-shadow: $drop_shadows_lightest;
+            }
+        }
+        + li{
+            margin-top: 10px;
+        }
+    }
+}
+.tk-popup-content{
+    .tk-themeform__wrap{
+        h4{
+            margin-bottom: 0;
+        }
+    }
+}
+.tk-betaversion-wrap-two{
+    flex-direction: column;
+    text-align: center;
+}
+.tk-unlock-week{
+    padding-top: 20px;
+    h5{
+        margin-bottom: 4px;
+    }
+    p{
+        @extend %p15;
+    }
+    .tk-btn_approve{
+        height: 40px;
+        > i{
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+}
+// Timecard style
+.tk-timecard{
+    margin: 0;
+    padding: 0;
+    & > li{
+        + li{
+            box-shadow: inset 0px -1px 0px $lightest_2;
+        }
+    }
+    li{
+        @extend %flex;
+    }
+    &_head{
+        gap: 10px 20px;
+        padding: 10px 20px;
+        background-color: $lightest;
+        border-radius: $radius $radius 0 0;
+        flex-wrap: nowrap !important;
+        & > h6{
+            margin: 0;
+            font-weight: 600;
+            &:first-child{
+                width: 100%;
+                max-width: 200px;
+            }
+            &:nth-child(2){
+                flex: auto;
+            }
+            &:nth-child(3){
+                width: 100%;
+                max-width: 170px;
+                text-align: right;
+                padding-right: 44px;
+            }
+            i{
+                color: $light;
+                margin-left: 10px;
+                font-size: rem(14);
+                line-height: em(26,14);
+            }
+        }
+    }
+    &_title{
+        width: 100%;
+        display: flex;
+        gap: 10px 20px;
+        padding: 14px 20px;
+        &[data-bs-toggle="collapse"]{cursor: pointer;}
+        p{
+            margin: 0;
+            @extend %p15;
+            display: flex;
+            font-weight: 600;
+        }
+        &[aria-expanded="true"]{
+            .tk-timecard_info a i{
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &_info{
+        gap: 0 24px;
+        @extend %flex;
+        margin-left: auto;
+        align-items: center;
+        .tk-project-tag{
+            padding: 0 9px;
+            text-transform: uppercase;
+        }
+        a{
+            color: $dark;
+            margin-left: auto;
+            font-size: rem(20);
+            line-height: em(26,20);
+            i{
+                display: block;
+                @extend %transition;
+                line-height: inherit;
+            }
+        }
+    }
+    &_list{
+        margin: 0;
+        padding: 0;
+        span{
+            font-size: rem(14);
+            line-height: 24px;
+        }
+        li{
+            gap: 10px 20px;
+            flex-wrap: nowrap;
+            padding: 10px 20px;
+            background: #f7f7f7;
+            border-bottom: 1px solid #ddd;
+            &.tk-statusview_alert{
+                margin: 0;
+                border: 0;
+                padding: 20px;
+                flex-wrap: wrap;
+                border-radius: 0px 0px 4px 4px;
+                background: rgba(255, 97, 103, 0.1);
+                border-top: 1.5px solid rgba(255, 97, 103, 0.2);
+                > *:first-child{max-width: 100% !important;}
+                span{
+                    font: 600 rem(15)/em(24,15) $heading_font_family;
+                }
+            }
+            &:not(.tk-timecard_btns) > *{
+                &:first-child{
+                    width: 100%;
+                    max-width: 200px;
+                }
+                &:nth-child(2){
+                    flex: auto;
+                }
+                &:nth-child(3){
+                    width: 100%;
+                    max-width: 60px;
+                    text-align: right;
+                }
+            }
+            & + li{
+                border-top: 1px solid $white;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            &.tk-timecard_btns{
+                background: $white;
+            }
+        }
+    }
+    &_btns{
+        gap: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px 20px 6px;
+        span{
+            font-size: rem(14);
+            line-height: em(24,14);
+            display: inline-block !important;
+
+        }
+    }
+}
+.tk-timecard_toggle{
+    margin: 0;
+    @extend %p15;
+    color: $dark;
+    display: none;
+    font-weight: 600;
+    padding: 14px 20px;
+    &:focus,
+    &:hover{
+        color: $dark;
+    }
+}
+.tk-approvebtn{
+    @extend %h6;
+    color: $white;
+    padding: 7px 24px;
+    letter-spacing: 0.5px;
+    border-radius: $radius;
+    background-color: $bright-green;
+    &:focus,
+    &:hover{
+        color: $white;
+    }
+}
+.tk-declinebtn{
+    @extend %h6;
+    color: $dark;
+    padding: 5px 22px;
+    letter-spacing: 0.5px;
+    border-radius: $radius;
+    border: 2px solid $lighter;
+    &:focus,
+    &:hover{
+        color: $dark;
+    }
+}
+.tk-timecard-aprroved{
+    box-shadow: inset 0px -1px 0px #EEEEEE;
+    li{
+        background: rgba(34, 197, 94, 0.07);
+        + li{
+            border-top: 1px solid rgba(34, 197, 94, 0.2);
+        }
+    }
+}
+// seller project 
+.tk-seller-project-activity{
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    .tk-employerproject, .tk-projectsstatus_head{    
+        background-color: $white;
+    }
+    .tk-employerproject{
+        border-radius: 4px 4px 0 0;
+    }
+    .tk-projectsstatus_head{
+        margin-bottom: 20px;
+        border-radius: 0 0 4px 4px;
+        box-shadow: inset 0px 1px 0px #eeeeee;
+    }
+    .tk-timecardwraper{
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    .tk-counterinfo{
+        box-shadow: none;
+        background-color: #fff;
+    }
+    .tk-projectsactivity{
+        box-shadow: none;
+        border-radius: 4px;
+        margin: 20px 0 0;
+        .tk-nav-tabs{
+            background: $white;
+            padding-top: 0;
+        }
+    }
+}
+.tk-project-wrapper .tk-employerproject-title{
+    & > .tk-blogviewdates{margin-top: 10px !important;}
+}
+.tk-dbprojectwrap{
+    & + .tk-projectsactivity {
+        border-top: 1px solid #eee;
+        box-shadow: none;
+    }
+    .tk-notify-alert.mt-4{
+        margin: 0 !important;
+    }
+}
+.tk-employerproject-title{
+    width: 100%;
+}
+.tk-timecard_togglevtwo{
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 40px;
+
+    .tk-timecard_infovtwo{
+        .tk-statusvtwo{
+            position: absolute;
+            right: 0;
+            top: 13px;
+            a {
+                display: inline-block;
+                @extend %transition;
+            }
+        }
+        h6 {
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+            em {
+                display: inline-flex;
+                margin: 0;
+
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        margin: 0;
+    }
+    [aria-expanded=true]{
+        .tk-statusvtwo {
+            a {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    > a {
+        @extend %p15;
+        color: $dark;
+    }
+    .tk-project-tag {
+        ~  .tk-timecard_info{
+            margin: 3px 0 0;
+        }
+    }
+    .tk-timecard_info{
+        width: 100%;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+.tk-timecard_infovtwo {
+    h6 {
+        margin: 0;
+        em {
+            margin: 0;
+            @extend %h6;
+            font-weight: 600;
+            margin-right: 20px;
+            display: inline-block;
+        }
+    }
+    > a {
+        width: 100%;
+        margin: 0;
+    }
+}

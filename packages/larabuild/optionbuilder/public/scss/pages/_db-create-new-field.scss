@@ -1,0 +1,71 @@
+
+.op-infotips{
+    color: rgba($color: $theme_color, $alpha: 0.32);
+    :hover{
+        color: rgba($color: $theme_color, $alpha: 0.32) !important;
+    }
+}
+.op-addfeild{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    .form-control:first-child{
+        width: 180px;
+    }
+}
+.op-trashfeild{
+    gap: 6px;
+    height: 38px;
+    display: flex;
+    padding: 0 12px;
+    border-radius: 4px;
+    align-items: center;
+    background: #FFEDF0;
+    justify-content: center;
+    border: 1px solid rgba(5, 18, 55, 0.08);
+    i{
+        font-size: 18px;
+        color: $error-color;
+    }
+    span{
+        color: $error-color;
+        font: 500 rem(14)/em(20,14) $body-font-family;
+       }
+}
+.op-add-dwonload{
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    ~ .op-addfeild{
+        margin-top: 10px;
+    }
+}
+.op-importfrild{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    a{
+        flex: none;
+        @extend %p13;
+        line-height: 16px;
+        color: $anchor-color;
+    }
+    .op-btn{
+        color: $theme_color;
+    }
+    label{
+        margin: 0;
+    }
+}
+.op-required{
+    position: relative;
+    &:after{
+        content: '*';
+        margin-left: 6px;
+        color: $error-color;
+        display: inline-block;
+    }
+}

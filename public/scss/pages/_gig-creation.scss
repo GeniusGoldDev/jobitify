@@ -1,0 +1,211 @@
+.tk-add-moreoption{
+    .tk-addicon{
+        margin: 0;
+    }
+}
+.tk-project-boxvtwo{
+    .tk-attechment-tittle i[aria-expanded=true]::before {
+        display: block;
+        content: "\e92e";
+        font-size: 20px;
+        color: #1C1C1C;
+    }
+    .tk-attechment-tittle{
+        justify-content: space-between;
+    }
+}
+.tk-switchbtn{
+    & input{
+    &::before{
+        top: -2.5px;
+        left: -4px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        transition: 0.5s;
+        position: absolute;
+        border-radius: 50%;
+        background: $lighter;
+    }
+        &:checked::before{
+        left: 15px;
+        background: $bright_green;
+        }
+    }    
+} 
+.tk-switchbtn{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 0;
+    span{
+        @extend %h6;
+    }
+    input{
+        height: 18px;
+        width: 34px;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        border-radius: 50px;
+        @extend %transition;
+        background: $lightest;
+        -webkit-appearance: none;
+        border: 1.5px solid $lighter;
+    }
+    label{
+        margin: 0;
+        color: $dark;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+        span{
+            color: $dark;
+            font: 400 rem(14)/em(22,14) $body-font-family;
+        }
+    }
+    input:checked{
+        background: $white;
+        border: 1.5px solid $bright_green;
+    }
+} 
+.tk-select-features{
+    border: 1.5px solid #eeeeee;
+    border-radius: 4px;
+    & .tk-attechment-wrapper{
+        border-radius: 0;
+        border: 0;
+        fieldset{
+            padding: 20px;
+            margin: 0;
+            & .tk-themeform__wrap{
+                margin: -10px;
+            }
+        }
+    }
+    .tk-attechment-tittle{
+        position: relative;
+        h6{
+            @extend %p15;
+            &::after{
+                content: "\e930";
+                font-family: 'icomoon' !important;
+                font-size: 20px;
+                color: #1C1C1C;
+                position: absolute;
+                right: 20px;
+                font-weight: 400;
+               
+            }
+        }
+    }
+    
+    .tk-attechment-tittle[aria-expanded=true] h6::after {
+        transform: rotate(90deg);
+    }
+   
+    
+}
+.tk-features-list{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    li{
+        list-style: none;
+        width: 50%;
+        padding: 19px 20px;
+        border-bottom: 1.5px solid #eeeeee;
+        &:nth-child(even){
+            border-left: 1.5px solid #eeeeee;
+        }
+        .tk-features-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        span{
+            @extend %p15;
+            color: #0A0F26;
+        }
+    }
+}
+.tk-accord-rightside{
+    display: flex;
+    align-items: center;
+    i{
+        right: 0;
+        margin-left: 20px;
+        position: relative;
+    }
+}
+.tk-add-remov-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tk-icon-bg{
+    padding: 9.5px 13px;
+    background: #F7F7F7;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 4px;
+    & .tk-add{
+        color: #1C1C1C;
+        font-size: 20px;
+    }
+    & .tk-remove{
+        font-size: 20px;   
+    }
+}
+.tk-add-more{
+    padding: 10px 0;
+    width: 100%;
+    border: 1px dashed #DDDDDD;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+    gap: 10px;
+    i{
+        color: #0A0F26;
+        font-size: 20px;
+    }
+    h6{
+        margin: 0;
+    }
+}
+.tk-attechment-tittle{
+    & .tk-form-checkbox{
+        gap: 10px;
+    }
+}
+.tk-Remove-adon{
+    border: 2px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #EF4444;
+    i{
+        font-size: 20px;
+        color: #EF4444;
+    }
+    span{
+        color: #EF4444;
+        @extend %h6;
+    }
+}
+.downloadable-files{
+    width: 100%;
+}
+.tk-project-wrapper{
+    & .from-group-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}

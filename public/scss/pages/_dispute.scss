@@ -1,0 +1,332 @@
+.tk-dispute-buyer{
+    .tk-project-tag{
+        margin-bottom: 6px;
+    }   
+    .tk-blogviewdates{
+        padding-top: 0;
+    }
+}
+.tk-servicedetailtitle{
+    h5{
+        margin-bottom: 6px;
+    }
+}
+.tk-dispute{
+    @extend %flex;
+    align-items: center;
+    justify-content: space-between;
+    &_holder{
+        gap: 0 20px;
+        @extend %flex;
+        align-items: center;
+        figure{
+            margin-bottom: 0;
+            img{
+                max-width: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    &_title{
+        h5{
+            margin-bottom: 0;
+            text-transform: capitalize;
+        }
+        span{
+            @extend %p14;
+            color: $dark;
+            display: block;
+            text-transform: capitalize;
+            em{
+                color: #64748B;
+                font-style: normal;
+            }
+        }
+    }
+    &_progress{
+        span{
+            z-index: 1;
+            display: block;
+            line-height: 20px;
+            position: relative;
+            i{
+                font-size: 20px;
+                padding: 0 10px;
+                background-color: $white;
+            }
+            &:after{
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                width: 88px;
+                content: '';
+                position: absolute;
+                border: 1px dashed $lighter;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+}
+.tk-conversation-holder{
+    padding: 30px;
+    overflow: auto;
+    border-radius: $radius;
+    background: $lightest;
+    position: relative;
+    + .tk-conversation-reply{
+        margin-top: 30px;
+    }
+    
+}
+.tk-custom-scrollbar{
+    height: 500px;
+    overflow: auto;
+    scrollbar-width: none;
+    padding-right: 20px;
+    &::-webkit-scrollbar {
+        width: 3px;   
+    }
+    &::-webkit-scrollbar-track {
+        background: $white;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1.5px;       
+        background-color: $bright-green;    
+    }
+}
+.tk-conversation-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 100%;
+}
+.tk-message-wrapper{
+    + .tk-message-wrapper{
+        margin-top: 20px;
+    }
+}
+.tk-message{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    > img{
+        height: 36px;
+        max-width: 36px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    + .tk-message{
+        margin-top: 4px
+    }
+    
+}
+.tk-message-holder{
+    display: block;
+    max-width: 567px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 0px 10px 10px;
+    p{
+        text-align: left;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        + .tk-message-attechemets{
+            margin-top: 10px;
+        }
+    }
+}
+.tk-messages-reciver{
+    .tk-message-holder{
+        border-radius: 0px 10px 10px 10px;
+    }
+}
+.tk-message-content{
+    strong{
+        @extend %p13;
+        color: $light;
+        font-weight: 600;
+        margin: 4px 0 0 3px;
+    }
+}
+.tk-message-adminreply{
+    .tk-message-content{
+        p{
+            max-width: 521px;
+        }
+    }
+    &::before{
+        font-size: 16px;
+        color: #64748B;
+        
+        content: "\e949";
+        display: inline-block;
+        padding: 2px 10px 10px 10px;
+        font-family: 'icomoon' !important;
+    }
+}
+.tk-messages-sender{
+    .tk-message{
+        flex-direction: row-reverse;
+    }
+    .tk-message-content{
+        text-align: right;
+        strong{
+            margin-right: 3px;
+        }
+    }
+    .tk-message-adminreply{
+        &::before{
+            content: "\e948";
+        }
+    }
+}
+.tk-conversation-reply{
+    h6{
+        margin-bottom: 10px;
+    }
+}
+.tk-replybtns{
+    @extend %flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px 0;
+    justify-content: space-between;
+}
+.tk-project-box{
+    &:empty{
+        display: none;
+    }
+    .tk-escrow{
+        i{
+            font-size: 20px;
+            color: #977C0C; 
+            margin-right: 10px;
+        }
+        span{
+            @extend %p14;
+        }
+    }
+}
+.tk-ordersumery-content{
+    .tk-status-tabs_content{
+        h6{
+            @extend %p14;
+            color: $dark;
+            @extend %flex;
+            font-weight: 600;
+            align-items: center;
+            > a{
+                color: $anchor_color;
+            }
+        }
+        span{
+            @extend %p13;
+            display: block;
+            padding-left: 17px;
+            color: #64748B;
+        }
+    }
+    .tk-status-tabs_content{
+        &:before{
+            left: 1px;
+        }
+        h6::before{
+            width: 5px;
+            height: 5px;
+            background-color: $bright-green;
+        }
+    } 
+}
+.tk-acknowledge-admin{
+    .tk-btn-solid{
+        width: 100%;
+    }
+    p{
+        @extend %p13;
+        color: $charcoal_black;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+}
+.tk-dispute-tags{
+    margin: 0 0 6px;
+    padding: 0;
+    gap: 0 10px;
+    @extend %flex;
+    align-items: center;
+    li{
+        list-style-type: none;
+    }
+}
+.tk-dispute-tag{
+    padding: 0 9px;
+    @extend %label_title;
+    display: inline-block;
+    text-transform: capitalize;
+    border-radius: $radius;
+    border: 1px solid $decent-grey;
+}
+.tk-refund-tag{
+    border-color: $bright-green;
+}
+.tk-decline-tag{
+    border-color: $red;
+}
+button.tk-decline-btn,
+a.tk-decline-btn{
+    color: $white !important;
+    border-color: $red;
+    background-color: $red;
+    &:hover,
+    &:focus{
+        color: $white !important;
+        border-color: $red;
+        background-color: $red;
+    }
+}
+.tk-decline-btns{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+a.tk-allow-btn{
+    color: $white !important;
+    border-color: $bright-green;
+    background-color: $bright-green;
+    &:hover,
+    &:focus{
+        color: $white;
+        border-color: $bright-green;
+        background-color: $bright-green;
+    }
+}
+.tk-message-attechemets{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    background-color: $lightest;
+    justify-content: space-between;
+    img{
+        max-width: 26px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    span{
+        color: $dark;
+        display: flex;
+        align-items: center;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+    }
+    > a{
+        margin-left: 30px;
+        color: $anchor_color;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+    }
+}

@@ -1,0 +1,160 @@
+@media (max-width:1680px){
+    .op-addfeild{
+        .form-control:first-child{
+            width: 100%;
+        }
+    }
+    .op-creatfield {
+        width: 100%;
+    }
+    .op-pagination-wrapper{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width:1399px){
+    .op-listing-fields{
+        input{
+            min-width: 0;
+        }
+        .op-select {
+            min-width: 0;
+        }
+    }
+    .op-fields-content_title{
+        gap: 10px;
+        strong{
+            flex: none;
+        }
+    }  
+    .op-field-table{
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        td:before {
+            width: 40%;
+            margin-right: 20px;
+            color: #7D7A7E;
+            content: attr(data-label);
+        }   
+        tbody{
+            tr{
+                flex-direction: column;
+                td{
+                    padding: 12px 20px;
+                }
+            }
+        }
+    }
+    .op-fields-content_title {
+        padding: 9px 10px 10px 10px;
+    }
+}
+
+@media (max-width:1199px){
+    .op-pagination-wrapper{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .op-pagination{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:991px){
+    .op-creatfield{
+        .op-btn-two{
+            width: 100%;
+        }
+        .op-importfrild{
+            flex-direction: column;
+        }
+    }
+    .op-importfrild{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .op-listing-fields{
+        width: 100%;
+    }
+    .op-themeform__wrap > li{
+        flex-direction: column;
+        .form-group-half{
+            width: 100%;
+        }
+    }    
+    .op-content-title{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:767px){
+    .op-fields-aside{
+        padding-bottom: 20px;
+    }
+    .op-fields-content_title{
+        padding: 9px 10px 10px 10px;
+        flex-wrap: wrap;
+    }
+    .op-fields-holder{
+        flex-direction: column;
+    }
+    .op-fields-aside{
+        max-width: 100%;
+        border-right: 0;
+    }
+}
+
+@media (max-width:575px){
+    .op-group-wrap{
+        flex-wrap: wrap;    
+        .op-wrap-half{
+            width: 100%;
+        }
+    }
+}
+@media (max-width:480px){
+    .op-field-table{
+        tbody{
+            tr{
+                td{
+                    align-items: baseline;
+                }
+            }
+        }
+    }
+    .op-btnwrapper{
+        flex-direction: column;
+    }
+    .op-fields-title{
+        padding: 12px;
+    }
+    .op-feildlisting{
+        padding: 0;
+    }
+    .op-themeform__wrap > li{
+        padding: 2px;
+    }
+}
+@media (max-width:420px){
+    .op-listing-fields{
+        flex-wrap: wrap;
+    }
+    .op-btnholder{
+        width: 100%;
+        flex-direction: column;
+        > a,button{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:320px){
+    
+}

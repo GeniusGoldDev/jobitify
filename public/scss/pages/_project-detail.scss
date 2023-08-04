@@ -1,0 +1,440 @@
+.tk-servicedetailtitle {
+    >h3 {
+        margin-bottom: 0;
+    }
+    >.tk-featuretag {
+        margin-bottom: 10px;
+    }
+}
+.tk-blogviewdates {
+    @extend %flex;
+    align-items: center;
+    padding: 10px 0 0 0;
+    margin: -5px -15px; 
+    li {
+        list-style-type: none;
+        padding: 5px 15px;
+        line-height: 1;
+        i{
+            margin-right: 7px;
+            font-size: 20px;
+        }
+        span,
+        a{
+            @extend %p15;
+            color: $dark;
+            display: inline-flex;
+            align-items: center;
+            i {margin-right: 10px;}
+        }
+        em{
+            @extend %h6;
+            font-style: normal;
+        }
+    }
+}
+.tk-boxlg{
+    padding: 30px;
+}
+.tk-project-holder{
+    + .tk-project-holder{
+        margin-top: 30px;
+    }
+}
+.tk-projectdetail-img{
+    margin-bottom: 0;
+    background: $darkblack;
+    border-radius: $radius;
+    iframe{
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+    }
+    img{
+        opacity: 0.6;
+        border-radius: 4px;
+    }
+}
+.tk-project-title{
+    margin-bottom: 20px;
+    h4,h3{
+        margin-bottom: 0;
+    }
+}
+.tk-jobdescription{
+    ul {
+        margin:  0 0 30px;
+        padding: 0;
+        li{
+            position: relative;
+            list-style-type: none;
+            padding: 0 0 0 26px;
+            display: flex;
+            line-height: 30px;
+            align-items: center;
+            &::after{
+                left: 0;
+                top: 6px;
+                flex: none;
+                width: 18px;
+                height: 18px;
+                display: flex;
+                color: #ffffff;
+                font-size: 12px;
+                content: "\e92b";
+                line-height: 18px;
+                position: absolute;
+                align-items: center;
+                border-radius: 50px;
+                justify-content: center;
+                background-color: #22C55E;
+                font-family: "icomoon" !important;
+            }
+        }
+    }
+    p{
+        margin-bottom: 26px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &_list{
+        padding-left: 18px;
+        margin-bottom: 26px;
+        li{
+            list-style-type: disc;
+            @extend %p16;
+            color: $dark;
+        }
+    }
+}
+ul.tk-jobdescription_list{
+    padding: 0;   
+}
+.tk-tags_links{
+    @extend %flex;
+    align-items: center;
+    li {
+        list-style-type: none;
+    }
+}
+.tk-skillstags {
+    display: flex;
+    align-items: center;
+    .tk-tagtittle{
+        padding-bottom: 10px;
+        align-self: flex-start;
+        span{
+            display: block;
+        }
+    }
+    .tk-tags_links{
+        padding-left: 0;
+        margin: -5px;
+        li{
+            padding: 5px;
+            line-height: inherit;
+            a{
+                border-radius: $radius;
+            }
+        }
+    }
+    + .tk-skillstags{
+        margin-top: 30px;
+    }
+}
+.tk-betaversion-wrap{
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    border-radius: $radius;
+    background: rgba(#D9A1131A, 0.1);
+    .tk-project-tag{
+        background-color: $blazing-purple;
+        margin-left: 10px;
+        color: $white;
+    }
+    figure{
+        margin: 0 20px 0 0;
+        flex: none;
+    }
+    
+}
+.tk-betaversion-info{
+    max-width: 695px;
+    h5,p{margin-bottom: 0}
+    p{
+        @extend %p15;
+        padding-top: 6px;
+        a{
+            font-weight: 600;
+        }
+    }
+}
+.tk-downloadbtn {
+    flex: none;
+    margin-left: auto;
+    padding-left: 20px;
+}
+.tk-relatedproject_title{
+    margin-top: 40px;
+    h3{margin: 0;}
+}
+.tk-otherproject{
+    margin-top: 20px;
+    position: relative;
+    @extend %transition;
+    &:hover{
+        box-shadow: $drop_shadows_light;
+        &:after{height: 3px;}
+    }
+    &:after{
+        bottom: 0;
+        height: 0;
+        left: 29px;
+        content: '';
+        @extend %transition;
+        position: absolute;
+        width: calc(100% - 58px);
+        background: $primary_color_02_base;
+        border-radius: 3px 3px 0 0;
+    }
+    .tk-project-box{
+        border-radius: 4px;
+    }
+}
+.tk-projectprice{
+    text-align: center;
+    .tk-sidebar-title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        & > h3{width: 100%;}
+        .tk-project-tag {
+            margin-top: -30px;
+            line-height: 20px;
+            border-radius:  0 0 10px 10px;
+        }
+    }
+}
+.tk-sidebar-title{
+    .tk-project-tag{
+        @extend %h6;
+        padding: 4px 12px;
+        & +  h3{
+            margin: 20px 0 0 0;
+        } 
+    }
+    > h3{
+        margin: 0;
+    } 
+    > em{
+        color: $light;
+        font-style: normal;
+        @extend %p15;
+        font-weight: 600;
+        display: inline-block;
+    }
+    > h5{
+        margin-bottom: 20px;
+    }
+}
+.tk-sidebarpkg__btn {
+    margin-top: 20px;
+    > a{
+        width: 100%;
+        + a{
+            margin-top: 10px;
+        }
+        
+    }
+    .tk-btnline{
+        color: $light;
+        display: flex;
+        font-size: 16px;
+        line-height: 26px;
+        align-items: center;
+        i{
+            color: $light;
+        }
+    }
+}
+.tk-project-requirement{
+    padding-left: 0;
+    margin-bottom: 0;
+    > li{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+    
+        + li{
+            margin-top: 20px;
+        }
+        i{
+            flex: none;
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            font-size: 24px;
+            color: #0A0F26;
+            position: relative;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+            background-color: #f7f7fa;
+        }
+    }
+    &_content{
+        padding-left: 14px;
+        width: 100%;
+        > em{
+            font-size: 14px;
+            font-style: normal;
+            line-height: 1.3em;
+            display: block;
+        }
+        > a{
+            @extend %tiny_title;
+            color: $theme-color;
+            margin-left: 4px;
+        }
+    }
+    i.tk-darkred-icon:after {
+        background-color: #FFF1F4;
+    }
+    i.tk-yellow-icon:after {
+        background-color: #F7F1D2;
+    }
+    i.tk-cat-icon:after {
+        background-color: rgba(249, 115, 22, 0.1);
+    }
+    i.tk-green-icon:after {
+        background-color: #EAFFEC;
+    }
+    i.accountsicon:after {
+        background-color: #E9E9FF;
+    }
+}
+
+.tk-requirement-tags{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    span{
+        @extend %h6;
+        color: $dark;
+        margin-right: 4px;
+        &::after{
+            content: ',';
+            display: inline-block;
+        }
+        &:last-child{
+            margin-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    a{
+        @extend %p15;
+        font-weight: 600;
+    }
+}
+.tk-verified-title{
+    @extend %flex;
+    align-items: center;
+    img{
+        flex: none;
+        margin-right: 20px;
+        max-width: 50px;
+        border-radius: $radius;
+    }
+    p{
+        margin: 20px 0 0 0;
+        @extend %p15;
+    }
+}
+.tk-projectinfo{
+    border-radius: $radius;
+    background-color: $white;
+    border: 1px solid $border-color;
+    box-shadow: $drop_shadows_lightest;
+    &_title{
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+    .tk-checkout-info{
+        width: 100%;
+    }
+    .tk-total-title i {font-size: 18px;}
+}
+.tk-checkout-info{
+    padding:30px 0 0 0;
+    margin-bottom: 0;
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        > span{
+            @extend %p15;
+            font-weight: 600;
+            text-align: right;
+            padding-left: 20px;
+        }
+        + li{
+            margin-top: 14px;
+        }
+    }
+}
+.tk-total-title{
+    @extend %flex;
+    flex: none;
+    align-items: center;
+    i{
+        font-size: 18px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    em{
+        font-style: normal;
+        display: inline-block;
+        @extend %tiny_title;
+        
+    }
+}
+.tk-project-box.tk-employerproject + .tk-project-box{
+    box-shadow: inset 0px -1px 0px #eeeeee;
+}
+.tk-project-wrapper .tk-project-table-info .tk-blogviewdates{
+    margin-top: 0 !important;
+}
+.tk-project-table-status{
+    .tk-submitreview{
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+.tk-project-wrapper .tk-project-table-info .tk-blogviewdates li{
+    gap: 4px;
+}
+.tk-project-wrapper .tk-project-table-info .tk-blogviewdates li i{
+    margin-right: 2px;
+}
+.tk-project-img{
+    flex: none;
+    margin-right: 20px;
+    img {
+        width: 130px;
+        object-fit: cover;
+        height: 106px !important;
+        border-radius: 4px !important;
+    }
+}

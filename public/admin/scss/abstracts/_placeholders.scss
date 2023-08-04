@@ -1,0 +1,78 @@
+%body-font{
+    color: $body-font-color;
+    font: 400 rem(14)/em(24,14) $body-font-family;
+}
+%transition{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+%transitiontwo{
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+%flex{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+%themeboxshadow{
+    -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+%themeboxshadowvtwo{
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.04);
+}
+%label_title{
+    letter-spacing: 0.5px;
+    font: 700 rem(12)/em(24,12) $heading_font_family;
+}
+%border{border: 1px solid $border-color;}
+%border-top{border-top: 1px solid $border-color;}
+%border-bottom{border-bottom: 1px solid $border-color;}
+%border-left{border-left: 1px solid $border-color;}
+%border-right{border-right: 1px solid $border-color;}
+%border-radius4{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+%readmore-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    font: 600 14px $heading-font-family;
+    color: $heading-font-color;
+    padding: 10px;
+    margin-top: 20px;
+}
+%tb-featureRating__stars{
+    position: relative;
+    width: 72px;
+    height: 16px;
+    line-height: 16px;
+}
+%tb-featureRating{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: 'Font Awesome 5 Free';
+}
+%tb-featureRating__starsIcon{
+    color: #fddb5b;
+    content: '\f005 \f005 \f005 \f005 \f005';
+}

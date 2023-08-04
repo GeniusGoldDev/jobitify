@@ -1,0 +1,231 @@
+// question-section-block 
+.tk-faq-search{
+    padding-bottom: 60px;
+    max-width: 830px;
+    margin: 0 auto;
+    .tk-maintitle{
+        padding-bottom: 0;
+    }
+}
+.tk-blue-clr {
+    color: #3377FF !important;
+}
+.tk-faq_input{
+    .tk-inputappend{
+        margin: 0 auto;
+        max-width: 856px;
+        padding-left: 22px;
+        .form-control{
+            border: 0;
+            padding-left: 18px;
+        }
+        & > i{
+            font-size: 20px;
+            display: inline-flex;
+            color: $text-light;
+        }
+    }
+    .tk-placeholder{
+        left: 19px;
+    }
+    .tk-placeholderholder{
+        width: auto;
+        flex: auto;
+    }
+}
+.tk-inputappend {
+    width: 100%;
+    padding: 14px 14px 14px 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 4%), 0px 8px 16px rgb(0 0 0 / 8%);
+}
+.tk-acoridan_title{
+    h3{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        font: 700 rem(28)/em(38, 28) $heading-font-family;
+        color: $dark;
+    }
+}
+.tk-accordion{
+    padding-left: 0;
+    li{
+        border-radius: $radius;
+        list-style-type: none;
+        cursor: pointer;
+        background-color: $lightest;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &_title{
+        @extend %flex;
+        position:relative;
+        align-items: center;
+        padding: 20px 30px;
+        &[aria-expanded="true"]{
+            &:after{content: "\e9a3";}
+        }
+        &:after{
+            content: "\e9c0";
+            font-family: 'icomoon' !important;
+            position: absolute;
+            right: 30px;
+            font-size: 20px;
+            top: 20px;
+            @extend %transition;
+        }
+        h5{
+            margin-bottom: 0;
+            font: 700 rem(18)/em(26, 18) $heading-font-family;
+            color: $heading-font-color;
+            padding: 0 30px 0 0;
+        }
+    }
+    &_info{
+        cursor: default;
+        padding: 10px 30px 20px;
+        p{
+            margin: 0;
+            ~ p{padding-top: 7px;}
+        }
+    }
+}
+.tk-accordion_infov2{
+    p{
+        margin: 0;
+        font: 400 rem(16)/em(26, 16) $body-font-family;        
+    }
+}
+.tk-themeinputv2{
+    &::placeholder{
+        font: 400 rem(15)/em(24, 15) $body-font-family !important; 
+    }
+}
+// faq category block 
+.tk-faqsslider {
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.04)) drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.04));
+    .splide__arrows {
+        .splide__arrow--prev {left: -64px;}
+        .splide__arrow--next {right: -64px;}
+    }
+    ul{
+        padding: 0;
+        li{
+            list-style: none;
+        }
+    }
+}
+.tk-faq-category{
+    background-color: $white;
+    padding: 40px 0;
+    min-width: 254px;
+    @extend %flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    figure{
+        margin-bottom: 0;
+        img{
+           margin: 0 auto;
+       }
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        @extend %transitiontwo;
+        height: 3px;
+        left: 0;
+        bottom: 0;
+        background-color: #ffd101;
+    }
+    &:hover,
+    &-active{
+        &::after{
+            width: 100%;
+        }
+    }
+}
+.tk-slider-section{
+    .tk-maintitle {
+        padding-bottom: 20px;
+    }
+}
+// send quention block 
+.tk-question-section{
+    padding: 40px;
+    @extend %flex;
+    align-items: center;
+    margin-bottom: 80px;
+    border-radius: $radius;
+    background-color: #0A1833;
+    justify-content: space-between;
+}
+.tk-faq-search_title{
+    h5{
+        color: $clr-white;
+        margin: 0;
+    }
+    h2{
+        color: $primary_color_02_base;
+        margin: 0;
+    }
+}
+.tk-question_desc{
+    padding-top: 20px;
+    max-width: 592px;
+    p{
+        color: $clr-white;
+        margin-bottom: 0;
+    }
+}
+.tk-faq-question-section{
+    padding: 80px 0 40px 0 !important;
+    .tk-accordion_title,
+    .tk-accordion_info{   
+        background-color: $white;
+    }
+}
+.tk-submitquestion{
+    .tk-placeholderholder{
+        flex-wrap: wrap;
+        .tk-required{
+            width: 100%;
+        }
+    }
+    .tk-form-checkbox{
+        padding: 0;
+        flex-wrap: wrap;
+        .tk-required:after{line-height: 24px;}
+        .text-danger{
+            width: 100%;
+        }
+    }
+    .tk-btn-solid-lg{
+        span:not(.tk-waiting){
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            i{padding: 0;}
+        }
+    }
+}
+.tk-faq-acordian .tk-accordion_title:after{
+    top: 50%;
+    line-height: 24px;
+    margin-top: -12px;
+}
+.tk-faq-acordian{
+    .tk-accordion_title{
+        padding: 20px;
+        border-radius: 4px;
+    }
+    .tk-accordion_info{
+        padding: 0 20px 20px;
+    }
+}

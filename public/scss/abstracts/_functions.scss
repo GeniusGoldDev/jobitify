@@ -1,0 +1,18 @@
+$base: 16 !default;
+
+@function scut-strip-unit ($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem ($pixels) {
+  @return scut-strip-unit($pixels) / $base * 1rem;
+}
+@function em ($pixels, $context: $base) {
+    @return #{$pixels/$context}em;
+  }
+@for $i from 1 through 50 {
+  $step: $i*1;
+  .tk-category-item-#{$step} {
+      margin-left: #{$step*10}px !important;
+  }
+}

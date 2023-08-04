@@ -1,0 +1,305 @@
+.tk-ongoing-hourly{
+    color: $white;
+    background-color: $bright-green;
+}
+.tk-ongoing-feature{
+    color: $charcoal_black;
+    background-color: #FDD943;
+}
+.tk-btn-solid-bg-blue{
+    color: $white;
+    // background-color: $primary_color_base;
+}
+.tk-tabs{
+    padding-top: 30px;
+    ul{
+        border: none;
+    }
+}
+.tk-nav-link-button{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 15px 20px;
+    font-family: 'Open Sans';
+    color: $black_opacity_80;
+    border-radius: 10px 10px 0 0 !important;
+    i{
+        color: $light;
+        margin-right: 7px;
+    }
+    span{
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 6px;
+        line-height: 24px;
+        font-family: 'Open Sans';
+        color: $black_opacity_40;
+    }
+    &:hover{
+        color: $black_opacity_80;
+        border: 1px solid transparent !important;
+    }
+}
+.tk-tab-content{
+    padding: 30px;
+    border-radius: 10px;
+    background-color: $white;
+    border: 1px solid $lighter;
+}
+.tk-tab-content-heading{
+    color: $dark;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-family: 'Urbanist';
+}
+.tk-tab-content-list{
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    li{
+        line-height: inherit;       
+        a{
+            color: $dark;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 24px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            letter-spacing: 0.5px;
+            font-family: 'Urbanist';
+            background-color: $lightest;
+            border: 1px solid $lightest_2;
+        }
+    }
+    .active{
+        a{
+            color: $white;
+            background-color: $primary_color_01_base;
+        }
+    }
+}
+.tk-candidate-table{
+    border-radius: 10px;
+    border: 1px solid $lighter;
+}
+.tk-tab-table{
+    margin: 0;
+    tr{
+        &:nth-child(odd){
+            background-color: $lightest;
+        }
+        &:nth-child(1){
+            background-color: $lightest;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+}
+.tk-table-row{
+    width: 100%;
+    display: flex;
+    padding: 14px 10px;
+    align-items: center;
+    justify-content: space-between;
+    th{
+        width: 15%;
+        border: none;
+        line-height: 1;
+        padding: 0 10px;
+        text-align: left;
+        h5{
+            color: $dark;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 26px;
+            letter-spacing: 0.5px;
+            font-family: 'Urbanist';
+        }
+        em{
+            color: $dark;
+            display: block;
+            font-size: 13px;
+            margin-bottom: 0;
+            font-weight: 400;
+            line-height: 22px;
+            font-style: normal;
+            font-family: 'Open Sans';
+        }
+        h6{
+            color: $dark;
+            font-size: 15px;
+            margin-bottom: 0;
+            font-weight: 400;
+            line-height: 24px;
+            font-family: 'Open Sans';
+        }
+        p{
+            color: $dark;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 0;
+            line-height: 24px;
+            font-family: 'Open Sans';
+        }
+        span{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: $decent-grey;
+            font-family: 'Open Sans';
+
+        }
+    }
+}
+.tk-items-colors{
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    li{
+        display: flex;
+        position: relative;
+        align-items: center;
+        &::after{
+            top: auto;
+            height: 2px;
+            width: 10px;
+            content: "";
+            right: -10px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            background-color: $light;
+        }
+        &:nth-last-child(1)::after{
+            display: none;
+        }       
+        a{
+            width: 18px;
+            color: $white;
+            display: block;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 18px;
+            border-radius: 50%;
+            text-align: center;
+            font-family: 'Open Sans';
+            background-color: $light;
+        }
+    }
+}
+
+.tk-like-thumb{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: inherit;
+    border-radius: 6px;
+    align-items: center;
+    background:  $lightest;
+    justify-content: center;
+    i{
+        color: $light;
+    }
+}
+.tk-liked-thumb{
+    background-color: $bright-green;
+    i{
+        color: $white;
+    }
+}
+.tk-unlike-thumb{
+    background-color: $red;
+    i{
+        color: $white;
+    }
+}
+.tk-comment-inbox{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: inherit;
+    border-radius: 6px;
+    align-items: center;
+    background:  $lightest;
+    justify-content: center;
+    i{
+        color: $light;
+    }
+}
+.tk-commented-inbox{
+    background-color: $anchor_color;
+    i{
+        color: $white;
+    }
+}
+.tk-download-icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    position: inherit;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: $anchor_color;
+    i{
+        color: $white;
+    }
+}
+.tk-bg-red{
+    a{
+        background-color: $red !important;
+    }
+    &::after{
+        background-color: $red !important;
+    }
+}
+.tk-bg-yellow{
+    a{
+        background-color: $pale-yellow !important;
+    }
+    &::after{
+        background-color: $pale-yellow !important;
+    }
+}
+.tk-bg-blue{
+    a{
+        background-color: $anchor_color !important;
+    }
+    &::after{
+        background-color: $anchor_color !important;
+    }
+}
+.tk-bg-orange{
+    a{
+        background-color: $orange !important;
+    }
+    &::after{
+        background-color: $orange !important;
+    }
+}
+.tk-bg-grey{
+    a{
+        background-color: $decent-grey !important;
+    }
+    &::after{
+        background-color: $decent-grey !important;
+    }
+}
+.tk-bg-green{
+    a{
+        background-color: $bright-green !important;
+    }
+    &::after{
+        background-color: $bright-green !important;
+    }
+}

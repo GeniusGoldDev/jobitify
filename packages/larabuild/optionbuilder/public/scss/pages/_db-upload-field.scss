@@ -1,0 +1,227 @@
+.op-upload-img {
+  margin: 0;
+  gap: 10px;
+  padding: 0;
+  @extend %flex;
+  align-items: center;
+  li + li {
+    border: 1px solid rgba($color: $theme_color, $alpha: 0.24);
+  }
+  label {
+      margin: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      font-size: 16px;
+      cursor: pointer;
+      align-items: center;
+      color: $theme_color;
+      border-radius: $radius;
+      justify-content: center;
+      background: rgba($color: $theme_color, $alpha: 0.04);
+  }
+    input[type="file"] {
+        display: none;
+    }
+}
+.op-upload-img-info {
+  margin: 0;
+  padding: 0;
+  width: 59px;
+  height: 59px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  @extend %transition;
+  border-radius: $radius;
+  justify-content: center;
+  cursor: pointer !important;
+  border: 1px dashed rgba($color: $theme_color, $alpha: 0.24);
+  img {
+    z-index: 1;
+    flex: none;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: $radius;
+  }
+  li {
+      list-style: none;
+  }
+}
+.op-upload-data{
+  figure{
+    margin: 0;
+  }
+} 
+.op-upload-data{
+  @extend %transition;
+  &:hover{
+    .op-overlay-icon{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.op-overlay-icon {
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+    z-index: 1;
+    width: 59px;
+    height: 59px;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    background: #FD306E;
+    @extend %transition;
+    i{
+      font-size: 20px;
+    }
+}
+.op-icon{
+  gap: 20px;
+  align-items: center;
+  display: inline-flex;
+}
+.op-trash{
+  i{
+    font-size: 16px;
+    cursor: pointer;
+    color: $error-color;
+  }
+}
+// RangeSlider
+.op-rangeslider {
+  padding: 20px 20px;
+  border-radius: 10px 10px 0 0;
+  flex: 1;
+  background: rgba(5, 18, 55, 0.02);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+.range-slider{
+  width: 100%;
+  margin-right: auto;
+}
+  .noUi-target {
+    background: rgba(5, 18, 55, 0.08);
+    border: 0;
+    border-radius: 1.5px;
+    height: 3px;
+    margin-top: 8px;
+
+  }
+
+  .noUi-handle {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .noUi-connect {
+    background: rgba(5, 18, 55, 0.6);
+  }
+
+  .noUi-handle:after,
+  .noUi-handle:before {
+    content: none;
+  }
+
+  .sv-distanceholder .sv-distance {
+    box-shadow: none;
+  }
+
+  .sv-distanceholder .sv-btnholder .sv-btn {
+    min-width: 60px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .sv-areasizebox {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sv-areasizebox .form-control {
+    background: #ffffff;
+    max-width: 148px;
+  }
+
+  .sv-rangeslider {
+    background: #ffffff;
+    margin: 17px 0 0;
+    padding: 31px 20px;
+    border: 1px solid #eeeeee;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .sv-rangeslider h6 {
+    margin: 0;
+  }
+
+  .sv-rangeslider h6 em {
+    font-style: normal;
+    float: right;
+  }
+
+  .sv-rangeslider h6 span {
+    float: right;
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    right: -7px;
+    background: $theme_color;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .noUi-connects {
+    background: rgba(5, 18, 55, 0.08);
+    border-radius: 3px 0px 0px 3px;
+    height: 3px;
+  }
+
+}
+
+.op-rangeval {
+  @extend %flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 0 6px;
+
+  span {
+    display: inline-block;
+    font: 400 rem(14)/em(20, 14) $body-font-family;
+    color: rgba(5, 18, 55, 0.76);
+  }
+}
+.op-inputrangewrap{
+  padding: 20px;
+  margin: 0;
+  gap: 10px;
+  border-top: 1px solid rgba(5, 18, 55, 0.08);
+  .op-rangeinput{
+    padding: 0;
+  }
+}
+.op-rangecollpase{
+  border: 1px solid rgba(5, 18, 55, 0.08);
+  border-radius: 10px;
+
+}
+.op-toogleicon{
+  transform: rotate(90deg);
+}

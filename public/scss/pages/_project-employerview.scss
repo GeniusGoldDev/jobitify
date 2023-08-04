@@ -1,0 +1,957 @@
+.tk-editbtn{
+    color: #999999;
+    font: 700 rem(16)/em(26,16) $heading_font_family;
+    i{
+        margin-right: 10px;
+    }
+    & + .tk-btn-solid-lg{margin-left: 34px;}
+}
+.tk-prouserslist{
+    margin: 0;
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightest;
+    box-shadow: inset 0px -1px 0px #EEEEEE;
+    padding: 10px !important;
+    li{
+        list-style-type: none;
+        + li{
+            margin-left: 4px;
+        }
+    }
+    a{
+        min-width: 172px;
+        text-align: center;
+        padding: 18px 20px;
+        position: relative;
+        @extend %transition;
+        display: inline-block;
+        border-radius: $radius;
+        border: 2px solid #EEEEEE;
+        h6{margin: 0;}
+        img{
+            width: 100%;
+            max-width: 42px;
+            object-fit: cover;
+            display: inline-block !important;
+            border-radius: 50%;
+            & + h6{
+                margin-top: 6px;
+            }
+        }
+        &.active,
+        &:hover{
+            background: $white;
+            border-color:  #22C55E;
+            &::after{
+                left: 50%;
+                content: '';
+                width: 12px;
+                height: 4px;
+                bottom: -6px;
+                position: absolute;
+                background-repeat: no-repeat;
+                transform: translate(-50%, 0);
+                background-image: url(../../images/Pin.png);  
+            }
+        }
+    }
+    .owl-item.active.center{
+        a{
+            background: $lightest;
+            border-color:  #22C55E;
+        }
+    }
+    .owl-nav.disabled{
+        display: block;
+    }
+}
+.tk-projectstatus{
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    &_users{
+        flex: none;
+        width: 100%;
+        box-shadow: inset -1px 0px 0px $lightest_2;
+        .tk-project-box-two{
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: inset 0px -1px 0px $lightest_2;
+            .tk-template-serach{
+                width: 100%;
+                padding: 20px 0 0;
+            }
+        }
+        & .tk-proposal{
+            .tk-select{
+                &:before{
+                    right: 0;
+                }
+                .form-control{
+                    border: 0;
+                    height: auto;
+                    box-shadow: none;
+                    padding: 0 30px 0 0;
+                }
+            }
+        }
+        & .tk-propposal_title{
+            h5{
+                font-size: rem(18);
+                line-height: em(26,18);
+                span{
+                    font-size: rem(16);
+                    line-height: em(26,16);
+                }
+            }
+        }
+    }
+}
+.tk-approve{
+    display: none;
+}
+#toast-container.tk-notification{
+    .tk-approve{
+        display: block;
+    }
+    > .toast-success{
+        background-image: none !important;
+        padding: 14px;
+        max-width: 450px;
+        width: 100%;    
+        box-shadow: $drop_shadows_light;
+        z-index: 1051;
+        background-color: $white;
+        opacity: 1;
+        border-radius: 0px 0px 10px 10px;
+        margin: 6px 0 0;
+        border: 0;
+        cursor: auto;
+        &:not(a){
+            pointer-events: none;
+        }
+        a {
+            color: $dark;
+            pointer-events:auto;
+        }
+    }
+    .toast-progress{
+        top: 0;
+        bottom: auto;
+        background-color: $bright-green;
+        opacity: 1;
+    }
+}
+.tk-projectsstatus{
+    flex: auto;
+    &_head{
+        padding:30px;
+        display: flex;
+        background: $white;
+    }
+    &_info{
+        display: flex;
+        align-items: center;
+    }
+    &_img{
+        flex: none;
+        border-radius: 50%;
+        margin: 0 16px 0 0;
+        img{
+            width: 100%;
+            max-width: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    &_name{
+        @extend %flex;
+        .tk-project-tag{
+            margin: 0 0 4px;
+        }
+        h5{
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &_budget{
+        flex: none;
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        position: relative;
+        .tk-projectsstatus_option{
+            position: relative;
+            top: 0;
+        }
+        strong{
+            color: $light;
+            text-align: right;
+            font: 600 rem(15)/em(24,15) $body_font_family;
+            span{
+                display: block;
+                color: $theme-color;
+                font: 700 rem(22)/em(30,22) $heading_font_family;
+            }
+        }
+    }
+    &_option{
+        margin-left: 30px;
+        position: relative;
+        & > a{
+            color: $dark;
+            display: block;
+            font-size: rem(34px);
+        }
+    }
+}
+.tk-contract-list{
+    right: 0;
+    margin: 0;
+    width: 100%;
+    display: none;
+    padding: 10px;
+    z-index: 1051;
+    min-width: 349px;
+    position:absolute;
+    background: $white;
+    border-radius: $radius;
+    box-shadow: $drop_shadows_medium;
+    li{
+        list-style-type: none;
+        a{
+            color: $dark;
+            @extend %h6;
+            display: block;
+            cursor: pointer;
+            border-radius: 4px;
+            padding: 14px 20px;
+            @extend %transition;
+            &:hover{
+                background-color: $lightest;
+            }
+        }
+    }
+}
+.tk-counterinfo{
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    &_list{
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        border-top: 1px solid #eee;
+        @extend %flex;
+        list-style: none;
+        li{
+            padding: 20px;
+            @extend %flex;
+            text-align: center;
+            align-items: center;
+            list-style-type: none;
+            flex: max(330px, 100%/3);
+            justify-content: space-between;
+            strong{
+                flex: none;
+                width: 52px;
+                display: block;
+                margin: 0 16px 0 0;
+                line-height: 52px;
+                font-size: rem(20);
+                border-radius: 50%;
+            }
+            span{
+                @extend %p15;
+                width: 100%;
+                color: $light;
+                display: block;
+                font-weight: 600;
+                text-align: left;
+            }
+            h5{margin: 0;}
+            &:not(:last-child){box-shadow: inset -1px 0px 0px $lightest_2;}
+        }
+    }
+    &_escrow{
+        color: #7357FB;
+        background: rgba(115, 87, 251, 0.1);
+    }
+    &_earned{
+        color: #FF6167;
+        background: rgba(255, 97, 103, 0.1);
+    }
+    &_remaining{
+        color: #D9A113;
+        background: rgba(217, 161, 19, 0.1);
+    }
+    &_carried{
+        color: #22C55E;
+        background: rgba(34, 197, 94, 0.1);
+    }
+    &_card{
+        color: #3377FF;
+        background: #D6E4FF;
+    }
+}
+.tk-projectsinfo{
+    padding: 30px;
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    background: #fff;
+    &_title{
+        margin: 0 0 20px;
+        h4,p{
+            margin: 0;
+        }
+    }
+    &_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            line-height: inherit;
+            list-style-type: none;
+            & + li{margin-top: 10px;}
+        }
+    }
+}
+.tk-counterinfo-title{
+    display: flex;
+    align-items: center;
+}
+.tk-popup-content {.tk-statusview_alert{margin-top: 0}}
+.tk-statusview{
+    padding: 19px;
+    @extend %transition;
+    border-radius: $radius;
+    border: 1px solid $lightest_2;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    &_head{
+        display: flex;
+    }
+    &_title{
+        flex: auto;
+        span{
+            display: block;
+            color: $theme-color;
+            margin: 0 0 4px;
+            font: 700 rem(22)/em(30,22) $heading_font_family;
+        }
+        h5{
+            margin: 0 0 4px;
+        }
+        p{
+            margin: 0;
+            max-width: 1060px;
+        }
+        h6{margin-bottom: 0;}
+    }
+    &_btns{
+        display: flex;
+        margin: 20px 0 0;
+        align-items: center;
+        a + a{margin-left: 20px;}
+        p{
+            margin:0 0 0 20px;
+            @extend %p14;
+
+        }
+    }
+    &_alert{
+        padding: 19px;
+        margin: 0 0 0;
+        border-radius: $radius;
+        background: rgba(255, 97, 103, 0.1);
+        border: 1.5px solid rgba(255, 97, 103, 0.2);
+        span{
+            color: #FF6167;
+            display: flex;
+            font: 600 rem(15)/em(24,15) $heading_font_family;
+            i{
+                margin-right: 10px;
+                font-size: rem(18);
+                line-height: inherit;
+            }
+        }
+        p{
+            background: #fff;  
+            margin: 10px 0 0;
+            padding:10px 20px;
+            font-size: rem(14);
+            line-height: em(24,14);
+            border-radius: $radius;
+        }
+    }
+    &_tag{
+        &:not(:hover) .tk-btn-solid{
+            color: $dark;
+            background: $lightest;
+        }
+        > a{
+            margin-top: 20px;
+        }
+    }
+    &:hover{
+        box-shadow: $drop_shadows_lightest;
+        .tk-btnline{
+            border-color: $primary_color_02_base;
+            background-color: $primary_color_02_base;
+        }
+    }
+    .tk-statusview_alert{
+        margin: 15px 0 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.tk-btn{
+    &_decline,
+    &_approve{
+        padding: 9px 22px;
+        display: inline-block;
+        letter-spacing: 0.5px;
+        border-radius: $radius;
+        border: 2px solid $lighter;
+        background-color: transparent;
+        text-align: center;
+        font: 700 rem(16)/em(26,16) $heading_font_family;
+    }
+    &_decline{
+        color: $dark;
+        &:hover{color: $dark;}
+    }
+    &_approve{
+        color: #fff;
+        background: $bright-green;
+        border: 2px solid $bright-green;
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+.tk-popup_title{
+    border-radius: 4px 4px 0px 0px;
+}
+.tk-user-content {
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+        max-width: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.tk-user-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    span {
+        @extend %p15;
+        color: $light;
+    }
+}
+.modal-content{border-radius: $radius;}
+.tk-projectsactivity{
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    .tk-nav-tabs{
+        display: flex;
+        padding: 30px;
+        background: #fff;
+        margin: 20px 0 0;
+        &.m-0{
+            box-shadow: inset 0px 1px 0px #eeeeee;
+        }
+        li{
+            margin: 0;
+            width: 50%;
+            flex: auto;
+            line-height: inherit;
+            button{
+                color: $light;
+                width: 100%;
+                display: flex;
+                padding: 14px 20px;
+                text-align: center;
+                align-items: center;
+                @extend %transition;
+                justify-content: center;
+                background: transparent;
+                box-shadow: inset 0px -1px 0px $lightest_2;
+                font: 600 rem(16)/em(26,16) $heading_font_family;
+                &.active{
+                    color: $charcoal_black;
+                    box-shadow: inset 0px -3px 0px $primary_color_02_base;
+                }
+                i{
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .tk-project-box{
+        padding-top: 0;
+    }
+}
+.tk-proactivity{
+    padding: 0 30px 30px;
+    &_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-height: 568px;
+        li{
+            display: flex;
+            list-style-type: none;
+            & + li{
+                margin-top: 30px;
+            }
+        }
+    }
+    &_img{
+        flex: none;
+        border-radius: 50%;
+        margin: 0 16px 0 0;
+        img{
+            max-width: 38px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    &_info{
+        flex: auto;
+        padding: 6px 0 0;
+        h6{
+            margin: 0 0 10px;
+            span{
+                color: $light;
+                margin-left: 10px;
+                font: 400 rem(15)/em(24,15) $body_font_family;
+            }
+        }
+        p{
+            margin: 0;
+            font-size: rem(15);
+            line-height: em(24,15);
+        }
+    }
+    &_file{
+        display: flex;
+        margin: 10px 0 0;
+        align-items: center;
+        background: $lightest;
+        border-radius: $radius;
+        padding: 10px 20px 10px 10px;
+        font-size: rem(14);
+        line-height: em(24,14);
+        gap: 10px;
+        a{
+            margin-left: auto;
+        }
+        img{
+            width: 21px;
+            height: 26px;
+            margin-right: 0;
+        }
+    }
+}
+.tk-uploadfile-doc{
+    box-shadow: inset 0px 1px 0px $lightest_2;
+    padding: 30px;
+    .tk-upload-resume{
+        padding: 19px;
+    }
+    .tk-upload-list li span{
+        color: $dark;
+    }
+    .tk-form-btn{
+        gap: 10px;
+        justify-content: flex-end;
+        span{
+            font-size: rem(14);
+            line-height: em(24,14);
+            strong{font-weight: 600;}
+            & + a{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.tk-proinvoices{
+    padding: 0 30px 30px;
+    &_title{
+        display: flex;
+        margin: 0 0 20px;
+        align-items: center;
+        h5{
+            margin: 0;
+        }
+    }
+    &_sorting{
+        flex: none;
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        & em{
+            display: block;
+            white-space: nowrap;
+            font: normal 700 rem(16)/em(26,16) $heading_font_family;
+            & + .tk-select{
+                margin-left: 20px;
+            }
+        }
+    }
+    &_table{
+        margin: 0;
+        thead{
+            & tr {
+                background: #F7F7F7;
+                & th{
+                    &:first-child{
+                        padding-left: 20px;
+                    }
+                    text-align: left;
+                    padding: 10px 5px;
+                    border: 0 !important;
+                    font: 700 rem(16)/em(26,16) $heading_font_family;
+                    i {
+                        color: #999999;
+                        font-size: 14px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        &>:not(:first-child){
+            border: 0;
+        }
+        tbody{
+            & tr{
+                & ~ tr {
+                    border-top: 1px solid $lightest_2;;
+                }
+                &:first-child td{
+                    border: 0;
+                }
+                & td{
+                    &:first-child{
+                        padding-left:20px;
+                    }
+                    border: 0;
+                    @extend %p15;
+                    text-align: left;
+                    padding: 13px 5px;
+                    vertical-align: middle;
+                    a{font-weight: 600;}
+                    p{
+                        margin: 0;
+                        overflow: hidden;
+                        max-width: 280px;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+    .tk-pagination{
+        margin: 20px 0 0;
+    }
+}
+.tk-declinereason{
+    .tk-popup-terms button{margin: 0;}
+}
+// Popup style
+.tk-cancelcontract{
+    .tk-themeform{
+        .tk-btnarea{
+            .tk-btn-solid-lg{width: 100%;}
+        }
+    }
+}
+.tk-pricerequest-popup{
+    .tk-projectsstatus_head{
+        padding: 0;
+        margin: 0 0 20px;
+    }
+    .tk-themeform{
+        .tk-btnarea{
+            .tk-btn-solid-lg{width: 100%;}
+        }
+    }
+}
+.tk-raisedispute-popup{
+    .tk-themeform{
+        .tk-btnarea{
+            .tk-btn-solid-lg{width: 100%;}
+        }
+    }
+}
+.tk-projectdetail-sidebar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform: translateX(100%);
+    z-index: 1051;
+    @extend %transition;
+    .mCSB_inside > .mCSB_container {
+        margin-right: 0;
+    }
+}
+.tk-themeform__wrap{
+    align-items: flex-start;
+    .tk-statusview_title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{margin-bottom: 0;}
+    }
+}
+.tk-project-box-footer{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    button{
+        margin: 0 auto;
+    }
+}
+.tk-sidebar-close{
+    font-size: 30px;
+    display: block;
+    color: $dark;
+    &:hover{
+        color: $dark;
+    }
+}
+.tk-sidebar-backgound{
+    position: relative;
+    @extend %transition;
+    &:before{
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+}
+.tk-complete-process{
+    border: 1.5px solid $lightest_2;
+    border-radius: $radius;
+    box-shadow: $drop_shadows_lightest;
+    padding:28px 30px;
+    margin-bottom: 20px;
+    &_head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    p{
+        margin-bottom: 0;
+        @extend %p14;
+        text-align: center;
+    }
+}
+.tk-complete-title{
+    strong{
+        width: 62px;
+        display: grid;
+        place-items: center;
+        height: 62px;
+        font-size: 1.375rem;
+        border-radius: 50%;
+    }
+}
+.tk-complete-title{
+    display: flex;
+    align-items: center;
+    h5{
+        margin-bottom: 0;
+
+        span{
+            display: block;
+            @extend %p13;
+            font-weight: 600;
+            color: $light;
+        }
+    }
+}
+.tk-counterinfo_carried{
+    margin: 0 10px 0 0;
+}
+.tk-counterinfo_card{
+    margin: 0 0 0 10px;
+}
+.text-right{
+    text-align: right;
+}
+.tk-completestatus_budget{
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: flex-end;
+    strong{
+        color: $light;
+        text-align: right;
+        font: 600 rem(15)/em(24,15) $body_font_family;
+    };
+    .tk-featureRating{
+        margin-top: 0;
+        .tk-featureRating__stars{
+            width: 150px;
+        }
+        span{
+            height: 26px;
+            line-height: 26px;
+            width: 70%;
+            &::after,
+            &::before{
+                font-size: 22px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+.tk-btnarea-two{
+    display: flex;
+    align-items: center;
+    button{
+        width: 100%;
+        max-width: 278px;
+        + button{
+            margin-left: 20px;
+        }
+    }
+}
+.tk-nav-tabs{
+    border: 0;
+    width: 100%;
+    li{
+        flex:max(443px, 100%/3);
+        + li{
+            margin-left: 18px;
+        }
+    }
+}
+.tk-proinvoices_table thead,
+.tk-proinvoices_table tbody tr{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.tk-proinvoices_table tbody{
+    display: block;
+    max-height: 760px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.tk-proinvoices_table .mCSB_inside > .mCSB_container{
+    margin-right: 0;
+}
+// slider 
+.tk-prouserslist.owl-carousel{
+    .owl-nav{
+        button.owl-next,
+        button.owl-prev{
+            top: 50%;
+            width: 35px;
+            height: 114px;
+            position: absolute;
+            background-color: $lightest;
+            transform: translate(0,-50%);
+            @extend %transition;
+            span{
+                font-size: 24px;
+                color: #999999;
+                @extend %transition;
+            }
+            &:hover,
+            &:active{
+                background-color: $primary_color_02_base;
+                span{
+                    color: $dark;
+                }
+            }
+        }
+        button.owl-prev{
+            left: 10px;
+        }
+        button.owl-next{
+            right: 10px;
+        }
+    }
+
+}
+.tk-status-point{
+    position: relative;
+    &::after{
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        left: 10px;
+        top: 10px;
+        position: absolute;
+        background-color: $light;
+    }
+}
+.tk-ongoing-pointer{
+    &::after{
+        background-color: $orange;
+    }
+}
+.tk-dispute-pointer{
+    &::after{
+        background-color: #64748B;
+    }
+}
+.tk-success-pointer{
+    &::after{
+        background-color: $bright-green;
+    }
+}
+.tk-awaiting-pointer{
+    &::after{
+        background-color: #64748B;
+    }
+}
+.tk-timecard-content{
+    width: 100%;
+}
+.tk-timecardwraper{
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: $white;
+}
+
+.tk-declinepopup{
+    .tb-form-btn{
+        margin-top: 20px;
+        .tb-btn{width: 100%;}
+    }
+}
+.tk-proposal-warapper.splide{
+    .splide__track {
+        background-color: #F7F7F7;
+      }
+}
+.tk-dbprojectwrap{
+    .tk-project-wrapper.tk-timecardwraper {
+        .tk-counterinfo.mt-4{
+            margin-top: 0 !important;
+        }
+    }
+}

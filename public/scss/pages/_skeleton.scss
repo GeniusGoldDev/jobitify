@@ -1,0 +1,415 @@
+ 
+.tk-skeleton{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.tk-services-skeleton{
+    width: 100%;
+    padding: 0;
+    display:flex;
+    flex-wrap: wrap;
+    margin: -12px;
+    justify-content: center;
+    li{
+        width: 33.33%;
+        padding: 12px;
+        list-style: none;
+        max-width: 306px;
+        figure{
+            margin: 0;
+            width: 100%;
+            height: 190px;
+            border-radius: 10px;
+        }
+         .tk-content-area{
+            margin-top: 15px;
+             > span{
+                 height: 16px;
+                 display: block;
+                + span{
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+}
+.tk-skeletonarea{
+    background: $white;
+    border-radius: 10px;
+    padding: 9px 9px 27px 9px;
+    border: 1px solid $border-color;  
+}
+.tk-skele{
+    animation: tk-skeleton-effect 1.5s infinite ease-out;
+    background: $skeleton-color;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(242, 242, 242, 0.5)), color-stop(18%, rgba(242, 242, 242, 0.4)), color-stop(33%, rgba(242, 242, 242, 0.3)));
+    background: linear-gradient(to right, rgba(242, 242, 242, 1) 8%, rgba(242, 242, 242, 0.9) 18%, rgba(242, 242, 242, 0.8) 33%);
+    background-size: 800px 100px;
+    color: transparent;
+    animation: tk-skeleton-animation 1.5s infinite ease-out;
+}
+.tk-skeleton-title{
+    width: 100%;
+    max-width: 68%;
+}
+.tk-skeleton-description{
+    width: 100%;
+}
+.tk-skeleton-para{
+    width: 100%;
+    max-width: 61%;
+}
+.tk-skeleton-user{
+    gap: 15px;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    & + .tk-skeleton-user{
+        margin-top: 15px;
+    }
+    span{
+        display: block;
+        height: 16px;
+    }
+    ~ span{
+        margin-top: 15px;
+    }
+}
+.tk-user{
+    width: 100%;
+    max-width: 255px;
+}
+.tk-user-icon{
+    width: 100%;
+    max-width: 5.599%;
+}
+.tk-services-skeletonvtwo{
+    li{
+        width: 100%;
+        max-width: 416px;
+         figure{
+            margin: 0;
+            width: 396px;
+            height: 200px;
+        }
+    }
+    .tk-skeletonarea{
+        padding: 9px 9px 30px 9px;
+    }
+}
+.tk-skeleton-paravtwo{
+    width: 100%;
+    max-width: 61.12%;
+}
+.tk-frame{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 966px;
+    flex-direction: column;
+    transition: all 2s ease-out;
+    li{
+        width: 100%;
+        list-style: none;
+        .tk-frame-items{
+            padding: 30px;
+            border-radius: 10px;
+            span{
+                display: block;
+                height: 16px;
+            }
+            & + .tk-frame-items{
+                padding: 39px 30px;
+            }
+            &:hover{
+                background: $lightest;
+            }
+        }
+        .tk-skeleton-title {
+            width: 100%;
+            max-width: 21.42%;
+        }
+    }
+}
+.tk-reviews{
+    width: 100%;
+    max-width: 81%;
+}
+.tk-frame-list{
+    gap: 10px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    .tk-skeleton-user{
+        width: 100%;
+        margin-top: 0;
+        max-width: 17.7%;
+    }
+    .tk-user-icon{
+        width: 100%;
+        max-width: 10%;
+    }
+    ~ span{
+        margin-top: 20px;
+    }
+}
+.tk-frame-para{
+    width: 100%;
+    max-width: 56.41%;
+}
+.tk-review{
+    width: 100%;
+    max-width: 47.5%;
+}
+.tk-imgarea{
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    max-width: 36.45%;
+    align-items: center;
+    figure{
+        margin: 0;
+        flex: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    ~ span{
+        margin-top: 20px;
+    }
+}
+.tk-img-deatil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.tk-title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    ~ span{
+        margin-top: 15px;
+    }
+}
+.tk-skeleton-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            list-style-type: none;
+        }
+        .tk-skeletonfull{
+            width: 100%;
+        }
+        .tk-skeletonhalf{
+            width: 60%;
+            margin-top: 12px;
+            height: 17px;
+        }
+    }
+}
+@keyframes tk-skeleton-animation {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+.tk-paraskelton{
+    margin: 30px 0 0 0;
+    .tk-wskeletonfull{
+        margin: 19px 0 0;
+    }
+}
+.tk-skeltontop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tk-section-skeleton{
+    .tk-wskeletonfull{
+        width: 97% !important;
+        height: 24px !important;
+    }
+
+    .tk-lightest_bg{
+        background-color: #F7F7F7;
+    }
+    .tk-box{
+        max-width: 964px;
+        margin: 0 auto;
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 4px;
+        padding: 30px;
+        position: relative;
+        .fixposition{
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            .tk-skeletontwo{
+                height: 21px;
+            }
+        }
+    }
+    .tk-line {
+        background: rgba(130, 130, 130, 0.2);
+        background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(130, 130, 130, 0.2)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, rgba(130, 130, 130, 0.2)));
+        background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+        background-size: 800px 100px;
+        animation: tk-skeleton-effect 1.5s infinite ease-out;
+        color: transparent;
+    }
+    
+    .tk-skeleton-right{
+       flex:1;
+    }
+    .tk-skeleton-left{
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .tk-box + .tk-box{
+        margin-top: 20px;
+    }
+    
+    .tk-right-sk-end .tk-line:nth-child(2){
+        margin-top: 10px;
+    }
+    .tk-img-area{
+        border-radius: 4px;
+        max-width: 89px;
+        width: 100%;
+        height: 89px;
+        margin: 0;
+    }
+    .tk-skeletontwo{
+    width: 113.66px;
+    height: 15px;
+    }
+    .tk-right-sk .tk-skeletonthree{
+        max-width: 300px;
+        height: 23px;
+    }
+    .tk-skeletonfour{width: 101.59px;
+    height: 19px;
+    }
+    .tk-righ-sk-last .tk-skeletonfive{
+        width: 48.74px;
+        height: 17px;
+    }
+    .tk-skeletonsix{
+        width: 100.73px;
+        height: 17px;
+    }
+    .tk-skeletonseven{
+        width: 96.81px;
+    height: 12.07px;
+    margin-left: auto;
+    }
+    .tk-skeletonten{
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+    }
+    .tk-skeletoneight{
+        width: auto;
+        height: 22px;
+    }
+    .tk-righ-sk-last{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .tk-right-sk{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+
+    }
+    .tk-right-sk-right{
+        width: 100%;
+    }
+    .tk-right-sk-right ul li{
+        margin-bottom: 15px;
+    }
+    
+    .tk-right-sk-right ul li{
+        list-style-type: none;
+    }
+    .tk-right-sk-right ul{
+        padding: 0;
+    }
+    @keyframes tk-skeleton-effect {
+       0% {
+           background-position: -468px 0;
+       }
+        100% {
+           background-position: 468px 0;
+       }
+    }
+    .tk-skeletonfull{
+        margin: 12px 0 0;
+        width: 80%;
+        height: 17px;
+    }
+}
+.tk-skeletonbtn{
+    height: 34px;
+    margin-top: 10px;
+}
+.tk-skelton-wrapper{
+    width: 100%;
+
+    .tk-services-skeleton{
+        li{
+            width: 25%;
+            max-width: initial;
+
+            figure{
+                width: 100%;
+                max-height: 186px;
+            }
+        }
+    }
+}
+.tk-skeltonprice{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.skeltonbtn{
+    .tk-line{
+        width: 125px;
+        height: 40px;
+        margin: 10px 0 0;
+    }
+}
+.tk-skeleton-divider{
+    height: 40px !important;
+    width: 2px;
+    background: linear-gradient(to right, rgba(130, 130, 130, 0.2) 8%, rgba(130, 130, 130, 0.3) 18%, rgba(130, 130, 130, 0.2) 33%);
+}
+.tk-righ-sk-tags{
+    display: flex;
+    gap: 10px;
+    margin: 40px 0 0;
+    .tk-skeletonsix {
+        width: 50px;
+        height: 26px;
+    }
+    .tk-skeletonfour {
+        width: 101px;
+        height: 26px;
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "larabuild/optionbuilder",
+    "description": "LaraBuild - Options/Settings builder allows the developers to generate a bunch of options/settings for their projects with a few clicks",
+    "version": "1.1",
+    "autoload": {
+        "psr-4": {
+            "Larabuild\\Optionbuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amentotech",
+            "email": "info@amentotech.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "mews/purifier": "^3.3"
+    },
+     "extra": {
+    "laravel": {
+        "providers": [
+            "Larabuild\\Optionbuilder\\ServiceProvider"
+        ],
+        "aliases": {
+            "Settings": "Larabuild\\Optionbuilder\\Facade\\Settings"
+        }
+        }
+    }
+}

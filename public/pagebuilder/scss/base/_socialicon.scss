@@ -1,0 +1,154 @@
+.tk-socialmedia{
+    @extend %flex;
+    font-size: 13px;
+    justify-content: center;
+    li{
+        &:nth-last-child(n+2){margin-right: 10px;} 
+    }
+    a{
+        display: inline-block;
+        @extend %transition;
+    }
+}
+.tk-facebook > i,
+.tk-facebook > a {color: #3b5999}
+.tk-facebook-messenger > a,
+.tk-facebook-messenger > i {color: #0084ff}
+.tk-twitter> a,
+.tk-twitter > i {color: #55acee}
+.tk-twitch> a,
+.tk-twitch > i {color: #9147ff}
+.tk-linkedin> a,
+.tk-linkedin > i {color: #0077b5}
+.tk-skype> a,
+.tk-skype > i {color: #00aff0}
+.tk-dropbox> a,
+.tk-dropbox > i {color: #007ee5}
+.tk-vimeo> a,
+.tk-vimeo > i {color: #1ab7ea}
+.tk-tumblr > i,
+.tk-tumblr> a {color: #34465d}
+.tk-yahoo> a,
+.tk-yahoo >i {color: #410093}
+.tk-googleplus> a,
+.tk-googleplus > i,
+.tk-google> a,
+.tk-google > i{color: #dd4b39}
+.tk-pinterestp> a,
+.tk-pinterestp > i {color: #bd081c}
+.tk-youtube> a,
+.tk-youtube > i {color: #cd201f}
+.tk-stumbleupon> a,
+.tk-stumbleupon > i {color: #eb4924}
+.tk-reddit> a,
+.tk-reddit > i {color: #ff5700}
+.tk-quora> a,
+.tk-quora > i {color: #b92b27}
+.tk-yelp> a,
+.tk-yelp > i {color: #af0606}
+.tk-soundcloud> a,
+.tk-soundcloud > i {color: #f30}
+.tk-whatsapp> a,
+.tk-whatsapp > i {color: #25d366}
+.tk-wechat> a,
+.tk-wechat > i {color: #09b83e}
+.tk-instagram> a,
+.tk-instagram > i {color: #e4405f}
+.tk-dribbble> a,
+.tk-dribbble > i {color: #ea4c89}
+.tk-flickr> a,
+.tk-flickr > i {color: #ff0084}
+.tk-rss> a,
+.tk-rss > i {color: #f60}
+.tk-behance> a,
+.tk-behance > i {color: #131418}
+.tk-foursquare> a,
+.tk-foursquare > i {color: #f94877}
+
+.tk-facebookv2 {
+    i{
+        @extend %transition;
+    }
+    &:hover{
+        i{
+            color: #1877f2;
+        }
+    }
+} 
+.tk-twitterv2{
+    i{
+        @extend %transition;
+    }
+    &:hover{
+        i{
+            color: rgb(29, 155, 240);
+        }
+    }
+} 
+.tk-twitchv2{
+    i{
+        @extend %transition;
+    }
+    &:hover{
+        i{
+            color: #9147ff;
+        }
+    }
+} 
+.tk-linkedinv2{
+    i{
+        @extend %transition;
+        
+    }
+    &:hover{
+        
+        i{
+            color: #0a66c2;
+        }
+    }
+}
+
+.tk-dribbblev2{
+    i{
+        @extend %transition;
+        
+    }
+    &:hover{
+        i{
+            color: #ea4c89;
+        }
+    }
+} 
+.tk-youtubev2 {
+    i{
+        @extend %transition;
+        
+    }
+    &:hover{
+        i{
+            color: #cd201f;
+        }
+    }
+} 
+.tk-behancev2 {
+    i{
+        @extend %transition;
+        
+    }
+    &:hover{
+        i{
+            color: #131418
+        }
+    }
+}
+.tk-vimeov2{
+    i{ 
+        @extend %transition;
+    }
+    &:hover{
+        
+        i{
+            color: #1ab7ea;
+        }
+    }
+} 

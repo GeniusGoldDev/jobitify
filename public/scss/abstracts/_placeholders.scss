@@ -1,0 +1,148 @@
+%body-font{
+    color: $secondary-color;
+    font: 400 rem(14)/em(24,14) $body-font-family;
+}
+%transition{
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+%transitiontwo{
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+%flex{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+%themeboxshadow{
+    -webkit-box-shadow: 0 6px 20px 0 rgba(0,0,0,0.1);
+        box-shadow: 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+%border-radius4{
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+%readmore-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    font: 600 15px $heading-font-family;
+    color: $heading-font-color;
+    padding: 10px;
+    margin-top: 20px;
+}
+%tb-featureRating__stars{
+    position: relative;
+    width: 72px;
+    height: 16px;
+    line-height: 16px;
+}
+%tb-featureRating{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: 'Font Awesome 5 Free';
+}
+%tb-featureRating__starsIcon{
+    color: #fddb5b;
+    content: '\f005 \f005 \f005 \f005 \f005';
+}
+%tb-bottomstyle{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(255, 91, 0, 0.7) 0%, rgba(255, 91, 0, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 91, 0, 0.7) 0%, rgba(255, 91, 0, 0) 100%);
+    background: linear-gradient(to bottom, rgba(255, 91, 0, 0.7) 0%, rgba(255, 91, 0, 0) 100%);
+    width: 772px;
+    height: 772px;
+    z-index: 11;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+}
+
+
+%border{border: 1px solid $lightest_2;}
+%border-top{border-top: 1px solid $lightest_2;}
+%border-bottom{border-bottom: 1px solid $lightest_2;}
+%border-left{border-left: 1px solid $lightest_2;}
+%border-right{border-right: 1px solid $lightest_2;}
+
+%h1{font: 700 rem(52)/em(58,52) $heading_font_family;}
+%h2{font: 700 rem(36)/em(46,36) $heading_font_family;}
+%h3{font: 700 rem(28)/em(38,28) $heading_font_family;}
+%h4{font: 700 rem(22)/em(30,22) $heading_font_family;}
+%h5{font: 700 rem(18)/em(26,18) $heading_font_family;}
+%h6{font: 700 rem(16)/em(26,16) $heading_font_family;}
+
+%p20{font: 400 rem(20)/em(34,20) $body_font_family;}
+%p18{font: 400 rem(18)/em(30,18) $body_font_family;}
+%p16{font: 400 rem(16)/em(26,16) $body_font_family;}
+%p15{font: 400 rem(15)/em(24,15) $body_font_family;}
+%p14{font: 400 rem(14)/em(24,14) $body_font_family;}
+%p13{font: 400 rem(13)/em(22,13) $body_font_family;}
+
+
+%readmore-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 100%;
+    font: 600 14px $heading_font_family;
+    color: $dark;
+    padding: 10px;
+    margin-top: 20px;
+}
+%label_title{
+    font: 700 rem(12)/em(24,12) $heading_font_family;
+    color: $dark;
+    letter-spacing: 0.5px;
+}
+%tiny_title{
+    font: 500 rem(14)/em(24,14) $heading_font_family;
+    letter-spacing: 0.5px;
+    color: $dark;
+}
+%other_title{
+    font: 500 rem(13)/em(23,13) $heading_font_family;
+    letter-spacing: 0.5px;
+    color: $dark;
+}
+%label_title-two{font: 600 rem(14)/em(22,14) $heading_font_family;}
+%tk-featureRating__stars{
+    position: relative;
+    width: 77px;
+    height: 16px;
+    line-height: 16px;
+}
+%tk-featureRating{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: 'Font Awesome 5 Free';
+}
+%tk-featureRating__starsIcon{
+    color: #fddb5b;
+    content: '\f005 \f005 \f005 \f005 \f005';
+}

@@ -1,0 +1,566 @@
+// Popup Style
+.modal-dialog{
+	max-width: 600px;
+}
+.modal .modal-body{
+	padding:30px;
+}
+.tb-popuptitle{
+	display: flex;
+	align-items: center;
+	padding: 20px 30px;
+	background: #F7F7F7;
+	border-radius: 4px;
+	& h4{
+		margin: 0;
+		font-size: rem(18);
+		letter-spacing: 0.5px;
+		line-height: em(26px,18px);
+	}
+	.close{
+		margin-left: auto;
+		font-size: 20px;
+		text-shadow: none;
+		opacity: 1 !important;
+		@extend %transition;
+		&:hover{color: $secondary-color;}
+		& i{
+			display: block;
+			color: $dark;
+			font-size: 24px;
+			@extend %transition;
+		}
+	}
+}
+.modal .modal-content{
+	border: 0;
+	border-radius:$radius;
+}
+// Login Popup Style
+.tb-formlogin{
+	.form-group-title{
+		flex: 0 0 140px;
+		margin-bottom: 0;
+	}
+	.form-group-half,
+	.form-group{
+		margin: 0;
+		display: flex;
+		align-items:center;
+	}
+}
+.tb-form-btn{
+	margin:10px 0 0;
+	.tb-btn{margin-left: auto;}
+}
+.tb-optionsbar {
+    float: left;
+    width: 100%;
+    margin: 25px 0 28px;
+    text-align: center;
+    font: 700 rem(14px)/em(14,14) $heading-font-family;
+    position: relative;
+    	& em {
+		z-index: 9;
+		color: #999;
+		display: block;
+		margin: 0 auto;
+		max-width: 50px;
+		background: #fff;
+		font-style: normal;
+		position: relative;
+	}
+	&:after {
+	    left: 0;
+	    top: 50%;
+	    width: 100%;
+	    content: '';
+	    height: 1px;
+	    background: #eee;
+	    position: absolute;
+	}
+}
+.tb-loginicon {
+    width: 100%;
+    @extend %flex;
+	align-items: center;
+	.form-group-title{
+		min-width: 140px;
+		width: auto;
+		margin: 0;
+		padding-right:20px;
+	}
+    & ul {
+		flex: auto;
+        width: auto;
+        margin: -5px;
+        list-style: none;
+        overflow: hidden;
+        @extend %flex;
+        li {
+            width: 50%;
+            padding: 5px;
+            list-style-type: none;
+        }
+    }
+    & a {
+        color: #fff;
+        display: block;
+        border-radius: $radius;
+    	padding: 0 20px 0 0;
+        font: 600 rem(14px)/em(40,14) $heading-font-family;
+        & span {
+            min-width: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 15px;
+            display: inline-block;
+            background: rgba(0,0,0,0.2);
+        }
+    }
+}
+.tb-facebookbox {
+    background: #3b5999;
+}
+.tb-googlebox {
+    background: #dd4b39;
+}
+.tb-loginfooterinfo{
+	width: 100%;
+    border: 0;
+    background: #fcfcfc;
+    border-radius: 0 0 6px 6px;
+    padding: 0;
+    border-top:1px solid $border-colorv2;
+    & a{
+		width: 50%;
+		display: inline-block;
+		margin: 0 !important;
+		padding: 10px 20px;
+		text-align: center;
+		line-height: 30px;
+		& + a{border-left: 1px solid $border-colorv2;}
+		& em{
+			font-style:normal;
+			color: #999;
+		}
+    }
+}
+.tb-eyeicon{
+	& input{
+		padding-right: 50px;
+		flex: auto;
+		outline: none;
+	}
+	& > a {
+	    right: 25px;
+	    color: #999;
+	    position: absolute;
+	    & i {
+	    	position: relative;
+	    	&:after {
+			    content: "";
+			    position: absolute;
+			    background-color: #999;
+			    border-right: 1px solid #fff;
+			    right: 7px;
+			    bottom: 0;
+			    width: 2px;
+			    height: 100%;
+			    transform: rotate(45deg);
+			}
+	    }
+	    &.tb-showpassword{
+	    	i:after{display: none;}
+	    }
+	}
+}
+.tb-joinpopup .tb-loginfooterinfo a{
+	width: 100%;
+}
+.tb-popupbodytitle{
+	margin-top: -6px;
+	padding-bottom: 14px;
+	~ .tb-popupbodytitle{margin-top: 24px;}
+	h5{margin-bottom: 0;}
+	p{
+		font-size: rem(16);
+		line-height: em(26,16);
+		margin: 5px 0 0;
+	}
+}
+.tb-popupbtnarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+	.tb-checkterm{
+		padding-right: 20px;
+	}
+	label{
+		font: 400 rem(14) $body-font-family;
+	}
+    .tb-checkbox {
+        span {
+			color: #999;
+			@extend %p16;
+		}
+    }
+}
+.tb-limit{
+	position: relative;
+	width: 100%;
+	> .form-control{
+		padding-right: 138px;
+	}
+	> em{
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		font-size: rem(13);
+		color: #ff7062;
+		transform: translate(-10px, 5px);
+	}
+}
+.tb-payoutmethodpopup{
+	.tb-radioholder{padding: 0 !important;}
+	.tb-radio{
+		width: 100%;
+		.payoutlists{
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
+}
+.tb-checkterm{
+	.tb-checkbox{
+		label{
+		   display: inherit;
+	   }
+	}
+}
+.am-registration-type .tb-radiobox,
+.tb-loginto{
+	width: 100%;
+	input[type="radio"]:checked{
+		& + label{
+			color: #fff;
+			background:$theme-color;
+		}
+	}
+	label{
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		border-radius:$radius;
+		color: #676767;
+		line-height: em(30,15);
+		background:#f7f7f7;
+		text-align: center;
+		span{
+			display: inline-flex;
+			& i{
+    			margin-right: 10px;
+				font-size: rem(24);
+			}
+		}
+		&:before,
+		&:after{display: none;}
+	}
+}
+.am-registration-type{
+	.form-group-title + .tb-radiobox{
+		margin-right: 5px;
+		& + .tb-radiobox{margin-left: 5px;}
+	}
+	.tb-radiobox{
+		input[type="radio"]{
+			display: none;
+			& + label{
+				margin: 0;
+				cursor: pointer;
+				font-weight: 700;
+			}
+		}
+	}
+}
+.tb-titleinput{
+	flex: 0 0 136px;
+	margin-bottom: 10px;
+	color: $heading-font-color;
+	align-self: center;
+    font: 700 1rem/1.625em $heading-font-family;
+	&.tb-titleinputv2{
+		align-self: flex-start;
+		padding-top: 24px;
+	}
+}
+.tb-hiretaskpopup{
+	.modal-dialog{max-width: 790px;}
+	.tb-popuptitle{
+		padding-bottom: 21px;
+		h4{
+			font-size: rem(18);
+			line-height: em(26,18);
+		}
+	}
+	.tb-startingprice{
+		flex: none;
+		padding-left: 70px;
+		margin-left: auto;
+		i{
+			font-weight: 700;
+			color: #333;
+			em{
+				font-size: 12px;
+				color: #999;
+				padding-right: 3px;
+			}
+		}
+		span{
+			font-size: rem(20);
+		}
+	}
+	.tb-checkbox label:before,
+	.tb-checkbox label:after{
+		top: -2px;
+	}
+}
+.tb-form-btn__content{
+	display: flex;
+	margin-left: auto;
+}
+.tb-popup{
+	.tb-sectiontitle{
+		h2{
+			font-size: rem(28);
+			line-height: em(36,28);
+			font-weight: 700;
+			&:after{content: none;}
+		}
+		p{
+			color: #676767;
+			margin-top: 11px;
+		}
+	}
+	.tb-themeformpopup{
+		.form-group-wrap{width: 100%;}
+	}
+	.tb-themeform{padding-top: 20px;}
+}
+.tb-btn.tb-signup-now{width: 100%;}
+.tk-popup-terms{
+	width: 100%;
+	p{
+		margin-bottom: 0;
+	}
+	.tk-btn-solid-lg{
+		width: 100%;
+		margin-top: 20px;
+	}
+	.wpcf7-spinner{
+		display: none;
+		margin: 10px;
+	}
+}
+form.submitting .wpcf7-spinner{
+	display: block;
+}
+.tb-addonspopup{
+	.tb-dhb-mainheading__rightarea{
+		em{
+			flex: auto;
+		}
+	}
+}
+.tb-submitpopup{
+	.tk-themeform__wrap{
+		margin: -10px;
+	}
+	.wpcf7 form .wpcf7-response-output{
+		margin: 20px 0 0;
+		padding:10px 20px;
+	}
+	& .wpcf7-not-valid-tip{
+		font-size: 14px;
+    	margin: 10px 0 0;
+	}
+	.tk-popup-terms{
+		padding:10px;
+	}
+	.tk-form-checkbox{
+		margin: 10px 0;
+		span{
+			color: #999;
+			display: block;
+		}
+		.wpcf7-list-item{margin: 0;}
+	}
+}
+// working hour popup
+.tk-popup_title{
+	@extend %flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: $lightest;
+    > a{display: inline-flex;}
+    h4,
+    h5{
+        margin: 0;
+    }
+    i{
+        color: $dark;
+        font-size: rem(24);
+        font-weight: 500;
+    }
+}
+.tk-termscondition{
+	@extend %flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    gap: 10px;
+	.tk-checkterm{
+		@extend %flex;
+		align-items: center;
+		> a{
+			padding-left: 5px;
+			font: 400 0.875rem $heading-font-family;
+		}
+	}
+	.tk-form-checkbox{
+		label{
+			margin-bottom: 0;
+			line-height: 15px;
+
+			span{
+				display: block;
+				padding-left: 10px;
+				align-self: center;
+				font: 400 0.875rem "Urbanist", sans-serif;
+			}
+		}
+	}
+}
+.tk-popup-content{
+    .form-group{
+        &.tk-popup-terms{
+            flex-wrap: wrap;
+        }
+    }
+}
+.tk-popup-terms{
+    width: 100%;
+    .tk-form-checkbox{
+        padding: 10px 0 20px;
+    }
+    button{
+        margin-top:10px;
+    }
+    .tk-btn-solid-lg{
+        width: 100%;
+    }
+}
+.tk-payoutclicks{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	li{
+		list-style-type: none;
+		& ~ li {
+			margin: 15px 0 0;
+		}
+		input {
+			display: none;
+		}
+		.tk-label{
+			display: flex;
+			align-items: center;
+			border-radius: 4px;
+			padding: 10px 20px;
+			background-color: #fcfcfc;
+			border: 1px solid #eeeeee;
+			margin: 0;
+			width: 100%;
+		}
+	}
+}
+.wt-formpauoyt{
+	display: flex;
+    align-items: center;
+    border-radius: 4px;
+	padding: 10px 20px 10px 10px;
+	background-color: #fcfcfc;
+    border: 1px solid #eeeeee;
+		[type="radio"]:checked,
+		[type="radio"]:not(:checked) {
+			position: absolute;
+			left: -9999px;
+		}
+		[type="radio"]:checked + label,
+		[type="radio"]:not(:checked) + label
+		{
+			position: relative;
+			padding-left: 28px;
+			cursor: pointer;
+			line-height: 20px;
+			color: #666;
+			margin: 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			img{
+				width: 20px;
+				margin:  0 10px 0 0;
+			}
+		}
+		[type="radio"]:checked + label:before,
+		[type="radio"]:not(:checked) + label:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 18px;
+			height: 18px;
+			border: 1px solid #ddd;
+			border-radius: 100%;
+			background: #fff;
+		}
+		[type="radio"]:checked + label:after,
+		[type="radio"]:not(:checked) + label:after {
+			content: '';
+			width: 12px;
+			height: 12px;
+			background: #22C55E;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			border-radius: 100%;
+			-webkit-transition: all 0.2s ease;
+			transition: all 0.2s ease;
+		}
+		[type="radio"]:not(:checked) + label:after {
+			opacity: 0;
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		[type="radio"]:checked + label:after {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+}
+.tk-popup-terms.form-group {
+	.tk-form-checkbox{
+		flex-wrap: nowrap;
+	}
+}
+.modal.fade{
+	&.show{
+		.modal-dialog {transform: scale(1);}
+	}
+	.modal-dialog  {
+		transform: scale(0);
+	}
+}

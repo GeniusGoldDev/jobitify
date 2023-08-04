@@ -1,0 +1,268 @@
+// Popup Style
+.tb-joinpopup,
+.tb-loginpopup{
+	.modal-dialog{
+		max-width: 600px;
+	}
+	.modal-body{
+		padding:30px;
+	}
+}
+.tb-addonpopup{
+	.modal-body{
+		padding:30px;
+	}
+	.modal-lg{
+		max-width: 600px;
+	}
+}
+.tb-popuptitle {
+	@extend %flex;
+    padding: 20px 30px;
+    align-items: center;
+	background-color: $lightest;
+	border-radius: 4px 4px 0 0;
+    & h4,h5 {
+        margin: 0;
+		letter-spacing: 0.5px;
+		font: 700 rem(18)/em(26,18) $heading_font_family;
+    }
+    .close {
+        color: #0A0F26;
+        margin-left: auto;
+        font-size: 24px;
+		line-height: 24px;
+        text-shadow: none;
+        opacity: 1 !important;
+        @extend %transition;
+        &:hover {
+            color: #0A0F26;
+        }
+        & i {
+            display: block;
+        }
+    }
+}
+.modal-content{
+	border: 0;
+	border-radius: 6px;
+}
+.tb-formbtn{
+	a{
+		width: 100%;
+	}
+}
+// Login Popup Style
+.tb-formlogin{
+	.tb-btn{margin-left: auto;}
+	.form-group{margin: 0;}
+	.tb-form-btn{margin:10px 0 0; }
+}
+.tb-optionsbar {
+    float: left;
+    width: 100%;
+    margin: 25px 0 28px;
+    text-align: center;
+    font: 700 rem(14px)/em(14,14) $heading-font-family;
+    position: relative;
+    	& em {
+		z-index: 9;
+		color: #999;
+		display: block;
+		margin: 0 auto;
+		max-width: 50px;
+		background: #fff;
+		font-style: normal;
+		position: relative;
+	}
+	&:after {
+	    left: 0;
+	    top: 50%;
+	    width: 100%;
+	    content: '';
+	    height: 1px;
+	    background: #eee;
+	    position: absolute;
+	}
+}
+.tb-loginicon {
+    width: 100%;
+    @extend %flex;
+	align-items: center;
+	.tb-titleinput{min-width: 180px;}
+    & ul {
+		flex: auto;
+        width: auto;
+        margin: 0 -5px;
+        list-style: none;
+        overflow: hidden;
+        @extend %flex;
+        li {
+            width: 50%;
+            padding: 0 5px;
+            list-style-type: none;
+        }
+    }
+    & a {
+        color: #fff;
+        display: block;
+        border-radius: 4px;
+    	padding: 0 20px 0 0;
+        font: 600 rem(14px)/em(40,14) $heading-font-family;
+        & span {
+            min-width: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-right: 15px;
+            display: inline-block;
+            background: rgba(0,0,0,0.2);
+        }
+    }
+}
+.tb-facebookbox {
+    background: #3b5999;
+}
+.tb-googlebox {
+    background: #dd4b39;
+}
+.tb-loginfooterinfo{
+	width: 100%;
+    border: 0;
+    background: #fcfcfc;
+    border-radius: 0 0 4px 4px;
+    padding: 0;
+    border-top:1px solid #eee;
+    & a{
+		width: 50%;
+		display: inline-block;
+		margin: 0 !important;
+		padding: 10px 20px;
+		text-align: center;
+		line-height: 30px;
+		& + a{border-left: 1px solid #eee;}
+		& em{
+			font-style:normal;
+			color: #999;
+		}
+    }
+}
+.tb-eyeicon{
+	position:relative;
+	& input{padding-right: 50px;}
+	& > a {
+	    right: 25px;
+	    color: #999;
+	    position: absolute;
+	    & i {
+	    	position: relative;
+	    	&:after {
+			    content: "";
+			    position: absolute;
+			    background-color: #999;
+			    border-right: 1px solid #fff;
+			    right: 7px;
+			    bottom: 0;
+			    width: 2px;
+			    height: 100%;
+			    transform: rotate(45deg);
+			}
+	    }
+	    &.tb-showpassword{
+	    	i:after{display: none;}
+	    }
+	}
+}
+.tb-titleinput{
+	flex: 0 0 140px;
+	margin-bottom: 10px;
+	color: $heading-font-color;
+	font: 700 rem(14px)/em(18,14) $heading-font-family;
+}
+.tb-joinpopup .tb-loginfooterinfo a{
+	width: 100%;
+}
+.tb-userinfo{
+	padding: 0;
+	margin: 0;
+	li{
+		display: flex;
+		list-style-type: none;
+		span{
+			display: block;
+			font: 400 rem(15)/em(26,15) $body-font-family;
+		}
+		h6{
+			text-align: right;
+			margin: 0 0 0 auto;
+			padding-left: 20px;
+			font: 600 rem(16)/em(26,16) $heading-font-family;
+			> a{
+				color: $hyperlink;
+			}
+		}
+		+ li{
+			margin-top: 10px;
+		}
+	}
+}
+.tb-userverfication-btns{
+	gap: 10px;
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+	a{
+		width: 100%;
+	}
+}
+.tb-userinfo-list{
+	padding: 0;
+	margin: 0;
+	li{
+		list-style-type: none;
+		+ li{
+			margin-top: 12px;
+		}
+		span{
+			color: $dark;
+			display: block;
+			font: 600 rem(14)/em(24,14) $body-font-family;
+		}
+		h6{
+			padding: 8px;
+			display: block;
+			margin: 4px 0 0;
+			border-radius: 4px;
+			background-color: $lightest;
+			font: 400 rem(15)/em(24,15) $body-font-family;
+		}
+	}
+}
+
+.tb-userinfo-list{
+	max-height: 500px;
+	.mCSB_scrollTools{
+		right: -5px;
+		position: absolute;
+	}
+}
+.modal.fade{
+	&.show{
+		.modal-dialog {transform: scale(1);}
+	}
+	.modal-dialog  {
+		transform: scale(0);
+	}
+}
+.tb-modaldialog {
+	.croppie-container{
+		.cr-boundary{
+			border-radius: 4px;
+			width: 100% !important;
+		}
+	}
+}
+.tb-popup-info{
+	p{
+		margin: 0;
+	}
+}

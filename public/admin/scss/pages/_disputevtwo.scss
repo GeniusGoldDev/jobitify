@@ -1,0 +1,410 @@
+.bordr-dark{
+    border: 1px solid #64748B !important;
+}
+.tb-dbbox{
+    .tb-bordertags{
+        margin:  0 0 6px;
+    }
+    h5 {
+        line-height: 24px;
+        margin:  6px 0 0 0;
+    }
+    .tb-disputesum{
+        margin: 20px 0 0;
+    }
+}
+.tb-infolist{
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    li{
+        list-style-type: none;
+        span{
+            display: inline-flex;
+            align-items: center;
+            color: #0A0F26; 
+            gap: 6px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            i{
+                color: #999999;
+            }
+        }
+    }
+}
+.tb-colapseable{
+    width: 100%;
+}
+.tb-colapseableiten{
+    width: 100%;
+    .tb-dbbox{background-color: transparent;}
+    &:last-child{
+        h5[aria-expanded="false"]{border-radius: 0 0 10px 10px;}
+    }
+    h5{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        background: #F7F7F7;
+        padding: 10px 30px;
+        align-items: center;
+        i{
+            font-size: 20px;
+            @extend %transition;
+        }
+    }
+    [aria-expanded="true"] i {
+        transform: rotate(90deg);
+    }
+    & + .tb-colapseableiten {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+.tb-collapsetile{
+    strong{
+        display: block;
+        font: 700 1.125rem/1.4444444444em "Urbanist", sans-serif;
+    }
+    p{
+        font-size: 15px;
+        line-height: 24px;
+        margin: 20px 0 0;
+    }
+}
+.tb-collapselist{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style-type: none;
+    }
+}
+.tb-dbbox{
+    .tb-collapselist{
+        margin: 26px 0 0;
+    }
+}
+.tb-disputesum{
+    padding: 20px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    h6{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #64748B;
+        margin: 0 ;
+    }
+    .tl-summerylist{
+        margin: 10px 0 0;
+    }
+}
+.tl-summerylist{
+    padding: 0;
+    margin: 0;
+    li{
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        justify-content: space-between;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        color: $heading-font-color;
+        margin: 10px 0 0;   
+        span{
+            display: inline-block;
+        }
+    }
+    .tb-sublisttotal{
+        width: 100%;
+        margin: 20px 0 0;
+        padding: 20px 0 0;
+        flex-direction: row;
+        display: inline-flex;
+        border-top: 1px solid #DDDDDD;
+        font: 700 1.125rem/1.4444444444em "Urbanist", sans-serif;
+    }
+}
+
+.tk-conversation-holder{
+    padding: 30px;
+    overflow: hidden;
+    max-height: 620px;
+    border-radius: 10px;
+    background: #F7F7F7;
+    .mCSB_scrollTools .mCSB_draggerContainer{
+        background-color: transparent;
+    }
+}
+.tk-message-wrapper{
+    + .tk-message-wrapper{
+        margin-top: 20px;
+    }
+}
+.tk-message{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    > img{
+        height: 36px;
+        max-width: 36px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    + .tk-message{
+        margin-top: 20px
+    }
+    
+}
+.tk-message-holder{
+    display: block;
+    max-width: 567px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px 0px 10px 10px;
+    p{
+        text-align: left;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        + .tk-message-attechemets{
+            margin-top: 10px;
+        }
+    }
+
+}
+.tk-message-content{
+    
+    strong{
+        color: #999999;
+        font-weight: 600;
+        margin: 4px 0 0 3px;
+        a{
+            display: inline-block;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 22px;
+            margin: 0 0 0 14px;
+            color: #1DA1F2;
+        }
+    }
+}
+.tk-message-adminreply{
+    .tk-message-content{
+        p{
+            max-width: 521px;
+        }
+    }
+    &::before{
+        font-size: 20px;
+        color: #64748B;
+        content: "\e949";
+        display: inline-block;
+        padding: 2px 10px 10px 10px;
+        font-family: 'icomoon' !important;
+    }
+}
+.tk-messages-reciver{
+    .tk-message-holder{
+        border-radius: 0px 10px 10px 10px;
+    }
+}
+.tk-messages-sender{
+    .tk-message{
+        flex-direction: row-reverse;
+        margin: 20px 0 0;
+
+    }
+    .tk-message-content{
+        text-align: right;
+        strong{
+            margin-right: 3px;
+        }
+    }
+    .tk-message-adminreply{
+        &::before{
+            content: "\e948";
+        }
+    }
+}
+.tk-conversation-holder{
+    + .tk-conversation-reply{
+        margin-top: 30px;
+    }    
+}
+.tk-conversation-reply{
+    h6{
+        margin-bottom: 10px;
+    }
+}
+.tk-replybtns{
+    @extend %flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tb-disputetest{
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    @extend %flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    > .tb-radiobox{
+        width: 50%;
+        > input{
+            &:checked + .tb-radiodispute{
+                background: transparent;
+                label {
+                    &::before {
+                        background: #fff;
+                        border: 4px solid #22C55E;
+                    }
+                }
+            }
+        }
+                label {
+                    &::before{
+                        height: 24px;
+                        width: 24px;
+                        border: 1.5px solid #ddd;
+                        background-color: $white;
+                    }
+                }
+                .tb-wininginfomain {
+                    align-items: center;
+                    img {
+                        margin-left: 0;
+                        border-radius: 50%;
+                        width: 44px;
+    
+                    }
+                } 
+           
+    }
+    .tb-radiobox{
+        background: #F7F8FC;
+        border-radius: 10px;
+
+        .tb-radiodispute{
+            background: #F7F8FC;
+            border-radius: 10px;
+            padding: 13px 20px;
+            label{
+                width: 100%;
+                flex-wrap: nowrap;
+
+            }
+        }
+        & + .tb-radiobox{
+            margin-top: 0;
+        }
+    }
+
+}
+
+td.tb-action-profile {
+    .tb-delete {
+        i {
+            font-size: 20px;
+        }
+    }
+}
+.tb-action-profile{
+    a{
+        gap: 8px;
+        color: #64748B;
+        @extend %transition;
+        display: inline-flex;
+        align-items: center;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+        &:hover{
+            color: #1DA1F2;
+        }
+        i{
+            font-size: 15px;
+        }
+        + a{
+            padding-left: 16px;
+            margin-left: 16px;
+            border-left: 1px solid $lighter;
+        }
+    }
+
+}
+
+.tk-refunded-dispute{
+    label{
+        .tb-wininginfomain{
+            width: 100%;
+        }
+        img{
+            margin-left: 0 !important;
+        }
+        figure{
+            margin:0 0 0 auto;
+            display: block;
+            img{
+                margin-right: 0;
+                max-width: 24px;
+            }
+        }
+        &::after,
+        &::before{
+            display: none;
+        }
+    }
+}
+.tb-disputed{
+    width: 100%;
+    margin-top: 20px;
+}
+.tb-radiobox{
+    figure{
+        display: none;
+    }
+}
+.tk-message-attechemets{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    background-color: $lightest;
+    justify-content: space-between;
+    img{
+        max-width: 26px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    span{
+        color: $dark;
+        display: flex;
+        align-items: center;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+    }
+    > a{
+        color: $hyperlink;
+        margin-left: 30px;
+        font: 400 rem(14)/em(24,14) $body-font-family;
+    }
+}
+.tb-disputebtn{
+    em{
+        color: $dark;
+        font-style: normal;
+        font: 400 rem(13)/em(22,13) $body-font-family;
+    }
+}

@@ -1,0 +1,392 @@
+.tb-packages-table{
+    & .tb-checkbox{
+        & label:after{
+            top: 50%;
+            left: 0;
+            border: 0;
+            font-size: 20px;
+            color: $bright_green;
+            transform: translate(0, -50%);
+        }
+        & label:before{
+            font-size: 20px;
+        }
+        & input:checked{
+            width: 100%;
+            height: 20px;
+            max-width: 20px;
+        }
+    }
+    &  > tbody{
+            & > tr{
+                    td{
+                padding: 13.5px 20px;
+            }
+        } 
+    }
+    .tb-checkboxwithimg{
+        padding: 0;
+        img{
+            border-radius: 10px;
+        }
+    } 
+    .tb-table-data{
+        color: $dark;
+        font: 400 15px/24px 'Open Sans', sans-serif;
+    }
+    & thead{
+        & tr{
+           & > th{
+                color: $dark;
+                padding: 10px 20px;
+                font: 600 16px/26px 'Urbanist', sans-serif;
+                 & .tb-checkbox{
+                    & label{
+                        & span{
+                            color: $dark;
+                            font: 600 16px/26px 'Urbanist', sans-serif;
+                        }
+                    } 
+                } 
+            } 
+        }  
+    } 
+    .tb-checkbox label:before{
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+    .tb-invoicecon{
+        text-align: left;
+    }
+}
+.tb-packages-sec{
+    & .tb-inputheight {
+        .form-control{
+            height: 40px !important;
+            &::placeholder{
+                color: $dark;
+                font: 400 15px/24px 'Open Sans', sans-serif;
+            }
+        }
+    }
+    .tb-select{
+        height: 40px;
+    }
+    .tb-actionselect{
+        & .select2-container--default{
+            & .select2-selection--single{
+                & .select2-selection__rendered {
+                    color: $dark;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    font: 400 15px/24px 'Open Sans', sans-serif;
+                } 
+            } 
+        } 
+    } 
+}
+
+.tb-viewpackages-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4{
+        color: $dark;
+        margin-bottom: 0;
+        font: 700 22px/30px 'Urbanist', sans-serif;
+    }
+}
+.tb-view-imgarea{
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 100%;
+        height: 60px;
+        max-width: 60px;
+        border-radius: 10px;
+    }
+}
+
+.tb-img-description{
+    span{
+        color: $dark;
+        display: block;
+        margin: 4px 0 0;
+        font: 700 18px/26px 'Urbanist', sans-serif;
+    }
+}
+.tb-packege-list{
+    padding: 20px 0 0 0;
+    li{
+        list-style: none;
+        + li{
+            padding-top: 10px;
+        }
+    }
+}
+.tb-view-pac-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h6{
+        margin: 0;
+        color: $dark;
+        font: 600 16px/26px 'Urbanist', sans-serif;
+    }
+    span{
+        color: $dark;
+        font: 400 15px/24px 'Open Sans', sans-serif;
+    }
+}
+.tb-viewpac-btn{
+    gap: 10px;
+    display: flex;
+    padding: 20px 0 0 0;
+    align-items: center;
+    a{
+        width: 100%;
+        height: 40px;
+        max-width: 50%;
+        font: 700 18px/26px 'Urbanist', sans-serif;
+    }
+    .tb-gry-bd {
+        color: $dark;
+        background: $lightest;
+    }
+}
+.tb-package-settings{
+    border-radius: 4px;
+    .tb-dbboxtitle{
+        padding: 10px 20px;
+        border-radius: 0;
+        background-color: #FAFAFB;
+        h5{
+            margin: 0;
+            color: $light-gray;
+            font: 600 16px/26px 'Urbanist', sans-serif;
+        }
+    }
+    .tb-todobox{
+        padding: 20px;
+        border-radius: 0 0 10px 10px;
+        fieldset{
+            margin: -10px;
+            .tb-packagesfor{
+                gap: 10px;
+                .tk-errormsg span{margin: 0;}
+            }
+        }
+    }
+    .tb-titleinput{
+        padding: 0;
+        margin-bottom: 10px;
+        font: 600 16px/26px 'Urbanist', sans-serif;
+    }
+   .tb-dbtnarea{
+    a{
+        font: 700 16px/26px 'Urbanist', sans-serif;
+    }
+   }
+   .form-group{
+        .tb-label{width: 100%;}
+   }
+}
+
+.tb-upload-limit{
+    color: $dark;
+    display: block;
+    font: 400 13px/22px 'Open Sans', sans-serif;
+}
+.tb-tippy-input{
+    width: 100%;
+    position: relative;
+    & > .form-control {
+        padding-right: 50px;
+    }
+    .tippy{
+        top: 50%;
+        right: 20px;
+        font-size: 20px;
+        position: absolute;
+        color: rgba(0, 0, 0, 0.4);
+        transform: translate(0px, -50%);
+        i{
+            display: block;
+        }
+    }
+}
+.tb-package-settings{
+    .form-control{
+        height: 48px;
+        position: relative;
+        &::placeholder{
+            color: $light;
+            font: 400 15px/24px $body-font-family;
+        }
+    }
+    .tb-select{
+        .select2-selection__placeholder{
+            color: $light;
+            font: 400 15px/24px $body-font-family;
+        }
+    }
+}
+
+.tb-increasevalue{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    padding: 0px 20px;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid $lightest_2;
+    justify-content: space-between;
+    input{
+        border: 0;
+        padding: 0;
+        height: auto !important;
+    }   
+}
+.tb-increasbtn{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 20px;
+        color: $dark_black;
+    }
+}
+.tb-packagesfor{
+    h6{
+        flex: none;
+        margin-bottom: 0;
+    }
+}
+.tb-packagestype{
+    margin: 0;
+    gap: 10px;
+    padding: 0;
+    flex: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    li{
+        
+        width: 100%;
+        max-width: 177px;
+        margin: 0 !important;
+    }
+    .tb-radio{
+        padding: 10px 20px;
+        border-radius: 4px;
+        background: #FAFAFB;
+        label{
+            display: flex;
+            padding-left: 0;
+            align-items: center;
+            width: auto;
+            &::before{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+.tb-active{
+    height: 24px;
+    cursor: pointer;
+    color: #1C1C1C;
+    padding: 1px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: 1px solid #22C55E;
+    font: 700 12px/24px 'Urbanist', sans-serif !important;
+}
+.tb-uploading{
+    display: none;
+}
+
+.tb-payeoutstatus{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    li{
+        width: 50%;
+    }
+    .tb-radiobox{
+        + .tb-radiobox{
+            margin-top: 0;
+        }
+    }
+}
+.tb-emailsubject-list{
+    width: 100%;
+    padding: 19px;
+    border-radius: $radius;
+    background: $lightest_3;
+    border: 1.5px solid $lightest_2;
+}
+.tb-action-status{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    li{
+        line-height: inherit;
+        list-style-type: none;
+        > a{
+            display: block;
+            font-size: 20px;
+            i{
+                display:  block;
+                line-height: inherit;
+            }
+        }
+        span{
+            display: flex;
+            align-items: center;
+            color: $decent_grey;
+            font: 400 rem(14)/em(24,14) $body-font-family;
+            i{
+                padding-right: 6px;
+            }
+            a{
+                flex: none;
+                color: $decent_grey;
+                i{color: #999;}
+            }
+        }
+        + li{
+            margin-left: 16px;
+            padding-left: 16px;
+            border-left: 1px solid $lighter;
+        }
+    }
+}
+
+.tb-approved{
+    color: $bright-green !important;
+    i{
+        color: $bright-green;
+    }
+}
+.tb-action-profile .tb-action-status li > a {
+    display: inline-flex;
+    font-size: 14px;
+}
+.tk-proposal-title{
+    a{
+        color: $dark;
+        display: block;
+        font: 400 rem(15)/em(24,15) $body-font-family;
+    }
+    span{
+        display: block;
+        color: $decent_grey;
+        font: 400 rem(13)/em(22,13) $body-font-family;
+    }
+}

@@ -1,0 +1,9 @@
+<script src="{{ asset('common/js/jquery.min.js') }}"></script>
+<script defer src="{{ asset('common/js/bootstrap.min.js') }}"></script>
+<script defer src="{{ asset('common/js/select2.min.js') }} "></script>
+<script defer src="{{ asset('common/js/jquery.mCustomScrollbar.min.js') }}"></script>
+<script defer src="{{ asset('common/js/popper-core.js') }}"></script>
+<script defer src="{{ asset('common/js/tippy.js') }}"></script>
+<script defer src="{{ asset('js/main.js')}}"></script>
+<script defer src="{{ asset('common/js/jquery-confirm.min.js')}}"></script>
+<script defer src="{{ asset('admin/js/main.js') }}"></script>

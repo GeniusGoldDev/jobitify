@@ -1,0 +1,719 @@
+.tk-bootstraps-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tk-seller-list{
+    margin-top: 18px;
+    flex-wrap: nowrap;
+    margin-bottom: -1px;
+
+    .tk-notification{
+        display: inline-block;
+    }
+}
+.tk-scetiondb{
+    padding: 20px 0 80px 0;
+}
+.tk-seller-item{
+    position: relative;
+    font: 600 rem(14)/em(24, 14) $body_font_family;
+    text-align: right;
+    color: $black_opacity_80;
+    a{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        font-family: $heading-font-family;
+        color: $black_opacity_80;
+        border-radius: 10px 10px 0 0 !important;
+        padding: 12px 20px;
+        display: inline-flex;
+        align-items: center;
+        
+         i {
+            display: inline-block;
+            font-size: 16px;
+            color: $light;
+            margin-right: 7px;
+         }
+    }
+    a.active{
+        background-color: #F7F7F7;
+        border: 1px solid $border-colorv2;
+        border-radius: 4px 4px 0px 0px !important;
+        border-bottom: 0;
+    }
+}
+.tk-seller-list .nav-tabs .nav-link.active{
+    background-color: #F7F7F7;
+    border-color: $border-colorv2;
+    border-bottom: 1px solid #F7F7F7;
+    border-radius: 4px 4px 0px 0px !important;
+}
+.tk-seller-list .nav-tabs .nav-link.active:hover{
+    border-color: $border-colorv2 !important;
+    border-bottom: 1px solid #F7F7F7 !important;
+    border-radius: 4px 4px 0px 0px !important;
+}
+.tk-notification::after{
+    position: absolute;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    right: 10px;
+    border-radius: 50%;
+    top: 10px;
+    background: #EF4444;
+}
+.tk-tabs-button{
+    padding: 8px 14px;
+    width: 162px;
+    height: 38px;
+    background: $btn_bgcolor;
+    border-radius: 4px;
+    font: 600 rem(13)/em(22, 13) $body_font_family;
+    color: $btn_textcolor;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        color: $btn_textcolor;
+    }
+    i{
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 6px;
+    }
+}
+.tk-nav-link-button{
+    border-radius: 4px 4px 0 0;
+}
+.tk-seller-content{
+    background-color: $lightest;
+}
+.tk-tabs-links{
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    a{
+        @extend %p14;
+        color: $black_opacity_60;
+    }
+    span{
+        @extend %p14;
+        color: $black_opacity_60;
+    }
+    .active{
+        color: $primary_color_01_base;
+    }
+    i{
+        color: $black_opacity_40;
+        margin: 0 8px;
+    }
+}
+.tk-seller-counter-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: -10px;
+    li {
+        width: 100%;
+        max-width: 33.33%;
+        position: relative;
+        padding: 10px;
+        margin-bottom: 10px;
+        @extend %transition;
+        list-style-type: none;
+        &::after {
+            content: " ";
+            height: 10px;
+            left: 20px;
+            width: calc(100% - 40px);
+            position: absolute;
+            background: $white;
+            border-width: 0px 1px 1px 1px;
+            border-style: solid;
+            border-color: $lightest_2;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.03);
+            border-radius: 0px 0px 10px 10px;
+        }
+        &:hover a {
+            @extend %transition;
+            background-color: $btn_bgcolor !important;
+            color: $btn_textcolor !important;;
+        }
+        &:hover .tk-icon-watermark{
+            i{
+                @extend %transition;
+                right: -20px;
+                bottom: -30px;
+                position: absolute;
+            }
+        }
+    }
+}
+.tk-counter-contant{
+    width: 100%;
+    min-height: 138px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: $white;
+    border: 1px solid $lightest_2;
+    box-shadow: $drop_shadows_light;
+    border-radius: 10px;
+    h3{
+        @extend %h4;
+        letter-spacing: 0.5px;
+        color: $charcoal_black;
+        margin-bottom: 0;
+        height: 30px
+    }
+    strong{
+        @extend %p14;
+        display: block;
+        color: $black_opacity_60;
+    }
+}
+.tk-counter-icon-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    i{
+        font-size: 24px;
+    }
+    a{
+        padding: 4px 12px;
+        background: $lightest;
+        border-radius: 4px;
+        font: 600 rem(14)/em(24, 14) $body_font_family;
+        color: $decent-grey;
+        @extend %transition;
+    }
+}
+.tk-icon-green{
+    color: $bright-green;
+}
+.tk-icon-orange{
+    color: $orange;
+}
+.tk-icon-purple{
+    color: #6366F1;
+}
+.tk-icon-blue{
+    color: $anchor_color;
+}
+.tk-icon-red{
+    color: $red;
+}
+.tk-icon-yellow{
+    color: $pale-yellow;
+}
+.tk-icon-gray{
+    color: $decent-grey;
+}
+.tk-seller-graph{
+    background: $white;
+    padding: 20px;
+    background: $white;
+    border: 1px solid rgba(5, 18, 55, 0.08);
+    box-shadow: $drop_shadows_light;
+    border-radius: 10px;
+}
+.tk-dbinvoice{
+    background: $white;
+    padding: 20px;
+    background: $white;
+    border: 1px solid rgba(5, 18, 55, 0.08);
+    box-shadow: $drop_shadows_light;
+    border-radius: 10px;
+    .tk-submitreview{
+        box-shadow: none;
+        padding: 0;
+    }
+    .tb-dhb-mainheading{
+        width: 100%;
+        border-bottom: 1px solid $border-colorv2;
+        padding-bottom: 23px;
+        margin: 0 0 0;
+         h2{
+            margin: 0;
+            font: 700 rem(22)/em(30, 22) $heading_font_family !important;
+        }
+    }
+}
+.tk-heading-detail{
+    h6 {
+        @extend %p14;
+        color: $light;
+        margin-bottom: 0;
+    }
+    h3 {
+        @extend %h4;
+        letter-spacing: 0.5px;
+        color: $dark;
+        margin-bottom: 0;
+    }
+}
+.tk-graph-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tk-seller-select{
+    width: 180px;
+    height: 48px;
+}
+.tk-seller-aside{
+    padding: 10px;
+    border-radius: 9px;
+    background: $white;
+    border: 1px solid $lightest_2;
+    box-shadow: $drop_shadows_light;
+    & ~ div {
+        margin: 24px 0 0;
+    }
+}
+.tk-seller-details{
+    background-image: url(../../images/account-info-bg.png);
+    border-radius: 10px;
+    padding: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    background-size: cover;
+    h3 {
+        font: 600 rem(18)/em(30, 18) $body_font_family;
+        color: $white;
+        padding: 35px 0;
+        margin-bottom: 0;
+    }
+    p {
+        font: 400 rem(13)/em(22, 13) $body_font_family;
+        color: $white;
+        margin-bottom: 0;
+    }
+    h5 {
+        font: 600 rem(14)/em(24, 14) $body_font_family;
+        margin-bottom: 0;
+        color: $white;
+    }
+}
+.tk-seller-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tk-seller-name{
+    h6 {
+        font: 600 rem(14)/em(24, 14) $body_font_family;
+        color: $white;
+        margin-bottom: 0;
+    }
+}
+.tk-seller-logo{
+    flex: none;
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 20px;
+        height: 20px;
+
+    }
+}
+.tk-list-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(115, 87, 251, 0.1);
+    padding: 14px;
+    border-radius: 10px;
+    min-height: 148px;
+
+}
+.tk-list-name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .tk-list-heading{
+        margin: 10px 0 0;
+    }
+}
+.tk-aside-list{
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: 50%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+.tk-list-heading{
+    h5 {
+        @extend %h6;
+        margin: 0;
+        color: $charcoal_black;
+    }
+}
+.tk-list-icon{
+    i {
+        font-size: 20px;
+        display: inline-flex;
+        padding: 10px;
+        width: 40px;
+        line-height: 40px;
+        height: 40px;
+        background: $white;
+        border: 1px solid $lightest_2;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.tk-income-detail{
+    p {
+        @extend %p13;
+        color: $black_opacity_60;
+        margin-bottom: 0;
+    }
+}
+.tk-list-icon-blue{
+    color: #7357FB;
+}
+.tk-list-icon-green{
+    color: #18B99B;
+}
+.tk-list-icon-red{
+    color: #FF6167;
+}
+.tk-list-icon-yellow{
+    color: #D9A113;
+}
+.tk-withdraw-button{
+    @extend %h6;
+    margin-top: 15px;
+    width: 100%;
+    padding: 7px 24px;
+    background: $primary_color_02_base;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: $charcoal_black;
+    display: block;
+    &:hover{
+        color: $charcoal_black;
+    }
+}
+.tk-for-signup{
+    @extend %p13;
+    text-align: center;
+    color: $black_opacity_60;
+    margin: 15px 0 0 0;
+    a {
+        color: $anchor_color;
+        margin-right: 5px;
+        font-weight: 600;
+    }
+}
+.tk-advertisment-img{
+    text-align: center;
+    img{
+        width: 306px;
+        height: 306px;
+    }
+}
+.tk-icon-watermark{
+    i{
+        position: absolute;
+        font-size: 110px;
+        right: -50px;
+        color: $lightest;
+        bottom: -50px;
+        @extend %transition;
+    }
+}
+.tk-seller-breadcrum{
+    border-bottom: 1px solid $border-colorv2;
+}
+.nav-tabs{
+    border: none;
+}
+.tk-headerbottom{
+    background: white;
+    border-bottom: 1px solid $border-colorv2;
+
+}
+.tk-bglightgreen{
+    background: rgba(24, 185, 155, 0.1) !important;
+}
+.tk-bglightred{
+    background: rgba(255, 97, 103, 0.1) !important;
+}
+.tk-bglightwheat{
+    background: rgba(217, 161, 19, 0.1) !important;
+}
+.tk-paymentways{
+    .tk-project-box{
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .tk-seller-details{
+        margin: 0 0 14px;
+    }
+    .tk-withdrawamount {
+        & ~ h5 {
+            margin-top: 14px;
+        }
+    }
+}
+.tk-radiobox.tk-expanded{
+    border-radius: 10px 10px 0 0 !important;
+}
+.tk-payoutmethodvtwo{
+    gap: 0;
+    .tk-radiobox {
+        border-radius: 10px;
+    }
+    .form-check-label{
+        margin: 0 0 0 10px;
+    }
+    .form-check-label[aria-expanded="true"]{
+        & .tk-escrow-content{
+            transform: rotate(90deg);
+        }
+    }
+    .tk-radiobox{
+        background: #F7F7F7;
+        & ~ .tk-radiobox {
+            margin-top: 10px;
+        }
+    }
+    [aria-expanded="true"]{
+        border-radius: 10px 10px 0 0;
+    }
+    .tb-stepescrow{
+        .tk-payment-submenu{
+            border-radius: 0 0 10px 10px;
+            border-top: 0;
+        }
+    }
+    .tk-profileform__holder{
+        > a {
+            display: inline-flex;
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
+.tk-paymentways {
+    .tk-project-box > h5 ,
+    .tk-projectboxinner > h5 {
+        font: 600 rem(14)/em(24, 14) $body_font_family;
+        margin-bottom: 10px;
+    }
+}
+.tk-withdrawamount{
+    .tk-themeform{
+        border-radius: 10px;
+        background: #F7F7F7;
+        .tk-inputicon .form-control {
+            padding-left: 14px;
+            padding-right: 130px;
+        }
+        ::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+}
+.tk-maxlimitt{
+    position: absolute;
+    right: 20px;
+    color: $red !important;
+    display: inline-block;
+    font: 500 rem(14)/em(26, 14) $heading_font_family;
+}
+
+.tk-paymentways.tk-project-box {
+    padding: 0;
+    border-radius: 10px;
+    > .tk-withdraw-button {
+        border-radius: 0 0 10px 10px;
+        margin: 0;
+        cursor: pointer;
+    }
+}
+
+.tk-projectboxinner{
+    padding: 20px;
+    background: $white;
+    box-shadow: $drop_shadows_light;
+    border: 1px solid #eeeeee;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+.tb-header{
+    padding: 0;
+   
+    .tb-navbarnav > li > a {
+        padding: 18px 0;
+        color: $secondary-color;
+    }
+    .tb-userlogin {
+        padding: 16px 44px 16px 18px;
+        background: #F7F7F7;
+        border-radius: 0 0 10px 10px;
+        &::after{
+            right: 20px;
+            top: 50%;
+            font-size: 18px;
+            content: "\e92e";
+            padding-left: 5px;
+            position: absolute;
+            color: $light;
+            font-family: 'icomoon';
+            transform: translate(0%, -50%);
+        }
+        img {
+            max-width: 44px;
+        }
+        .tk-wallet{
+            display: flex;
+
+        }
+        a span{
+            color: #64748B;
+            display: inline-flex;
+            text-align: right;
+            flex-direction: column;
+            font: 700 rem(13)/em(22, 13) $body_font_family;
+            margin-right: 12px;
+            line-height: 18px;
+
+            strong {
+                color: rgba(0, 0, 0, 0.6);
+                font: 700 rem(16)/em(26, 16) $heading_font_family;
+            }
+        }
+    } 
+}
+.tk-headervtwo{
+    padding: 0;
+    background: $headerbg;
+    .tb-navbarnav > li  {
+        > a:not(.tk-btn-yellow){
+            padding: 18px 0;
+            color: $clr-white;
+        }
+        .tk-registerbtn{
+            background: transparent !important;
+            border: 1px solid $white !important;
+        }
+    }
+    .tb-userlogin {
+        background: rgba(255, 255, 255, 0.05);
+        border-width: 0px 1px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.14);
+        padding: 16px 44px 16px 18px;
+        border-radius: 0;
+
+        &::after{
+            right: 20px;
+            top: 50%;
+            font-size: 18px;
+            content: "\e92e";
+            padding-left: 5px;
+            position: absolute;
+            color: $clr-white;
+            font-family: 'icomoon';
+            transform: translate(0%, -50%);
+        }
+        img {
+            max-width: 36px;
+        }
+        .tk-wallet{
+            display: flex;
+
+        }
+        a span{
+            color: #DDDDDD;
+            display: inline-flex;
+            text-align: right;
+            margin-right: 12px;
+            flex-direction: column;
+            font: 500 rem(13)/em(18, 13) $body_font_family;
+
+            strong {
+                color: #EAB308;
+                font: 700 rem(15)/em(20, 15) $heading_font_family;
+            }
+        }
+    } 
+}
+.tb-tabfiltertitle{
+    h5 {
+        margin: 0 0 16px;
+    }
+}
+.tk-emptyheading{
+    width: 100%;
+    border-bottom: 1px solid $border-colorv2;
+    padding-bottom: 23px;
+    margin: 0 0 30px;
+
+    .tb-tabfiltertitle h5{
+        margin: 0;
+        font: 700 rem(22)/em(30, 22) $heading_font_family;
+    }
+}
+.tk-submitreviewvtwo{
+    justify-content: flex-start;
+
+    figure {
+        img {
+            width: 70px;
+            max-width: 70px;
+        }
+    }
+    h4 {
+        font-size: 18px;
+    }
+}
+.tk-emptypayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 240px;
+
+}
+.tb-linechart {
+    animation: none !important;
+}
+.tk-seller-tabs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    .navbar-toggler{
+        &:focus{
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
